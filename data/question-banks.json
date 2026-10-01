@@ -1,0 +1,234 @@
+[
+  {
+    "id": "bank-ap-patterns-code",
+    "courseId": "advanced-programming",
+    "title": "بنك أسئلة وأكواد أنماط التصميم والبرمجة المتقدمة",
+    "titleEn": "Advanced Programming Patterns & Architecture Bank",
+    "description": "بنك أسئلة شامل مستخرج من ملفات الأكواد وشروحات أنماط التصميم (Decorator, Proxy, Bridge, Facade, Strategy, Observer).",
+    "questionsCount": 4,
+    "sourceFile": "advanced_programming.html & Codes.html"
+  },
+  {
+    "id": "bank-hci-official",
+    "courseId": "human-computer-interaction",
+    "title": "بنك الأسئلة المعتمد لمقرر تفاعل الإنسان والحاسوب (185 سؤال)",
+    "titleEn": "Official HCI Comprehensive Question Bank (185 MCQs)",
+    "description": "بنك الأسئلة الرسمي الكامل لمقرر HCI؛ يغطي المبادئ النفسية، نماذج التفاعل، واجهات المستخدم، قابلية الاستخدام وتجربة المستخدم.",
+    "questionsCount": 185,
+    "sourceFile": "185 Q from Bank HCI.JSON"
+  },
+  {
+    "id": "bank-se-lec-01",
+    "courseId": "software-engineering",
+    "title": "بنك أسئلة المحاضرة 1: مدخل هندسة البرمجيات وتكاليف التطوير",
+    "lectureId": "se-lec-01",
+    "type": "lecture_bank",
+    "description": "40 سؤالاً معتمداً تغطي تعريف هندسة البرمجيات، تكاليف التطوير والفحص، وأخلاقيات وسمات البرمجيات الجيدة.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "bank-se-lec-02",
+    "courseId": "software-engineering",
+    "title": "بنك أسئلة المحاضرة 2: منهجيات ونماذج تطوير البرمجيات (Waterfall & Prototyping)",
+    "lectureId": "se-lec-02",
+    "type": "lecture_bank",
+    "description": "39 سؤالاً حول النموذج التتابعي الخطي ونموذج بناء النماذج الأولية والميزات والعيوب لكل نموذج.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "bank-se-lec-03",
+    "courseId": "software-engineering",
+    "title": "بنك أسئلة المحاضرة 3: النماذج التكرارية والتطورية (Incremental & Spiral)",
+    "lectureId": "se-lec-03",
+    "type": "lecture_bank",
+    "description": "21 سؤالاً حول النماذج التكرارية، النموذج التزايدي، والنموذج الحلزوني الموجه بالمخاطر وتطوير المكونات.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "bank-se-lec-04",
+    "courseId": "software-engineering",
+    "title": "بنك أسئلة المحاضرة 4: إعادة استخدام البرمجيات (Software Reuse & CBSE)",
+    "lectureId": "se-lec-04",
+    "type": "lecture_bank",
+    "description": "30 سؤالاً حول مستويات إعادة الاستخدام وأثرها في خفض تكاليف المشاريع البرمجية وتسريع التسليم.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "bank-se-lec-05",
+    "courseId": "software-engineering",
+    "title": "بنك أسئلة المحاضرة 5: إدارة مشاريع البرمجيات وإدارة المخاطر والتكوين",
+    "lectureId": "se-lec-05",
+    "type": "lecture_bank",
+    "description": "62 سؤالاً حول التخطيط وإدارة المخاطر البرمجية، إدارة الأفراد، إدارة الجودة، وإدارة التكوين (SCM).",
+    "difficulty": "medium"
+  },
+  {
+    "id": "bank-se-lec-06",
+    "courseId": "software-engineering",
+    "title": "بنك أسئلة المحاضرة 6: مرحلة فحص واختبار البرمجيات (Software Testing)",
+    "lectureId": "se-lec-06",
+    "type": "lecture_bank",
+    "description": "71 سؤالاً حول استراتيجيات الفحص، الفارق بين التحقق والتثبت، واختبارات الوحدة والتكامل والصندوقين الأبيض والأسود.",
+    "difficulty": "hard"
+  },
+  {
+    "id": "bank-se-lec-07",
+    "courseId": "software-engineering",
+    "title": "بنك أسئلة المحاضرة 7: صيانة وتطور البرمجيات والكوارث البرمجية",
+    "lectureId": "se-lec-07",
+    "type": "lecture_bank",
+    "description": "68 سؤالاً حول أنواع صيانة البرمجيات الأربعة، التعامل مع الأنظمة القديمة، وأسباب وآثار الأخطاء الكارثية.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "bank-se-mixed",
+    "courseId": "software-engineering",
+    "title": "بنك الأسئلة الشامل لكامل مقرر هندسة البرمجيات",
+    "lectureId": null,
+    "type": "mixed_bank",
+    "description": "بنك أسئلة شامل يضم كافة أسئلة المنهج الـ 331 للتدريب المكثف على كافة الفصول والشباتر.",
+    "difficulty": "mixed"
+  },
+  {
+    "id": "sec-bank-mega-218",
+    "courseId": "information-security",
+    "title": "بنك أسئلة أمن المعلومات الشامل (219 سؤالاً)",
+    "titleEn": "Mega Information Security Final Question Bank (219 Qs)",
+    "description": "بنك الأسئلة الشامل الرسمي لمقرر أمن المعلومات بإشراف د. العزاني، يغطي كافة جوانب التشفير والتهديدات والمصادقة.",
+    "sourceFile": "218_questions.html",
+    "questionsCount": 219
+  },
+  {
+    "id": "se-bank-ch1",
+    "courseId": "software-engineering",
+    "title": "بنك أسئلة الفصل 1: مدخل هندسة البرمجيات",
+    "titleEn": "SE Chapter 1 Question Bank (40 Qs)",
+    "description": "بنك أسئلة الفصل 1 من تجميعات ونماذج هندسة البرمجيات المعتمدة للدفعة.",
+    "sourceFile": "ENG_1.html",
+    "questionsCount": 40
+  },
+  {
+    "id": "se-bank-ch2",
+    "courseId": "software-engineering",
+    "title": "بنك أسئلة الفصل 2: نماذج العمليات والمنهجيات",
+    "titleEn": "SE Chapter 2 Question Bank (39 Qs)",
+    "description": "بنك أسئلة الفصل 2 من تجميعات ونماذج هندسة البرمجيات المعتمدة للدفعة.",
+    "sourceFile": "ENG_2.html",
+    "questionsCount": 39
+  },
+  {
+    "id": "se-bank-ch3",
+    "courseId": "software-engineering",
+    "title": "بنك أسئلة الفصل 3: التطوير الرشيق Agile",
+    "titleEn": "SE Chapter 3 Question Bank (21 Qs)",
+    "description": "بنك أسئلة الفصل 3 من تجميعات ونماذج هندسة البرمجيات المعتمدة للدفعة.",
+    "sourceFile": "ENG_3.html",
+    "questionsCount": 21
+  },
+  {
+    "id": "se-bank-ch4",
+    "courseId": "software-engineering",
+    "title": "بنك أسئلة الفصل 4: هندسة المتطلبات",
+    "titleEn": "SE Chapter 4 Question Bank (30 Qs)",
+    "description": "بنك أسئلة الفصل 4 من تجميعات ونماذج هندسة البرمجيات المعتمدة للدفعة.",
+    "sourceFile": "ENG_4.html",
+    "questionsCount": 30
+  },
+  {
+    "id": "se-bank-ch5",
+    "courseId": "software-engineering",
+    "title": "بنك أسئلة الفصل 5: النمذجة وتصميم النظام",
+    "titleEn": "SE Chapter 5 Question Bank (62 Qs)",
+    "description": "بنك أسئلة الفصل 5 من تجميعات ونماذج هندسة البرمجيات المعتمدة للدفعة.",
+    "sourceFile": "ENG_5.html",
+    "questionsCount": 62
+  },
+  {
+    "id": "se-bank-ch6",
+    "courseId": "software-engineering",
+    "title": "بنك أسئلة الفصل 6: التصميم المعماري",
+    "titleEn": "SE Chapter 6 Question Bank (71 Qs)",
+    "description": "بنك أسئلة الفصل 6 من تجميعات ونماذج هندسة البرمجيات المعتمدة للدفعة.",
+    "sourceFile": "ENG_6.html",
+    "questionsCount": 71
+  },
+  {
+    "id": "se-bank-ch7",
+    "courseId": "software-engineering",
+    "title": "بنك أسئلة الفصل 7: فحص واختبار البرمجيات",
+    "titleEn": "SE Chapter 7 Question Bank (68 Qs)",
+    "description": "بنك أسئلة الفصل 7 من تجميعات ونماذج هندسة البرمجيات المعتمدة للدفعة.",
+    "sourceFile": "ENG_7.html",
+    "questionsCount": 68
+  },
+  {
+    "id": "rm-bank-01",
+    "courseId": "research-methodology",
+    "title": "بنك أسئلة منهجية البحث العلمي الشامل (145 سؤالاً - د. مالك الجبري)",
+    "titleEn": "Research Methodology Official Exam Bank (145 Questions - Dr. Malek Al-Jabri)",
+    "description": "بنك الأسئلة الرسمي المعتمد في كلية الحاسوب وتكنولوجيا المعلومات لمقرر منهجية البحث العلمي بإشراف د. مالك الجبري (145 سؤالاً اختيار من متعدد مع مفتاح الحل المعتمد).",
+    "questionsCount": 145,
+    "difficulty": "medium",
+    "sourceFile": "اسئلة_منهجية_البحث_العلمي_research_methodology.pdf"
+  },
+  {
+    "id": "rm-bank-02",
+    "courseId": "research-methodology",
+    "title": "بنك حلول وتطبيقات مناهج البحث العلمي (Solution Manual & Explanations)",
+    "titleEn": "Research Methodology Solution Manual & Practical Bank",
+    "description": "بنك أسئلة تدريبي موسع يحتوي على مسائل وتطبيقات منهجية في تصميم الأبحاث والمعاينة والتحليل الإحصائي مع الشروحات المفصلة.",
+    "questionsCount": 59,
+    "difficulty": "hard",
+    "sourceFile": "Research_methodology_Practical_Solution_Manual_and_Test_Bank_MCQ.pdf"
+  },
+  {
+    "id": "sec-bank-01",
+    "courseId": "information-security",
+    "title": "بنك أسئلة أمن المعلومات الشامل (Mega Security Bank)",
+    "titleEn": "Mega Security Question Bank (219 Questions)",
+    "description": "بنك أسئلة رسمي وشامل معتمد يضم 219 سؤالاً متعدد الخيارات تغطي كافة موضوعات أمن المعلومات والتشفير والمصادقة والشبكات.",
+    "questionsCount": 219,
+    "difficulty": "medium",
+    "sourceFile": "218_questions.html"
+  },
+  {
+    "id": "hci-bank-01",
+    "courseId": "human-computer-interaction",
+    "title": "بنك أسئلة التفاعل بين الإنسان والحاسوب (185 سؤالاً معتمداً)",
+    "titleEn": "HCI Official Question Bank (185 Questions)",
+    "description": "بنك أسئلة رسمي معتمد لمقرر تفاعل الإنسان مع الحاسوب يضم 185 سؤالاً مستخرجاً من ملف بنك الأسئلة الأصلي.",
+    "questionsCount": 185,
+    "difficulty": "medium",
+    "sourceFile": "185 Q from Bank HCI.JSON"
+  },
+  {
+    "id": "hci-bank-02",
+    "courseId": "human-computer-interaction",
+    "title": "بنك أسئلة تفاعل الإنسان والحاسوب المتقدم (الإصدار الثاني V2)",
+    "titleEn": "HCI Comprehensive Bank V2 (129 Questions)",
+    "description": "بنك أسئلة مكمل يضم 129 سؤالاً إضافياً حول نماذج التصميم ونظريات دون نورمان وقابلية الاستخدام وتصميم الواجهات.",
+    "questionsCount": 129,
+    "difficulty": "medium",
+    "sourceFile": "ALL_QUESTIONS_HCI_V2.JSON"
+  },
+  {
+    "id": "ai-bank-01",
+    "courseId": "artificial-intelligence",
+    "title": "بنك مصطلحات ومفاهيم الذكاء الاصطناعي الشامل (66 سؤالاً معتمداً)",
+    "titleEn": "Comprehensive AI Definitions & Concepts Question Bank (66 Questions)",
+    "description": "بنك أسئلة رسمي وشامل مستخرج من كشاف تعاريف ومصطلحات الذكاء الاصطناعي المعتمد بالكلية مع إحالات أرقام الصفحات لكل محاضرة.",
+    "questionsCount": 66,
+    "difficulty": "medium",
+    "sourceFile": "تجميع_للتعاريف_في_مادة_الذكاء_الاصطناعي.html"
+  },
+  {
+    "id": "toc-bank-01",
+    "courseId": "theory-of-computation",
+    "title": "بنك مسائل وتمارين نظرية الحوسبة والأوتوماتا (25 سؤالاً - أ. رويدة العمري)",
+    "titleEn": "Theory of Computation & Automata Practice Bank (Lectures 1-6)",
+    "description": "بنك أسئلة متخصص يغطي الأوتوماتا المنتهية DFA و NFA والتعبيرات المنتظمة والقواعد النحوية CFG وآلات تورينج استناداً لعروض أ. رويدة العمري.",
+    "questionsCount": 25,
+    "difficulty": "hard",
+    "sourceFile": "lectures 1..6 by Rowaida AL-Amri"
+  }
+]

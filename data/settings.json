@@ -1,0 +1,15 @@
+{
+  "appName": "منصة الاختبارات الجامعية التفاعلية",
+  "appNameEn": "University Interactive Quiz Platform",
+  "version": "1.0.0",
+  "defaultLanguage": "ar",
+  "defaultTheme": "auto",
+  "allowReviewDuringQuiz": false,
+  "shuffleQuestionsDefault": false,
+  "shuffleOptionsDefault": false,
+  "storageKeys": {
+    "theme": "uqp_theme",
+    "resultsHistory": "uqp_quiz_history",
+    "userPreferences": "uqp_user_prefs"
+  }
+}

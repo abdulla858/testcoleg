@@ -1,0 +1,97 @@
+[
+  {
+    "id": "model-se-01",
+    "courseId": "software-engineering",
+    "title": "هندسة البرمجيات: النموذج 1 (المفاهيم ومنهجيات التطوير)",
+    "description": "تدريب شامل يغطي المحاضرات 1 إلى 3: أسس هندسة البرمجيات، النموذج التتابعي (Waterfall)، والنماذج التكرارية والتطورية.",
+    "lectures": [
+      "se-lec-01",
+      "se-lec-02",
+      "se-lec-03"
+    ],
+    "questionsCount": 25,
+    "durationMinutes": 30,
+    "passingPercentage": 60,
+    "difficulty": "medium"
+  },
+  {
+    "id": "model-se-02",
+    "courseId": "software-engineering",
+    "title": "هندسة البرمجيات: النموذج 2 (إعادة الاستخدام وإدارة المشاريع)",
+    "description": "تدريب يغطي المحاضرتين 4 و 5: إعادة استخدام المكونات البرمجية، إدارة -المخاطر، إدارة الأفراد، والتكوين.",
+    "lectures": [
+      "se-lec-04",
+      "se-lec-05"
+    ],
+    "questionsCount": 25,
+    "durationMinutes": 30,
+    "passingPercentage": 60,
+    "difficulty": "medium"
+  },
+  {
+    "id": "model-se-03",
+    "courseId": "software-engineering",
+    "title": "هندسة البرمجيات: النموذج 3 (الفحص والاختبار وصيانة البرمجيات)",
+    "description": "تدريب يغطي المحاضرتين 6 و 7: استراتيجيات الاختبار (White/Black Box)، الصيانة، وتحليل الأخطاء البرمجية الكارثية.",
+    "lectures": [
+      "se-lec-06",
+      "se-lec-07"
+    ],
+    "questionsCount": 30,
+    "durationMinutes": 35,
+    "passingPercentage": 60,
+    "difficulty": "hard"
+  },
+  {
+    "id": "sec-model-01",
+    "courseId": "information-security",
+    "title": "النموذج التدريبي الشامل لأمن المعلومات",
+    "titleEn": "Comprehensive Information Security Practice Model",
+    "description": "نموذج اختباري شامل ثنائي اللغة (عربي / إنجليزي) لمفاهيم التشفير ونظم الحماية.",
+    "sourceFile": "INFO_SER.html",
+    "questionsCount": 50,
+    "durationMinutes": 45
+  },
+  {
+    "id": "hci-model-01",
+    "courseId": "human-computer-interaction",
+    "title": "النموذج التدريبي الشامل لمقرر تفاعل الإنسان والحاسوب (100 سؤال)",
+    "titleEn": "Comprehensive HCI Practice Model (100 Qs)",
+    "description": "نموذج تدريبي شامل يغطي نظريات تجربة المستخدم UX والتصميم التفاعلي وقابلية الاستخدام.",
+    "sourceFile": "index.html",
+    "questionsCount": 100,
+    "durationMinutes": 60
+  },
+  {
+    "id": "ai-model-01",
+    "courseId": "artificial-intelligence",
+    "title": "النموذج التدريبي الشامل لمقرر الذكاء الاصطناعي",
+    "titleEn": "AI Comprehensive Practice Model",
+    "description": "نموذج تجريبي شامل يغطي الوكلاء، خوارزميات البحث، تعلم الآلة، والشبكات العصبية.",
+    "sourceFile": "ai_summary.html",
+    "questionsCount": 20,
+    "durationMinutes": 45
+  },
+  {
+    "id": "toc-model-01",
+    "courseId": "theory-of-computation",
+    "title": "النموذج التدريبي الشامل لنظرية الحوسبة والأوتوماتا",
+    "titleEn": "Theory of Computation Comprehensive Practice Model",
+    "description": "نموذج تدريبي شامل يغطي الأوتوماتا المنتهية، اللغات المنتظمة، القواعد الخالية من السياق، وآلات تورينج.",
+    "durationMinutes": 40,
+    "questionsCount": 20,
+    "difficulty": "hard",
+    "targetAudience": "المراجعة والتحضير للامتحانات النهائية"
+  },
+  {
+    "id": "rm-model-01",
+    "courseId": "research-methodology",
+    "title": "النموذج التدريبي لتطبيقات وحلول مناهج البحث العلمي",
+    "titleEn": "Research Methodology Practice & Solutions Model",
+    "description": "نموذج تدريبي متخصص يغطي التطبيقات الإحصائية والمنهجية وأخلاقيات البحث العلمي والاقتباس وكتابة الأطروحة.",
+    "durationMinutes": 45,
+    "questionsCount": 30,
+    "difficulty": "medium",
+    "targetAudience": "التدريب على تطبيقات وحلول مسائل مناهج البحث"
+  }
+]

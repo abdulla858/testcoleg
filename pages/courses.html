@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="تصفح جميع المواد الدراسية والمقررات الجامعية المتاحة في منصة الاختبارات الجامعية التفاعلية.">
+  <title>المواد الدراسية | منصة الاختبارات الجامعية التفاعلية</title>
+  
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="site-header">
+    <div class="container navbar">
+      <a href="../index.html" class="brand-logo" id="coursesBrandLogo">
+        <div class="brand-icon">🎓</div>
+        <div class="brand-text">
+          <span class="brand-title">منصة الاختبارات الجامعية</span>
+          <span class="brand-subtitle">Interactive Quiz Platform</span>
+        </div>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="../index.html" class="nav-link" id="navHome">الرئيسية</a></li>
+        <li><a href="./courses.html" class="nav-link active" id="navCourses">المواد</a></li>
+        <li><a href="./question-banks.html" class="nav-link" id="navBanks">بنوك الأسئلة</a></li>
+        <li><a href="./models.html" class="nav-link" id="navModels">النماذج التدريبية</a></li>
+        <li><a href="./midterms.html" class="nav-link" id="navMidterms">الاختبارات النصفية</a></li>
+        <li><a href="./account.html" class="nav-link" id="navAccount">السجل والإعدادات</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button type="button" class="theme-toggle-btn" id="themeToggleBtn" aria-label="تبديل الثيم">
+          <span id="themeIcon">🌙</span>
+        </button>
+        <button type="button" class="mobile-menu-btn" id="mobileMenuBtn" aria-label="فتح القائمة">
+          ☰
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <div class="container">
+      
+      <!-- Page Header -->
+      <div class="mb-4">
+        <div class="d-flex align-center justify-between flex-wrap gap-2">
+          <div>
+            <h1 class="mb-1">المواد والمقررات الدراسية</h1>
+            <p class="text-muted">استعرض المواد المتاحة، المحاضرات المقررة، وبنوك الأسئلة التابعة لكل مقرر</p>
+          </div>
+          <span class="badge badge-primary" id="totalCoursesBadge">0 مادة مسجلة</span>
+        </div>
+      </div>
+
+      <!-- Academic Stages Filter Tabs -->
+      <div class="stage-tabs mb-3" id="stageTabs" role="tablist" aria-label="تصفية المراحل الدراسية">
+        <button type="button" class="stage-tab active" data-stage="all" id="tabStageAll">🎓 جميع المراحل</button>
+        <button type="button" class="stage-tab" data-stage="سنة ثالثة" id="tabStage3">⭐ السنة الثالثة (النشطة)</button>
+        <button type="button" class="stage-tab" data-stage="سنة ثانية" id="tabStage2">📘 السنة الثانية</button>
+        <button type="button" class="stage-tab" data-stage="سنة أولى" id="tabStage1">📗 السنة الأولى</button>
+        <button type="button" class="stage-tab" data-stage="سنة رابعة" id="tabStage4">📙 السنة الرابعة</button>
+      </div>
+
+      <!-- Search and Filter Bar -->
+      <div class="filter-bar">
+        <div class="search-box">
+          <input type="text" id="courseSearchInput" class="search-input" placeholder="ابحث باسم المادة أو كود المقرر..." aria-label="بحث في المواد">
+          <span class="search-icon">🔍</span>
+        </div>
+        <select id="courseLevelFilter" class="filter-select" aria-label="تصفية حسب المستوى">
+          <option value="all">جميع المستويات والأقسام</option>
+        </select>
+      </div>
+
+      <!-- Courses Grid Container -->
+      <div id="coursesGrid" class="grid-cards">
+        <!-- Will be populated dynamically by courses.js, or show empty state -->
+        <div class="empty-state w-100" style="grid-column: 1 / -1;">
+          <div class="empty-state-icon">📚</div>
+          <h2 class="empty-state-title">لا توجد مواد مسجلة حالياً</h2>
+          <p class="empty-state-desc">
+            سيتم ظهور المواد وتفاصيلها هنا تلقائياً بمجرد إرسال ملفات محاضرات المقررات في المرحلة الخامسة.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-bottom">
+      <div>المحاضرات هي المصدر الوحيد للمحتوى والأسئلة • منصة الاختبارات الجامعية</div>
+      <div>مرخص بموجب رخصة MIT</div>
+    </div>
+  </footer>
+
+  <script src="../js/app.js"></script>
+  <script src="../js/static-data.js"></script>
+  <script src="../js/data.js"></script>
+  <script src="../js/courses.js"></script>
+</body>
+</html>

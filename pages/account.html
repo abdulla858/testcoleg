@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="سجل الاختبارات السابقة وإعدادات التخزين المحلي والخصوصية.">
+  <title>السجل والإعدادات | منصة الاختبارات الجامعية التفاعلية</title>
+  
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="site-header">
+    <div class="container navbar">
+      <a href="../index.html" class="brand-logo" id="accountBrandLogo">
+        <div class="brand-icon">🎓</div>
+        <div class="brand-text">
+          <span class="brand-title">منصة الاختبارات الجامعية</span>
+          <span class="brand-subtitle">Interactive Quiz Platform</span>
+        </div>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="../index.html" class="nav-link" id="navHome">الرئيسية</a></li>
+        <li><a href="./courses.html" class="nav-link" id="navCourses">المواد</a></li>
+        <li><a href="./question-banks.html" class="nav-link" id="navBanks">بنوك الأسئلة</a></li>
+        <li><a href="./models.html" class="nav-link" id="navModels">النماذج التدريبية</a></li>
+        <li><a href="./midterms.html" class="nav-link" id="navMidterms">الاختبارات النصفية</a></li>
+        <li><a href="./account.html" class="nav-link active" id="navAccount">السجل والإعدادات</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button type="button" class="theme-toggle-btn" id="themeToggleBtn" aria-label="تبديل الثيم">
+          <span id="themeIcon">🌙</span>
+        </button>
+        <button type="button" class="mobile-menu-btn" id="mobileMenuBtn" aria-label="فتح القائمة">
+          ☰
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <div class="container">
+      
+      <!-- Page Header -->
+      <div class="mb-4">
+        <h1 class="mb-1">سجل الاختبارات والإعدادات المحلية</h1>
+        <p class="text-muted">متابعة إنجازاتك السابقة وإدارة تفضيلات التخزين المحلي على هذا الجهاز</p>
+      </div>
+
+      <!-- Quick Summary Stats Grid -->
+      <section class="stats-grid mb-4">
+        
+        <div class="stat-card">
+          <div class="stat-icon icon-blue">📝</div>
+          <div>
+            <div class="stat-value" id="accountTotalQuizzes">0</div>
+            <div class="stat-label">اختبارات منجزة</div>
+          </div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-icon icon-emerald">🎯</div>
+          <div>
+            <div class="stat-value" id="accountAverageScore">0%</div>
+            <div class="stat-label">متوسط الدرجات</div>
+          </div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-icon icon-purple">🔢</div>
+          <div>
+            <div class="stat-value" id="accountTotalQuestions">0</div>
+            <div class="stat-label">أسئلة تم حلها</div>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- History Table / Card Section -->
+      <section class="card mb-4">
+        <div class="card-header">
+          <h3 style="font-size: 1.15rem; margin: 0;">سجل الاختبارات الأخيرة</h3>
+          <button type="button" id="btnClearHistoryBtn" class="btn btn-danger btn-sm">
+            🗑️ مسح السجل المحلي
+          </button>
+        </div>
+        <div class="card-body">
+          <div id="quizHistoryList">
+            <div class="empty-state" style="padding: 2rem 1rem;">
+              <div class="empty-state-icon" style="font-size: 2.5rem;">📊</div>
+              <h3 style="font-size: 1.1rem; margin-bottom: 0.25rem;">لا توجد اختبارات مسجلة بعد</h3>
+              <p class="text-muted" style="font-size: 0.9rem; margin-bottom: 0;">
+                عند إكمال أي بنك أسئلة أو نموذج اختبار، ستظهر نتيجتك وتاريخ المحاولة هنا تلقائياً.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Privacy & LocalStorage Notice Card -->
+      <section class="card p-3" style="background-color: var(--bg-surface-subtle); border: 1px solid var(--border-subtle);">
+        <div class="d-flex gap-2">
+          <span style="font-size: 1.4rem;">🔒</span>
+          <div>
+            <h4 class="mb-1" style="font-size: 1rem;">الخصوصية والتخزين المحلي (LocalStorage):</h4>
+            <p class="text-muted mb-0" style="font-size: 0.88rem; line-height: 1.6;">
+              المنصة مصممة بدون خادم (Static / Backend-Free) احتراماً لخصوصيتك. جميع درجاتك وسجلاتك وتفضيلات الثيم تُخزن محلياً فقط داخل متصفح جهازك عبر تقنية <code>LocalStorage</code>. لا يتم إرسال أي بيانات لأي خادم أو جهة خارجية. في حال مسح بيانات التصفح، قد يتم تفريغ هذا السجل.
+            </p>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-bottom">
+      <div>المحاضرات هي المصدر الوحيد للمحتوى والأسئلة • منصة الاختبارات الجامعية</div>
+      <div>مرخص بموجب رخصة MIT</div>
+    </div>
+  </footer>
+
+  <script src="../js/app.js"></script>
+  <script>
+    // Simple inline handler for loading and clearing history
+    document.addEventListener('DOMContentLoaded', function () {
+      const historyKey = 'uqp_quiz_history';
+      const historyListEl = document.getElementById('quizHistoryList');
+      const totalQuizzesEl = document.getElementById('accountTotalQuizzes');
+      const avgScoreEl = document.getElementById('accountAverageScore');
+      const totalQuestionsEl = document.getElementById('accountTotalQuestions');
+      const clearBtn = document.getElementById('btnClearHistoryBtn');
+
+      function renderHistory() {
+        const raw = localStorage.getItem(historyKey);
+        const history = raw ? JSON.parse(raw) : [];
+
+        totalQuizzesEl.textContent = history.length;
+
+        if (history.length === 0) {
+          avgScoreEl.textContent = '0%';
+          totalQuestionsEl.textContent = '0';
+          return;
+        }
+
+        const totalQuestions = history.reduce((sum, item) => sum + (item.totalQuestions || 0), 0);
+        const totalPercentage = history.reduce((sum, item) => sum + (item.scorePercentage || 0), 0);
+        const avg = Math.round(totalPercentage / history.length);
+
+        totalQuestionsEl.textContent = totalQuestions;
+        avgScoreEl.textContent = avg + '%';
+
+        historyListEl.innerHTML = history.slice(-10).reverse().map(item => `
+          <div class="review-item d-flex align-center justify-between flex-wrap gap-2 mb-2 p-2">
+            <div>
+              <div class="font-bold">${item.quizTitle || 'اختبار'}</div>
+              <div class="text-muted" style="font-size: 0.82rem;">${item.courseTitle || ''} • ${new Date(item.completedAt).toLocaleString('ar-SA')}</div>
+            </div>
+            <div class="d-flex align-center gap-2">
+              <span class="badge ${item.scorePercentage >= 60 ? 'badge-success' : 'badge-danger'}">
+                ${item.scorePercentage}% (${item.correctCount}/${item.totalQuestions})
+              </span>
+            </div>
+          </div>
+        `).join('');
+      }
+
+      if (clearBtn) {
+        clearBtn.addEventListener('click', function () {
+          if (confirm('هل أنت متأكد من رغبتك في حذف سجل جميع الاختبارات السابقة على هذا الجهاز؟')) {
+            localStorage.removeItem(historyKey);
+            location.reload();
+          }
+        });
+      }
+
+      renderHistory();
+    });
+  </script>
+</body>
+</html>

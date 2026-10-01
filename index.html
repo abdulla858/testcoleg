@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="منصة الاختبارات الجامعية التفاعلية - منصة تدريبية ومذاكرة ذكية لطلاب الجامعة تعتمد 100% على ملفات المحاضرات الرسمية مع تصحيح فوري ومراجعة للأخطاء.">
+  <title>منصة الاختبارات الجامعية التفاعلية | الصفحة الرئيسية</title>
+  
+  <!-- CSS Stylesheets (Relative Paths) -->
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/components.css">
+  <link rel="stylesheet" href="./css/responsive.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="site-header">
+    <div class="container navbar">
+      <a href="./index.html" class="brand-logo" id="mainBrandLogo">
+        <div class="brand-icon">🎓</div>
+        <div class="brand-text">
+          <span class="brand-title">منصة الاختبارات الجامعية</span>
+          <span class="brand-subtitle">Interactive Quiz Platform</span>
+        </div>
+      </a>
+
+      <!-- Desktop & Mobile Navigation Links -->
+      <ul class="nav-links" id="navLinks">
+        <li><a href="./index.html" class="nav-link active" id="navHome">الرئيسية</a></li>
+        <li><a href="./pages/courses.html" class="nav-link" id="navCourses">المواد</a></li>
+        <li><a href="./pages/question-banks.html" class="nav-link" id="navBanks">بنوك الأسئلة</a></li>
+        <li><a href="./pages/models.html" class="nav-link" id="navModels">النماذج التدريبية</a></li>
+        <li><a href="./pages/midterms.html" class="nav-link" id="navMidterms">الاختبارات النصفية</a></li>
+        <li><a href="./pages/account.html" class="nav-link" id="navAccount">السجل والإعدادات</a></li>
+      </ul>
+
+      <!-- Action Buttons: Theme Toggle & Mobile Menu -->
+      <div class="nav-actions">
+        <button type="button" class="theme-toggle-btn" id="themeToggleBtn" aria-label="تبديل الثيم">
+          <span id="themeIcon">🌙</span>
+        </button>
+        <button type="button" class="mobile-menu-btn" id="mobileMenuBtn" aria-label="فتح القائمة">
+          ☰
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <div class="container">
+
+      <!-- Hero Section -->
+      <section class="card mb-4 animate-fade-in" style="background: linear-gradient(135deg, var(--bg-surface) 0%, var(--bg-surface-subtle) 100%); padding: 3rem 2rem; border: 1px solid var(--border-subtle); border-radius: var(--radius-xl); text-align: center;">
+        <span class="badge badge-primary mb-2" style="font-size: 0.9rem; padding: 0.4rem 1rem;">✨ المحاضرات هي المصدر الوحيد والحصري للأسئلة</span>
+        <h1 style="font-size: 2.5rem; margin-bottom: 1rem; color: var(--text-primary);">
+          تدرب بذكاء على اختباراتك الجامعية
+        </h1>
+        <p style="font-size: 1.15rem; max-width: 680px; margin: 0 auto 2rem auto; color: var(--text-secondary);">
+          منصة ويب تفاعلية صُممت خصيصاً للطلاب الجامعيين للتدرب على المواد عبر بنوك الأسئلة والنماذج التدريبية، مع تصحيح تلقائي فوري ومراجعة دقيقة لمصدر كل سؤال داخل المحاضرة.
+        </p>
+
+        <!-- Quick CTA Buttons -->
+        <div class="d-flex justify-center flex-wrap gap-2">
+          <a href="./pages/courses.html" class="btn btn-primary btn-lg" id="btnHeroCourses">
+            📚 تصفح المواد الدراسية
+          </a>
+          <a href="./pages/midterms.html" class="btn btn-secondary btn-lg" id="btnHeroMidterms">
+            ⏱️ محاكاة الاختبارات النصفية
+          </a>
+          <a href="./pages/question-banks.html" class="btn btn-outline btn-lg" id="btnHeroBanks">
+            📝 بنوك الأسئلة المباشرة
+          </a>
+        </div>
+      </section>
+
+      <!-- Key Pillars / Features Section -->
+      <section class="mb-4">
+        <h2 class="text-center mb-3">ركائز المنصة ومميزاتها</h2>
+        <div class="grid-cards">
+          
+          <!-- Feature 1 -->
+          <div class="card p-3">
+            <div class="card-icon-wrapper icon-blue">📖</div>
+            <h3 class="mb-1">مصدر موثوق 100%</h3>
+            <p class="text-muted">
+              كل سؤال مصاغ حصرياً من ملفات المحاضرات الرسمية، مع توثيق دقيق لرقم المحاضرة ورقم الصفحة والمقطع العلمي.
+            </p>
+          </div>
+
+          <!-- Feature 2 -->
+          <div class="card p-3">
+            <div class="card-icon-wrapper icon-purple">⚡</div>
+            <h3 class="mb-1">تصحيح فوري وتحليل أخطاء</h3>
+            <p class="text-muted">
+              حساب فوري للدرجات والنسبة المئوية، مع مراجعة دقيقة لسبب صحة كل إجابة وتعليلها المعتمد في المنهج.
+            </p>
+          </div>
+
+          <!-- Feature 3 -->
+          <div class="card p-3">
+            <div class="card-icon-wrapper icon-emerald">🎯</div>
+            <h3 class="mb-1">نماذج متنوعة ومحاكاة حقيقية</h3>
+            <p class="text-muted">
+              تدرب عبر بنوك أسئلة لكل محاضرة، أو خض تجربة الاختبار النصفي (Midterm) بوقت وتنسيق يحاكي قاعة الاختبار.
+            </p>
+          </div>
+
+          <!-- Feature 4 -->
+          <div class="card p-3">
+            <div class="card-icon-wrapper icon-amber">🔒</div>
+            <h3 class="mb-1">خصوصية تامة وسرعة قصوى</h3>
+            <p class="text-muted">
+              بدون أي تعقيدات أو خوادم خلفية أو تسجيل دخول. تعمل مباشرة عبر GitHub Pages وتحفظ درجاتك في جهازك محلياً.
+            </p>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Quick Exploration Section -->
+      <section class="mb-4">
+        <div class="card p-4" style="background: var(--bg-surface); border: 1px solid var(--border-subtle);">
+          <div class="d-flex align-center justify-between flex-wrap gap-2 mb-3">
+            <div>
+              <h3>المسارات التدريبية المتاحة</h3>
+              <p class="text-muted mb-0">اختر طريقة المذاكرة التي تناسب جدولك الدراسي اليوم</p>
+            </div>
+            <a href="./pages/courses.html" class="btn btn-outline btn-sm">عرض كافة المواد ←</a>
+          </div>
+
+          <div class="grid-cards">
+            
+            <div class="card p-3" style="background-color: var(--bg-surface-subtle);">
+              <span class="badge badge-primary mb-2">العمود 1</span>
+              <h4>📖 أسئلة المحاضرات التفاعلية</h4>
+              <p class="text-muted">أسئلة مستخرجة حصرياً من محتوى المحاضرات، واختبار شامل من أسئلة المحاضرات فقط.</p>
+              <a href="./pages/courses.html" class="btn btn-primary btn-sm mt-2">تصفح محاضرات المواد</a>
+            </div>
+
+            <div class="card p-3" style="background-color: var(--bg-surface-subtle);">
+              <span class="badge badge-primary mb-2">العمود 2</span>
+              <h4>🗂️ بنوك الأسئلة المستقلة</h4>
+              <p class="text-muted">ملفات بنوك الأسئلة وأسئلة المراجعة السابقة، محفوظة بمصدرها كما وردت في الملفات.</p>
+              <a href="./pages/question-banks.html" class="btn btn-outline btn-sm mt-2">فتح بنوك الأسئلة</a>
+            </div>
+
+            <div class="card p-3" style="background-color: var(--bg-surface-subtle);">
+              <span class="badge badge-warning mb-2">العمود 3</span>
+              <h4>📝 النماذج التدريبية المستقلة</h4>
+              <p class="text-muted">نماذج اختبارات مستقلة (Model A, B) بأسئلتها الأصلية للتدرب على نمط الامتحانات.</p>
+              <a href="./pages/models.html" class="btn btn-secondary btn-sm mt-2">تصفح النماذج</a>
+            </div>
+
+            <div class="card p-3" style="background-color: var(--bg-surface-subtle);">
+              <span class="badge badge-danger mb-2">العمود 4</span>
+              <h4>🎯 الاختبارات النصفية</h4>
+              <p class="text-muted">اختبارات نصفية رسمية مستقلة تماماً بمؤقت زمني ومفتاح إجابات مؤكد دون أي تخمين.</p>
+              <a href="./pages/midterms.html" class="btn btn-danger btn-sm mt-2">خوض اختبار نصفي</a>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="d-flex align-center justify-between flex-wrap gap-2 mb-3">
+        <div class="brand-logo">
+          <div class="brand-icon">🎓</div>
+          <div>
+            <div class="brand-title">منصة الاختبارات الجامعية التفاعلية</div>
+            <div class="brand-subtitle">University Interactive Quiz Platform</div>
+          </div>
+        </div>
+        <div class="d-flex gap-2">
+          <a href="./pages/courses.html" class="text-muted">المواد</a>
+          <span class="text-muted">•</span>
+          <a href="./pages/question-banks.html" class="text-muted">بنوك الأسئلة</a>
+          <span class="text-muted">•</span>
+          <a href="./pages/models.html" class="text-muted">النماذج</a>
+          <span class="text-muted">•</span>
+          <a href="./pages/midterms.html" class="text-muted">الميدتيرم</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>المحاضرات هي المصدر الوحيد للمحتوى والأسئلة • منصة ثابتة مجهزة لـ GitHub Pages</div>
+        <div>مرخص بموجب رخصة MIT</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Core Scripts -->
+  <script src="./js/static-data.js"></script>
+  <script src="./js/data.js"></script>
+  <script src="./js/app.js"></script>
+</body>
+</html>

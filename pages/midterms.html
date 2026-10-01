@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="محاكاة الاختبارات النصفية الرسمية لمختلف المقررات الجامعية في بيئة اختبارات تفاعلية.">
+  <title>الاختبارات النصفية | منصة الاختبارات الجامعية التفاعلية</title>
+  
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="site-header">
+    <div class="container navbar">
+      <a href="../index.html" class="brand-logo" id="midtermsBrandLogo">
+        <div class="brand-icon">🎓</div>
+        <div class="brand-text">
+          <span class="brand-title">منصة الاختبارات الجامعية</span>
+          <span class="brand-subtitle">Interactive Quiz Platform</span>
+        </div>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="../index.html" class="nav-link" id="navHome">الرئيسية</a></li>
+        <li><a href="./courses.html" class="nav-link" id="navCourses">المواد</a></li>
+        <li><a href="./question-banks.html" class="nav-link" id="navBanks">بنوك الأسئلة</a></li>
+        <li><a href="./models.html" class="nav-link" id="navModels">النماذج التدريبية</a></li>
+        <li><a href="./midterms.html" class="nav-link active" id="navMidterms">الاختبارات النصفية</a></li>
+        <li><a href="./account.html" class="nav-link" id="navAccount">السجل والإعدادات</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button type="button" class="theme-toggle-btn" id="themeToggleBtn" aria-label="تبديل الثيم">
+          <span id="themeIcon">🌙</span>
+        </button>
+        <button type="button" class="mobile-menu-btn" id="mobileMenuBtn" aria-label="فتح القائمة">
+          ☰
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <div class="container">
+      
+      <!-- Page Header -->
+      <div class="mb-4">
+        <div class="d-flex align-center justify-between flex-wrap gap-2">
+          <div>
+            <h1 class="mb-1">محاكاة الاختبارات النصفية (Midterms)</h1>
+            <p class="text-muted">نماذج اختبارات شاملة ومحاكية للاختبارات النصفية الفعلية في قاعات الجامعة</p>
+          </div>
+          <span class="badge badge-danger" id="totalMidtermsBadge">0 اختبار نصفي</span>
+        </div>
+      </div>
+
+      <!-- Exam Instructions Alert Box -->
+      <div class="card p-3 mb-4" style="background-color: var(--primary-50); border: 1px solid var(--primary-200);">
+        <div class="d-flex gap-2">
+          <span style="font-size: 1.5rem;">📌</span>
+          <div>
+            <h4 class="mb-1" style="color: var(--primary-700);">تعليمات الاختبار النصفي المحاكي:</h4>
+            <ul style="padding-right: 1.25rem; font-size: 0.95rem; color: var(--text-secondary);">
+              <li>يحتوي كل نموذج على وقت تنازلي إلزامي يحاكي وقت الاختبار الجامعي.</li>
+              <li>عند انتهاء الوقت المحدد، سيتم تسليم إجاباتك الحالية تلقائياً وتصحيحها فوراً.</li>
+              <li>يمكنك التنقل بين الأسئلة بحرية والرجوع لأي سؤال لتعديل إجابتك قبل النقر على تسليم الاختبار.</li>
+              <li>بعد التسليم، ستحصل على تقرير تفصيلي بالدرجة ومصادر كل سؤال من داخل المحاضرات.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Midterms Filter Bar -->
+      <div class="filter-bar">
+        <div class="search-box">
+          <input type="text" id="midtermSearchInput" class="search-input" placeholder="ابحث في الاختبارات النصفية..." aria-label="بحث في الميدتيرم">
+          <span class="search-icon">🔍</span>
+        </div>
+        <select id="midtermCourseFilter" class="filter-select" aria-label="تصفية حسب المادة">
+          <option value="all">جميع المواد</option>
+        </select>
+      </div>
+
+      <!-- Midterms Grid Container -->
+      <div id="midtermsGrid" class="grid-cards">
+        <div class="empty-state w-100" style="grid-column: 1 / -1;">
+          <div class="empty-state-icon">📋</div>
+          <h2 class="empty-state-title">لا توجد اختبارات نصفية مضافة حالياً</h2>
+          <p class="empty-state-desc">
+            سيتم إضافة نماذج الميدتيرم المتكاملة (Model A, Model B) في المرحلة السادسة فور استكمال أسئلة المحاضرات.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-bottom">
+      <div>المحاضرات هي المصدر الوحيد للمحتوى والأسئلة • منصة الاختبارات الجامعية</div>
+      <div>مرخص بموجب رخصة MIT</div>
+    </div>
+  </footer>
+
+  <script src="../js/app.js"></script>
+  <script src="../js/static-data.js"></script>
+  <script src="../js/data.js"></script>
+  <script src="../js/midterms.js"></script>
+</body>
+</html>

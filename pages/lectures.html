@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="تصفح محاضرات المقرر وابدأ الاختبارات التفاعلية المبنية مباشرة على محتوى المحاضرات.">
+  <title>محاضرات المقرر | منصة الاختبارات الجامعية التفاعلية</title>
+  
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="site-header">
+    <div class="container navbar">
+      <a href="../index.html" class="brand-logo" id="lecturesBrandLogo">
+        <div class="brand-icon">🎓</div>
+        <div class="brand-text">
+          <span class="brand-title">منصة الاختبارات الجامعية</span>
+          <span class="brand-subtitle">Interactive Quiz Platform</span>
+        </div>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="../index.html" class="nav-link" id="navHome">الرئيسية</a></li>
+        <li><a href="./courses.html" class="nav-link active" id="navCourses">المواد</a></li>
+        <li><a href="./question-banks.html" class="nav-link" id="navBanks">بنوك الأسئلة</a></li>
+        <li><a href="./models.html" class="nav-link" id="navModels">النماذج التدريبية</a></li>
+        <li><a href="./midterms.html" class="nav-link" id="navMidterms">الاختبارات النصفية</a></li>
+        <li><a href="./account.html" class="nav-link" id="navAccount">السجل والإعدادات</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button type="button" class="theme-toggle-btn" id="themeToggleBtn" aria-label="تبديل الثيم">
+          <span id="themeIcon">🌙</span>
+        </button>
+        <button type="button" class="mobile-menu-btn" id="mobileMenuBtn" aria-label="فتح القائمة">
+          ☰
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <div class="container">
+      
+      <!-- Breadcrumb & Navigation -->
+      <div class="mb-3">
+        <a href="./courses.html" class="btn btn-outline btn-sm">⬅ العودة إلى قائمة المواد</a>
+      </div>
+
+      <!-- Course Header & 4 Pillars Navigation Bar -->
+      <div class="card p-3 mb-4" id="courseHeaderCard">
+        <div class="d-flex align-center justify-between flex-wrap gap-2 mb-3">
+          <div>
+            <div class="d-flex align-center gap-2 mb-1">
+              <span class="badge badge-primary" id="courseCodeBadge">CS-302</span>
+              <h1 class="h2 mb-0" id="courseMainTitle">البرمجة المتقدمة</h1>
+            </div>
+            <p class="text-muted mb-0" id="courseDesc">المحاضرات والاختبارات التفاعلية المبنية حصرياً من محتوى المحاضرات الرسمية</p>
+          </div>
+          <div id="comprehensiveQuizBtnWrapper">
+            <!-- Will be populated if lecture questions exist -->
+          </div>
+        </div>
+
+        <!-- The 4 Distinct Pillars (Rule #24) -->
+        <div class="d-flex flex-wrap gap-2 pt-3" style="border-top: 1px solid var(--border-subtle);">
+          <a href="#" class="btn btn-primary btn-sm active" id="pillarLectures">📖 المحاضرات (أسئلة تفاعلية)</a>
+          <a href="#" class="btn btn-outline btn-sm" id="pillarBanks">🗂️ بنوك الأسئلة</a>
+          <a href="#" class="btn btn-outline btn-sm" id="pillarModels">📝 النماذج</a>
+          <a href="#" class="btn btn-outline btn-sm" id="pillarMidterms">🎯 الاختبارات النصفية</a>
+        </div>
+      </div>
+
+      <!-- Section Title & Filter -->
+      <div class="filter-bar">
+        <div class="search-box">
+          <input type="text" id="lectureSearchInput" class="search-input" placeholder="ابحث بعنوان المحاضرة أو الموضوع..." aria-label="بحث في المحاضرات">
+          <span class="search-icon">🔍</span>
+        </div>
+        <span class="badge badge-neutral" id="lecturesCountBadge">0 محاضرة</span>
+      </div>
+
+      <!-- Lectures Grid Container -->
+      <div id="lecturesGrid" class="grid-cards">
+        <!-- Rendered dynamically by lectures.js -->
+        <div class="empty-state w-100" style="grid-column: 1 / -1;">
+          <div class="empty-state-icon">📖</div>
+          <h2 class="empty-state-title">لا توجد محاضرات متاحة حالياً</h2>
+          <p class="empty-state-desc">
+            لم يتم رفع أي محاضرات بعد لهذه المادة. بمجرد إرسال ملفات المحاضرات وتصنيفها، ستظهر هنا مع أسئلتها التفاعلية فوراً.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-bottom">
+      <div>المحاضرات = مصدر لإنشاء أسئلة تفاعلية • بنوك الأسئلة = بنوك مستقلة • النماذج = نماذج مستقلة • الاختبارات النصفية = اختبارات مستقلة</div>
+      <div>مرخص بموجب رخصة MIT</div>
+    </div>
+  </footer>
+
+  <script src="../js/app.js"></script>
+  <script src="../js/static-data.js"></script>
+  <script src="../js/data.js"></script>
+  <script src="../js/lectures.js"></script>
+</body>
+</html>

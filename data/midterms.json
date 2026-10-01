@@ -1,0 +1,124 @@
+[
+  {
+    "id": "midterm-ap-model-01",
+    "courseId": "advanced-programming",
+    "title": "الاختبار النصفي لمقرر البرمجة المتقدمة - النموذج الأول (Model 1)",
+    "titleEn": "Advanced Programming Midterm Exam - Model 1",
+    "description": "النموذج الرسمي الأول للاختبار النصفي الحقيقي المستخرج من أوراق الامتحانات؛ يتضمن 10 أسئلة صح وخطأ، 5 أسئلة اختيار من متعدد، وسؤالين مقاليين معتمدين.",
+    "durationMinutes": 60,
+    "questionsCount": 15,
+    "passingPercentage": 60,
+    "sourceFile": "photo_٢٠٢٦-٠٩-٢٩_٢١-٢١-١٦.jpg"
+  },
+  {
+    "id": "midterm-ap-model-02",
+    "courseId": "advanced-programming",
+    "title": "الاختبار النصفي لمقرر البرمجة المتقدمة - النموذج الثاني (Model 2)",
+    "titleEn": "Advanced Programming Midterm Exam - Model 2",
+    "description": "النموذج الرسمي الثاني للاختبار النصفي الحقيقي المستخرج من أوراق الامتحانات؛ يتضمن 10 أسئلة صح وخطأ، 5 أسئلة اختيار من متعدد، وسؤالين تحليليين معتمدين.",
+    "durationMinutes": 60,
+    "questionsCount": 15,
+    "passingPercentage": 60,
+    "sourceFile": "photo_٢٠٢٦-٠٩-٢٩_٢١-٢١-١٨.jpg"
+  },
+  {
+    "id": "midterm-ap-model-03",
+    "courseId": "advanced-programming",
+    "title": "الاختبار النصفي لمقرر البرمجة المتقدمة - النموذج الثالث (Model 3)",
+    "titleEn": "Advanced Programming Midterm Exam - Model 3",
+    "description": "النموذج الرسمي الثالث للاختبار النصفي الحقيقي المستخرج من أوراق الامتحانات؛ يغطي أنماط التصميم والعمارة النظيفة ومبادئ SOLID.",
+    "durationMinutes": 60,
+    "questionsCount": 15,
+    "passingPercentage": 60,
+    "sourceFile": "photo_٢٠٢٦-٠٩-٢٩_٢١-٢١-١٩.jpg"
+  },
+  {
+    "id": "midterm-se-model-a",
+    "courseId": "software-engineering",
+    "title": "الاختبار النصفي لهندسة البرمجيات - النموذج (أ) Model A",
+    "description": "محاكاة شاملة لاختبار منتصف الفصل لمقرر هندسة البرمجيات؛ تغطي المحاضرات من 1 إلى 4 (المفاهيم الأساسية، Waterfall، Prototyping، النماذج التكرارية، وإعادة استخدام البرمجيات).",
+    "lectures": [
+      "se-lec-01",
+      "se-lec-02",
+      "se-lec-03",
+      "se-lec-04"
+    ],
+    "questionsCount": 30,
+    "durationMinutes": 40,
+    "passingPercentage": 60,
+    "difficulty": "medium"
+  },
+  {
+    "id": "midterm-se-model-b",
+    "courseId": "software-engineering",
+    "title": "الاختبار النصفي لهندسة البرمجيات - النموذج (ب) Model B",
+    "description": "محاكاة موسعة ومكثفة تغطي الشباتر الخمسة الأولى بما فيها إدارة مشاريع البرمجيات وإدارة المخاطر والتكوين.",
+    "lectures": [
+      "se-lec-01",
+      "se-lec-02",
+      "se-lec-03",
+      "se-lec-04",
+      "se-lec-05"
+    ],
+    "questionsCount": 35,
+    "durationMinutes": 45,
+    "passingPercentage": 60,
+    "difficulty": "medium"
+  },
+  {
+    "id": "sec-midterm-01",
+    "courseId": "information-security",
+    "title": "الاختبار النصفي الرسمي لمقرر أمن المعلومات",
+    "titleEn": "Official Information Security Midterm Exam",
+    "description": "نموذج الاختبار النصفي الرسمي المحقق لدكتور المقرر، بمؤقت زمني حقيقي ونظام تصحيح فوري.",
+    "sourceFile": "INFO_SER_-.html",
+    "questionsCount": 34,
+    "durationMinutes": 40
+  },
+  {
+    "id": "ai-midterm-01",
+    "courseId": "artificial-intelligence",
+    "title": "الاختبار النصفي المعتمد لمقرر الذكاء الاصطناعي",
+    "titleEn": "Official AI Midterm Exam",
+    "description": "اختبار نصفي رسمي يغطي الشباتر الثلاثة الأولى: المقدمة، الوكلاء الأذكياء، وخوارزميات البحث.",
+    "sourceFile": "Code Model.pdf",
+    "questionsCount": 15,
+    "durationMinutes": 40
+  },
+  {
+    "id": "hci-midterm-01",
+    "courseId": "human-computer-interaction",
+    "title": "الاختبار النصفي المعتمد لمقرر تفاعل الإنسان والحاسوب (HCI Midterm)",
+    "titleEn": "Official HCI Midterm Examination",
+    "description": "اختبار نصفي شامل يغطي أسس التفاعل، النماذج الذهنية ونورمان، معايير قابلية الاستخدام (Usability)، وتقنيات التصميم الموجه للمستخدم.",
+    "durationMinutes": 45,
+    "questionsCount": 30,
+    "difficulty": "medium",
+    "passingScore": 60,
+    "term": "الفصل الدراسي الأول 2024 - 2025"
+  },
+  {
+    "id": "toc-midterm-01",
+    "courseId": "theory-of-computation",
+    "title": "الاختبار النصفي المعتمد لمقرر نظرية الحوسبة (Theory of Computation Midterm)",
+    "titleEn": "Official Theory of Computation Midterm Examination",
+    "description": "اختبار نصفي يغطي اللغات الصورية، الأبجديات، الأوتوماتا المنتهية المحددة وغير المحددة (DFA & NFA)، والتعبيرات المنتظمة.",
+    "durationMinutes": 45,
+    "questionsCount": 20,
+    "difficulty": "medium",
+    "passingScore": 60,
+    "term": "الفصل الدراسي الأول 2024 - 2025"
+  },
+  {
+    "id": "rm-midterm-01",
+    "courseId": "research-methodology",
+    "title": "الاختبار النصفي المعتمد لمقرر منهجية البحث العلمي (Research Methodology Midterm)",
+    "titleEn": "Official Research Methodology Midterm Examination",
+    "description": "اختبار نصفي رسمي من نماذج د. مالك الجبري يغطي طبيعة البحث العلمي، المشكلة البحثية، الفرضيات، وتصميم البحوث.",
+    "durationMinutes": 45,
+    "questionsCount": 30,
+    "difficulty": "medium",
+    "passingScore": 60,
+    "term": "الفصل الدراسي الأول 2024 - 2025"
+  }
+]

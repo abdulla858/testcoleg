@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="نتيجة الاختبار والمراجعة التفصيلية للإجابات والأخطاء ومصادر المحاضرات.">
+  <title>نتيجة الاختبار والمراجعة | منصة الاختبارات الجامعية التفاعلية</title>
+  
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="site-header">
+    <div class="container navbar">
+      <a href="../index.html" class="brand-logo" id="resultsBrandLogo">
+        <div class="brand-icon">🎓</div>
+        <div class="brand-text">
+          <span class="brand-title">منصة الاختبارات الجامعية</span>
+          <span class="brand-subtitle">Interactive Quiz Platform</span>
+        </div>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="../index.html" class="nav-link" id="navHome">الرئيسية</a></li>
+        <li><a href="./courses.html" class="nav-link" id="navCourses">المواد</a></li>
+        <li><a href="./question-banks.html" class="nav-link" id="navBanks">بنوك الأسئلة</a></li>
+        <li><a href="./models.html" class="nav-link" id="navModels">النماذج التدريبية</a></li>
+        <li><a href="./midterms.html" class="nav-link" id="navMidterms">الاختبارات النصفية</a></li>
+        <li><a href="./account.html" class="nav-link" id="navAccount">السجل والإعدادات</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button type="button" class="theme-toggle-btn" id="themeToggleBtn" aria-label="تبديل الثيم">
+          <span id="themeIcon">🌙</span>
+        </button>
+        <button type="button" class="mobile-menu-btn" id="mobileMenuBtn" aria-label="فتح القائمة">
+          ☰
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <div class="container">
+      
+      <!-- Result Hero Score Area -->
+      <section class="result-hero" id="resultHeroSection">
+        <div class="score-circle">
+          <span class="score-number" id="resultScorePercentage">0%</span>
+          <span class="score-total" id="resultScoreFraction">0 / 0</span>
+        </div>
+
+        <h2 id="resultEvaluationTitle" class="mb-1">تقييم النتيجة</h2>
+        <p id="resultQuizTitle" class="text-muted mb-3" style="font-size: 1.05rem;">
+          عنوان الاختبار - المقرر الدراسي
+        </p>
+
+        <!-- Quick Action Buttons -->
+        <div class="d-flex justify-center flex-wrap gap-2">
+          <button type="button" id="btnRetakeQuiz" class="btn btn-primary">
+            🔄 إعادة المحاولة
+          </button>
+          <a href="./models.html" class="btn btn-secondary">
+            📋 نماذج أخرى
+          </a>
+          <a href="../index.html" class="btn btn-outline">
+            🏠 الصفحة الرئيسية
+          </a>
+        </div>
+      </section>
+
+      <!-- Key Performance Metrics Grid -->
+      <section class="stats-grid">
+        
+        <div class="stat-card">
+          <div class="stat-icon icon-emerald">✓</div>
+          <div>
+            <div class="stat-value text-success" id="statCorrectCount">0</div>
+            <div class="stat-label">إجابات صحيحة</div>
+          </div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-icon icon-amber">✕</div>
+          <div>
+            <div class="stat-value text-danger" id="statWrongCount">0</div>
+            <div class="stat-label">إجابات غير صحيحة</div>
+          </div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-icon icon-purple">⊘</div>
+          <div>
+            <div class="stat-value text-warning" id="statSkippedCount">0</div>
+            <div class="stat-label">أسئلة غير مجابة</div>
+          </div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-icon icon-blue">⏱️</div>
+          <div>
+            <div class="stat-value text-primary" id="statTimeSpent">00:00</div>
+            <div class="stat-label">الوقت المستغرق</div>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- Detailed Review Section -->
+      <section class="mb-4">
+        <div class="d-flex align-center justify-between flex-wrap gap-2 mb-3">
+          <div>
+            <h2>مراجعة الأسئلة وتوثيق المصادر</h2>
+            <p class="text-muted mb-0">راجع كل سؤال للتعرف على الإجابة الصحيحة وشرحها وموقعها في المحاضرة</p>
+          </div>
+          <div class="d-flex align-center gap-2 flex-wrap">
+            <!-- Language Switcher Segmented Control -->
+            <div class="lang-segmented-control" id="resultLangControl" role="group" aria-label="لغة عرض المراجعة">
+              <button type="button" class="lang-segment-btn" data-lang="ar" id="btnResultLangAr">عربي</button>
+              <button type="button" class="lang-segment-btn" data-lang="en" id="btnResultLangEn">EN</button>
+              <button type="button" class="lang-segment-btn active" data-lang="both" id="btnResultLangBoth">🌐 كلاهما</button>
+            </div>
+            <div class="d-flex gap-1" id="reviewFilterButtons">
+              <button type="button" class="btn btn-sm btn-outline active" data-filter="all">الكل</button>
+              <button type="button" class="btn btn-sm btn-ghost" data-filter="wrong">الأخطاء فقط</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review Items Container -->
+        <div id="reviewQuestionsContainer">
+          <!-- Dynamically populated by results.js -->
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-bottom">
+      <div>المحاضرات هي المصدر الوحيد للمحتوى والأسئلة • منصة الاختبارات الجامعية</div>
+      <div>مرخص بموجب رخصة MIT</div>
+    </div>
+  </footer>
+
+  <script src="../js/app.js"></script>
+  <script src="../js/static-data.js"></script>
+  <script src="../js/data.js"></script>
+  <script src="../js/results.js"></script>
+</body>
+</html>
