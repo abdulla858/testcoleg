@@ -932,3 +932,187 @@
   flex-wrap: wrap;
   gap: 1rem;
 }
+
+/* --- 9. Instant Answer Feedback & Verification --- */
+.quiz-option.reveal-correct {
+  border-color: var(--success) !important;
+  background-color: rgba(16, 185, 129, 0.1) !important;
+}
+
+.quiz-option.reveal-correct .quiz-option-indicator {
+  border-color: var(--success) !important;
+  background-color: var(--success) !important;
+  color: #ffffff !important;
+}
+
+.quiz-option.reveal-wrong {
+  border-color: var(--danger) !important;
+  background-color: rgba(239, 68, 68, 0.1) !important;
+}
+
+.quiz-option.reveal-wrong .quiz-option-indicator {
+  border-color: var(--danger) !important;
+  background-color: var(--danger) !important;
+  color: #ffffff !important;
+}
+
+.instant-feedback-box {
+  margin-top: 1.25rem;
+  padding: 1.25rem;
+  border-radius: var(--radius-md);
+  animation: feedbackSlideIn 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  border: 1px solid var(--border-subtle);
+  line-height: 1.6;
+}
+
+.instant-feedback-box.is-correct {
+  background-color: rgba(16, 185, 129, 0.08);
+  border-color: var(--success);
+}
+
+.instant-feedback-box.is-wrong {
+  background-color: rgba(239, 68, 68, 0.08);
+  border-color: var(--danger);
+}
+
+.feedback-status-title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 700;
+  font-size: 1.05rem;
+  margin-bottom: 0.5rem;
+}
+
+.feedback-correct-answer {
+  margin-top: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  background-color: var(--bg-surface);
+  border-radius: var(--radius-sm);
+  font-size: 0.95rem;
+  border-left: 3px solid var(--success);
+}
+
+[dir="rtl"] .feedback-correct-answer {
+  border-left: none;
+  border-right: 3px solid var(--success);
+}
+
+.feedback-explanation {
+  margin-top: 0.75rem;
+  font-size: 0.92rem;
+  color: var(--text-secondary);
+}
+
+@keyframes feedbackSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* --- 10. Custom Random Quiz Generator Modal --- */
+.custom-quiz-modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(15, 23, 42, 0.65);
+  backdrop-filter: blur(6px);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  animation: fadeIn 0.2s ease-out;
+}
+
+.custom-quiz-modal-card {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-xl);
+  max-width: 600px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: var(--shadow-xl);
+  display: flex;
+  flex-direction: column;
+}
+
+.custom-quiz-modal-header {
+  padding: 1.5rem;
+  border-bottom: 1px solid var(--border-subtle);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.custom-quiz-modal-body {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.custom-quiz-modal-footer {
+  padding: 1.25rem 1.5rem;
+  border-top: 1px solid var(--border-subtle);
+  background-color: var(--bg-surface-subtle);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.75rem;
+  border-radius: 0 0 var(--radius-xl) var(--radius-xl);
+}
+
+.form-group-custom {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.form-label-custom {
+  font-weight: 700;
+  font-size: 0.92rem;
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.btn-choice-group {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 0.5rem;
+}
+
+.btn-choice-item {
+  padding: 0.6rem 0.75rem;
+  background-color: var(--bg-surface-subtle);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  cursor: pointer;
+  text-align: center;
+  transition: all var(--transition-fast);
+}
+
+.btn-choice-item:hover {
+  border-color: var(--primary-400);
+  background-color: var(--bg-surface);
+}
+
+.btn-choice-item.active {
+  background-color: var(--primary-500);
+  color: #ffffff;
+  border-color: var(--primary-500);
+  box-shadow: 0 2px 8px var(--primary-glow);
+}

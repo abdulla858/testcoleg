@@ -102,14 +102,20 @@
             <div class="options-list" id="optionsContainer">
               <!-- Dynamically populated options -->
             </div>
+
+            <!-- Instant Feedback / Check Answer Area -->
+            <div id="instantFeedbackBox" class="instant-feedback-box" style="display: none;"></div>
           </div>
 
-          <!-- Controls: Prev, Next, Submit -->
+          <!-- Controls: Prev, Check Answer, Next, Submit -->
           <div class="quiz-controls">
             <button type="button" id="btnPrevQuestion" class="btn btn-secondary" disabled>
               → السؤال السابق
             </button>
-            <div class="d-flex gap-1">
+            <div class="d-flex gap-1 align-center flex-wrap">
+              <button type="button" id="btnCheckAnswer" class="btn btn-outline" style="border-color: var(--primary-500); color: var(--primary-600); font-weight: 700;">
+                💡 تحقق من الإجابة
+              </button>
               <button type="button" id="btnNextQuestion" class="btn btn-primary">
                 السؤال التالي ←
               </button>

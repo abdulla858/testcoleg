@@ -28,6 +28,8 @@ document.addEventListener('DOMContentLoaded', async function () {
   const btnPrev = document.getElementById('btnPrevQuestion');
   const btnNext = document.getElementById('btnNextQuestion');
   const btnSubmit = document.getElementById('btnSubmitQuiz');
+  const btnCheckAnswer = document.getElementById('btnCheckAnswer');
+  const instantFeedbackBox = document.getElementById('instantFeedbackBox');
 
   const paletteGrid = document.getElementById('paletteGrid');
   const answeredCountBadge = document.getElementById('answeredCountBadge');
@@ -131,6 +133,47 @@ document.addEventListener('DOMContentLoaded', async function () {
 
         // Load strictly from midterm-questions.json
         activeQuestions = await DataService.getMidtermQuestions(activeQuizMeta.courseId, targetId);
+
+      } else if (quizType === 'custom') {
+        const sourceParam = urlParams.get('source') || 'all';
+        const countParam = parseInt(urlParams.get('count'), 10) || 20;
+        const diffParam = urlParams.get('diff') || 'all';
+        const timerParam = parseInt(urlParams.get('timer'), 10) || 0;
+        const langParam = urlParams.get('lang');
+
+        if (langParam && ['ar', 'en', 'both'].includes(langParam)) {
+          currentQuizLang = langParam;
+          localStorage.setItem('uqp_quiz_lang', langParam);
+        }
+
+        const course = courses.find(c => c.id === courseIdParam) || {};
+
+        const sourceLabels = {
+          'all': 'شامل لجميع الأقسام',
+          'lectures': 'أسئلة المحاضرات فقط',
+          'banks': 'بنوك الأسئلة المعتمدة',
+          'models': 'النماذج التدريبية',
+          'midterms': 'الاختبارات النصفية'
+        };
+
+        const courseTitle = (!courseIdParam || courseIdParam === 'all') ? 'جميع المقررات الدراسية' : (course.title || 'مقرر مخصص');
+
+        activeQuizMeta = {
+          title: `اختبار عشوائي مخصص (${sourceLabels[sourceParam] || 'شامل'})`,
+          courseId: courseIdParam || 'all',
+          durationMinutes: timerParam,
+          questionsCount: countParam
+        };
+
+        quizMainTitle.textContent = activeQuizMeta.title;
+        quizCourseSubtitle.textContent = `${courseTitle} • ${countParam} سؤالاً`;
+
+        activeQuestions = await DataService.getCustomRandomQuestions({
+          courseId: courseIdParam,
+          source: sourceParam,
+          count: countParam,
+          difficulty: diffParam
+        });
 
       } else {
         // Question Bank
@@ -264,20 +307,30 @@ document.addEventListener('DOMContentLoaded', async function () {
     // Render Options
     renderOptions(question);
 
+    // Reset instant feedback on question change
+    if (instantFeedbackBox) {
+      instantFeedbackBox.style.display = 'none';
+      instantFeedbackBox.innerHTML = '';
+      instantFeedbackBox.className = 'instant-feedback-box';
+    }
+
     // Controls Buttons with localized text
     btnPrev.disabled = currentIndex === 0;
     if (currentQuizLang === 'en') {
       btnPrev.innerHTML = '← Previous';
       btnNext.innerHTML = 'Next →';
       btnSubmit.innerHTML = '✓ Submit Quiz';
+      if (btnCheckAnswer) btnCheckAnswer.innerHTML = '💡 Check Answer';
     } else if (currentQuizLang === 'both') {
       btnPrev.innerHTML = '← السابق (Previous)';
       btnNext.innerHTML = 'التالي (Next) →';
       btnSubmit.innerHTML = '✓ تسليم الاختبار (Submit)';
+      if (btnCheckAnswer) btnCheckAnswer.innerHTML = '💡 تحقق من الإجابة (Check)';
     } else {
       btnPrev.innerHTML = '← السابق';
       btnNext.innerHTML = 'التالي →';
       btnSubmit.innerHTML = '✓ تسليم الاختبار';
+      if (btnCheckAnswer) btnCheckAnswer.innerHTML = '💡 تحقق من الإجابة';
     }
 
     if (currentIndex === total - 1) {
@@ -452,6 +505,170 @@ document.addEventListener('DOMContentLoaded', async function () {
 
     submitQuiz();
   });
+
+  // --- Instant Answer Verification ---
+  function checkCurrentAnswer() {
+    if (!activeQuestions || activeQuestions.length === 0) return;
+    const question = activeQuestions[currentIndex];
+    const currentAnswer = userAnswers[question.id];
+
+    const hasAnswer = currentAnswer !== undefined && currentAnswer !== '' &&
+      (!Array.isArray(currentAnswer) || currentAnswer.length > 0);
+
+    if (!hasAnswer) {
+      if (instantFeedbackBox) {
+        instantFeedbackBox.style.display = 'block';
+        instantFeedbackBox.className = 'instant-feedback-box is-wrong';
+        const noAnsMsg = currentQuizLang === 'en'
+          ? '⚠️ Please select or type an answer first to verify!'
+          : (currentQuizLang === 'both'
+            ? '⚠️ يرجى اختيار إجابة أولاً للتحقق منها (Please select an answer first)'
+            : '⚠️ يرجى اختيار إجابة أولاً للتحقق منها!');
+        instantFeedbackBox.innerHTML = `
+          <div class="feedback-status-title" style="color: var(--danger); font-size: 0.95rem;">
+            ${noAnsMsg}
+          </div>
+        `;
+      }
+      return;
+    }
+
+    // Determine correctness
+    let isCorrect = false;
+    if (question.type === 'multiple_select') {
+      const correctSet = new Set(Array.isArray(question.correctAnswer) ? question.correctAnswer : [question.correctAnswer]);
+      const userSet = new Set(currentAnswer);
+      isCorrect = correctSet.size === userSet.size && [...correctSet].every(x => userSet.has(x));
+    } else if (question.type === 'fill_blank') {
+      isCorrect = String(question.correctAnswer).trim().toLowerCase() === String(currentAnswer).trim().toLowerCase();
+    } else {
+      isCorrect = currentAnswer === question.correctAnswer;
+    }
+
+    // Highlight options visually
+    const optCards = optionsContainer.querySelectorAll('.quiz-option');
+    optCards.forEach((card, idx) => {
+      card.classList.remove('reveal-correct', 'reveal-wrong');
+      const isThisCorrect = question.type === 'multiple_select'
+        ? (Array.isArray(question.correctAnswer) && question.correctAnswer.includes(idx))
+        : question.correctAnswer === idx;
+
+      const isThisSelected = question.type === 'multiple_select'
+        ? (Array.isArray(currentAnswer) && currentAnswer.includes(idx))
+        : currentAnswer === idx;
+
+      if (isThisCorrect) {
+        card.classList.add('reveal-correct');
+      } else if (isThisSelected && !isThisCorrect) {
+        card.classList.add('reveal-wrong');
+      }
+    });
+
+    // Format Answer representation
+    const optionsAr = question.options || [];
+    const optionsEn = question.optionsEn || [];
+
+    function formatAnswerVal(ansVal) {
+      if (ansVal === undefined || ansVal === '') return '—';
+      if (question.type === 'fill_blank') return ansVal;
+      if (question.type === 'multiple_select' && Array.isArray(ansVal)) {
+        return ansVal.map(i => {
+          const ar = optionsAr[i] || i;
+          const en = optionsEn[i] || ar;
+          if (currentQuizLang === 'en') return en;
+          if (currentQuizLang === 'both' && en !== ar) return `${ar} (${en})`;
+          return ar;
+        }).join('، ');
+      }
+      const ar = optionsAr[ansVal] || ansVal;
+      const en = optionsEn[ansVal] || ar;
+      if (currentQuizLang === 'en') return en;
+      if (currentQuizLang === 'both' && en !== ar) return `${ar} (${en})`;
+      return ar;
+    }
+
+    const correctDisplay = formatAnswerVal(question.correctAnswer);
+
+    let statusTitle = '';
+    if (isCorrect) {
+      statusTitle = currentQuizLang === 'en'
+        ? '✓ Correct Answer! Well done.'
+        : (currentQuizLang === 'both'
+          ? '✓ إجابة صحيحة وممتازة! (Correct Answer)'
+          : '✓ إجابة صحيحة وممتازة!');
+    } else {
+      statusTitle = currentQuizLang === 'en'
+        ? '✕ Incorrect Answer'
+        : (currentQuizLang === 'both'
+          ? '✕ إجابة غير صحيحة (Incorrect Answer)'
+          : '✕ إجابة غير صحيحة');
+    }
+
+    let correctAnswerHtml = '';
+    if (!isCorrect) {
+      const label = currentQuizLang === 'en'
+        ? 'Correct Answer:'
+        : (currentQuizLang === 'both' ? 'الإجابة الصحيحة هي (Correct Answer):' : 'الإجابة الصحيحة هي:');
+      correctAnswerHtml = `
+        <div class="feedback-correct-answer">
+          <strong>${label}</strong> <span class="font-bold text-success">${correctDisplay}</span>
+        </div>
+      `;
+    }
+
+    // Explanation
+    let explanationHtml = '';
+    if (question.explanation) {
+      const label = currentQuizLang === 'en' ? '💡 Explanation:' : '💡 الشرح والتوضيح:';
+      let expText = question.explanation;
+      if (currentQuizLang === 'en' && question.explanationEn) {
+        expText = question.explanationEn;
+      } else if (currentQuizLang === 'both' && question.explanationEn && question.explanationEn !== question.explanation) {
+        expText = `${question.explanation} <div dir="ltr" class="mt-1 text-muted" style="font-family: var(--font-family-en);">${question.explanationEn}</div>`;
+      }
+      explanationHtml = `
+        <div class="feedback-explanation">
+          <strong>${label}</strong> ${expText}
+        </div>
+      `;
+    }
+
+    // Source info
+    const source = question.source || {};
+    let sourceHtml = '';
+    if (source.lecture || source.file) {
+      const label = currentQuizLang === 'en' ? '📚 Source:' : '📚 المصدر الموثق:';
+      const lectureText = source.lecture || source.file || '';
+      sourceHtml = `
+        <div class="mt-2 text-muted" style="font-size: 0.85rem;">
+          <span>${label}</span> <strong>${lectureText}</strong>
+          ${source.page ? `• ص ${source.page}` : ''}
+          ${source.section ? `• قسم: ${source.section}` : ''}
+        </div>
+      `;
+    }
+
+    if (instantFeedbackBox) {
+      instantFeedbackBox.style.display = 'block';
+      instantFeedbackBox.className = `instant-feedback-box ${isCorrect ? 'is-correct' : 'is-wrong'}`;
+      instantFeedbackBox.innerHTML = `
+        <div class="feedback-status-title" style="color: ${isCorrect ? 'var(--success)' : 'var(--danger)'};">
+          ${statusTitle}
+        </div>
+        ${correctAnswerHtml}
+        ${explanationHtml}
+        ${sourceHtml}
+      `;
+    }
+
+    if (btnCheckAnswer) {
+      btnCheckAnswer.innerHTML = currentQuizLang === 'en' ? '🔄 Checked' : '🔄 تم التحقق';
+    }
+  }
+
+  if (btnCheckAnswer) {
+    btnCheckAnswer.addEventListener('click', checkCurrentAnswer);
+  }
 
   btnExitQuiz.addEventListener('click', function () {
     const exitMsg = currentQuizLang === 'en'

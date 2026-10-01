@@ -65,8 +65,9 @@ const DataService = (function () {
     }
 
     // 2. Fallback to pre-bundled data (guarantees offline support when opened directly via file:///)
-    if (window.UQP_STATIC_DATA && staticKey && window.UQP_STATIC_DATA[staticKey]) {
-      cache[filename] = window.UQP_STATIC_DATA[staticKey];
+    const staticBundle = window.UQP_STATIC_DATA || window.STATIC_DATA;
+    if (staticBundle && staticKey && staticBundle[staticKey]) {
+      cache[filename] = staticBundle[staticKey];
       return cache[filename];
     }
 
@@ -171,6 +172,58 @@ const DataService = (function () {
     return await fetchJson('settings.json');
   }
 
+  /**
+   * 5. Custom Random Questions Generator
+   * Generates a custom randomized question pool based on user preferences
+   * (course, source pillar, count, difficulty).
+   */
+  async function getCustomRandomQuestions(options = {}) {
+    const {
+      courseId = 'all',
+      source = 'all', // 'all', 'lectures', 'banks', 'models', 'midterms'
+      count = 20,
+      difficulty = 'all' // 'all', 'easy', 'medium', 'hard'
+    } = options;
+
+    let pool = [];
+
+    if (source === 'lectures' || source === 'all') {
+      const lqs = await fetchJson('lecture-questions.json');
+      pool = pool.concat(lqs);
+    }
+    if (source === 'banks' || source === 'all') {
+      const bqs = await fetchJson('bank-questions.json');
+      pool = pool.concat(bqs);
+    }
+    if (source === 'models' || source === 'all') {
+      const mqs = await fetchJson('model-questions.json');
+      pool = pool.concat(mqs);
+    }
+    if (source === 'midterms' || source === 'all') {
+      const mtqs = await fetchJson('midterm-questions.json');
+      pool = pool.concat(mtqs);
+    }
+
+    // Filter by course if specified
+    if (courseId && courseId !== 'all') {
+      pool = pool.filter(q => q.courseId === courseId);
+    }
+
+    // Filter by difficulty if specified
+    if (difficulty && difficulty !== 'all') {
+      pool = pool.filter(q => q.difficulty === difficulty);
+    }
+
+    // Shuffle pool (Fisher-Yates)
+    for (let i = pool.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [pool[i], pool[j]] = [pool[j], pool[i]];
+    }
+
+    const targetCount = parseInt(count, 10) || 20;
+    return pool.slice(0, targetCount);
+  }
+
   // --- LocalStorage History Management ---
   function getHistory() {
     try {
@@ -212,6 +265,7 @@ const DataService = (function () {
     getModels,
     getMidterms,
     getSettings,
+    getCustomRandomQuestions,
     getHistory,
     saveQuizResult,
     clearHistory,
