@@ -195,6 +195,9 @@ document.addEventListener('DOMContentLoaded', async function () {
         return;
       }
 
+      // Randomize question sequence and option order (A, B, C, D) dynamically
+      activeQuestions = randomizeSessionQuestions(activeQuestions);
+
       // Initialize Timer if duration specified
       if (activeQuizMeta.durationMinutes && activeQuizMeta.durationMinutes > 0) {
         secondsRemaining = activeQuizMeta.durationMinutes * 60;
@@ -226,7 +229,53 @@ document.addEventListener('DOMContentLoaded', async function () {
     `;
     paletteGrid.innerHTML = '';
     btnPrev.style.display = 'none';
-    btnNext.style.display = 'none';
+  }
+
+  // --- Dynamic Randomization of Questions and Options ---
+  function randomizeSessionQuestions(questions) {
+    if (!Array.isArray(questions)) return [];
+
+    // 1. Shuffle question order
+    const shuffled = [...questions];
+    for (let i = shuffled.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+    }
+
+    // 2. Shuffle options for each question (except True/False)
+    return shuffled.map(origQ => {
+      const q = JSON.parse(JSON.stringify(origQ));
+      if (q.type === 'fill_blank') return q;
+      if (!Array.isArray(q.options) || q.options.length < 2) return q;
+
+      const optsAr = q.options;
+      const optsEn = Array.isArray(q.optionsEn) ? q.optionsEn : [];
+
+      // Keep standard True/False order
+      const isTrueFalse = optsAr.length === 2 &&
+        (optsAr.includes('صح') || optsAr.includes('خطأ') || optsAr.includes('True') || optsAr.includes('False'));
+      if (isTrueFalse) return q;
+
+      const indices = optsAr.map((_, i) => i);
+      for (let i = indices.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [indices[i], indices[j]] = [indices[j], indices[i]];
+      }
+
+      q.options = indices.map(i => optsAr[i]);
+      if (optsEn.length > 0) {
+        q.optionsEn = indices.map(i => optsEn[i] !== undefined ? optsEn[i] : '');
+      }
+
+      const oldCorrect = q.correctAnswer;
+      if (typeof oldCorrect === 'number') {
+        q.correctAnswer = indices.indexOf(oldCorrect);
+      } else if (Array.isArray(oldCorrect)) {
+        q.correctAnswer = oldCorrect.map(idx => indices.indexOf(idx)).sort((a, b) => a - b);
+      }
+
+      return q;
+    });
   }
 
   // --- 2. Timer Logic ---

@@ -257,12 +257,12 @@
     "type": "multiple_choice",
     "question": "يدعم نظام الدفع CreditCardPayment وPayPalPayment وBankTransferPayment. يجب أن يكون التطبيق قادرًا على تغيير خوارزمية الدفع في وقت التشغيل. ما هو النمط الأكثر ملاءمة؟",
     "options": [
-      "استراتيجية",
-      "طريقة المصنع",
       "محول",
-      "الواجهة"
+      "الواجهة",
+      "طريقة المصنع",
+      "استراتيجية"
     ],
-    "correctAnswer": 0,
+    "correctAnswer": 3,
     "answerStatus": "confirmed",
     "explanation": "Strategy Pattern enables a family of interchangeable algorithms that can be switched at runtime.",
     "source": {
@@ -272,10 +272,10 @@
     "questionEn": "A payment system supports CreditCardPayment, PayPalPayment, and BankTransferPayment. The application should be able to change the payment algorithm at runtime. Which pattern is most suitable?",
     "questionAr": "يدعم نظام الدفع CreditCardPayment وPayPalPayment وBankTransferPayment. يجب أن يكون التطبيق قادرًا على تغيير خوارزمية الدفع في وقت التشغيل. ما هو النمط الأكثر ملاءمة؟",
     "optionsEn": [
-      "Strategy",
-      "Factory Method",
       "Adapter",
-      "Façade"
+      "Façade",
+      "Factory Method",
+      "Strategy"
     ]
   },
   {
@@ -286,10 +286,10 @@
     "type": "multiple_choice",
     "question": "ما هو الهدف الرئيسي للعمارة النظيفة؟",
     "options": [
-      "جعل التطبيق أسرع",
-      "فصل المخاوف وتقليل التبعيات",
       "إزالة قاعدة البيانات",
-      "استخدم المزيد من أنماط التصميم"
+      "فصل المخاوف وتقليل التبعيات",
+      "استخدم المزيد من أنماط التصميم",
+      "جعل التطبيق أسرع"
     ],
     "correctAnswer": 1,
     "answerStatus": "confirmed",
@@ -301,10 +301,10 @@
     "questionEn": "What is the main goal of Clean Architecture?",
     "questionAr": "ما هو الهدف الرئيسي للعمارة النظيفة؟",
     "optionsEn": [
-      "Make the application faster",
-      "Separate concerns and reduce dependencies",
       "Remove the database",
-      "Use more design patterns"
+      "Separate concerns and reduce dependencies",
+      "Use more design patterns",
+      "Make the application faster"
     ]
   },
   {
@@ -315,12 +315,12 @@
     "type": "multiple_choice",
     "question": "ما هي الطبقة التي تحتوي على كيانات وقواعد الأعمال الأساسية؟",
     "options": [
-      "العرض التقديمي",
-      "البنية التحتية",
       "التطبيق",
-      "المجال"
+      "المجال",
+      "البنية التحتية",
+      "العرض التقديمي"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "answerStatus": "confirmed",
     "explanation": "Domain layer is the heart of the system containing business entities and enterprise business rules.",
     "source": {
@@ -330,10 +330,10 @@
     "questionEn": "Which layer contains the core business entities and rules?",
     "questionAr": "ما هي الطبقة التي تحتوي على كيانات وقواعد الأعمال الأساسية؟",
     "optionsEn": [
-      "Presentation",
-      "Infrastructure",
       "Application",
-      "Domain"
+      "Domain",
+      "Infrastructure",
+      "Presentation"
     ]
   },
   {
@@ -344,12 +344,12 @@
     "type": "multiple_choice",
     "question": "ما هي الطبقة المسؤولة عن حالات استخدام التطبيق وسير عمل الأعمال؟",
     "options": [
-      "المجال",
-      "التطبيق",
       "البنية التحتية",
-      "العرض التقديمي"
+      "العرض التقديمي",
+      "المجال",
+      "التطبيق"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "answerStatus": "confirmed",
     "explanation": "Application layer contains use cases, commands, queries, and business workflows orchestrating entities.",
     "source": {
@@ -359,10 +359,10 @@
     "questionEn": "Which layer is responsible for application use cases and business workflows?",
     "questionAr": "ما هي الطبقة المسؤولة عن حالات استخدام التطبيق وسير عمل الأعمال؟",
     "optionsEn": [
-      "Domain",
-      "Application",
       "Infrastructure",
-      "Presentation"
+      "Presentation",
+      "Domain",
+      "Application"
     ]
   },
   {
@@ -373,12 +373,12 @@
     "type": "multiple_choice",
     "question": "ما هو المبدأ الذي ينص على أن الكيانات البرمجية يجب أن تكون مفتوحة للتوسيع ولكنها مغلقة للتعديل؟",
     "options": [
-      "SRP (مبدأ المسؤولية الفردية)",
       "OCP (مبدأ مفتوح ومغلق)",
-      "LSP (مبدأ استبدال ليسكوف)",
-      "DIP (مبدأ انعكاس التبعية)"
+      "DIP (مبدأ انعكاس التبعية)",
+      "SRP (مبدأ المسؤولية الفردية)",
+      "LSP (مبدأ استبدال ليسكوف)"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 0,
     "answerStatus": "confirmed",
     "explanation": "OCP (Open-Closed Principle) coined by Bertrand Meyer defines this exact statement.",
     "source": {
@@ -388,10 +388,10 @@
     "questionEn": "Which principle states that software entities should be open for extension but closed for modification?",
     "questionAr": "ما هو المبدأ الذي ينص على أن الكيانات البرمجية يجب أن تكون مفتوحة للتوسيع ولكنها مغلقة للتعديل؟",
     "optionsEn": [
-      "SRP (Single Responsibility Principle)",
       "OCP (Open-Closed Principle)",
-      "LSP (Liskov Substitution Principle)",
-      "DIP (Dependency Inversion Principle)"
+      "DIP (Dependency Inversion Principle)",
+      "SRP (Single Responsibility Principle)",
+      "LSP (Liskov Substitution Principle)"
     ]
   },
   {
@@ -652,10 +652,10 @@
     "type": "multiple_choice",
     "question": "يجب أن يقوم نظام الإشعارات بإخطار جميع المستخدمين المسجلين تلقائيًا عند نشر رسالة جديدة. ما هو النمط الأكثر ملاءمة؟",
     "options": [
-      "محول",
       "طريقة المصنع",
+      "وكيل",
       "المراقب",
-      "وكيل"
+      "محول"
     ],
     "correctAnswer": 2,
     "answerStatus": "confirmed",
@@ -667,10 +667,10 @@
     "questionEn": "A notification system should automatically notify all registered users whenever a new message is published. Which pattern is most suitable?",
     "questionAr": "يجب أن يقوم نظام الإشعارات بإخطار جميع المستخدمين المسجلين تلقائيًا عند نشر رسالة جديدة. ما هو النمط الأكثر ملاءمة؟",
     "optionsEn": [
-      "Adapter",
       "Factory Method",
+      "Proxy",
       "Observer",
-      "Proxy"
+      "Adapter"
     ]
   },
   {
@@ -681,12 +681,12 @@
     "type": "multiple_choice",
     "question": "ما هو نمط التصميم الذي يوفر واجهة مبسطة لنظام فرعي معقد؟",
     "options": [
-      "طريقة المصنع",
+      "ديكور",
       "المراقب",
-      "الواجهة",
-      "ديكور"
+      "طريقة المصنع",
+      "الواجهة"
     ],
-    "correctAnswer": 2,
+    "correctAnswer": 3,
     "answerStatus": "confirmed",
     "explanation": "Facade Pattern provides a single, high-level interface that makes a subsystem easier to use.",
     "source": {
@@ -696,10 +696,10 @@
     "questionEn": "Which Design Pattern provides a simplified interface to a complex subsystem?",
     "questionAr": "ما هو نمط التصميم الذي يوفر واجهة مبسطة لنظام فرعي معقد؟",
     "optionsEn": [
-      "Factory Method",
+      "Decorator",
       "Observer",
-      "Façade",
-      "Decorator"
+      "Factory Method",
+      "Façade"
     ]
   },
   {
@@ -710,10 +710,10 @@
     "type": "multiple_choice",
     "question": "أين يجب أن يقع التنفيذ الفعلي لـ IUserRepository عادةً؟",
     "options": [
-      "المجال",
       "التطبيق",
+      "العرض التقديمي",
       "البنية التحتية",
-      "العرض التقديمي"
+      "المجال"
     ],
     "correctAnswer": 2,
     "answerStatus": "confirmed",
@@ -725,10 +725,10 @@
     "questionEn": "Where should the actual implementation of IUserRepository normally be located?",
     "questionAr": "أين يجب أن يقع التنفيذ الفعلي لـ IUserRepository عادةً؟",
     "optionsEn": [
-      "Domain",
       "Application",
+      "Presentation",
       "Infrastructure",
-      "Presentation"
+      "Domain"
     ]
   },
   {
@@ -739,12 +739,12 @@
     "type": "multiple_choice",
     "question": "ما هو المكون المسؤول عادةً عن طلبات واستجابات HTTP؟",
     "options": [
-      "المجال",
-      "التطبيق",
+      "العرض التقديمي",
       "البنية التحتية",
-      "العرض التقديمي"
+      "المجال",
+      "التطبيق"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 0,
     "answerStatus": "confirmed",
     "explanation": "Presentation layer (Controllers/Web API) handles HTTP requests, status codes, and HTTP responses.",
     "source": {
@@ -754,10 +754,10 @@
     "questionEn": "Which component is usually responsible for HTTP requests and responses?",
     "questionAr": "ما هو المكون المسؤول عادةً عن طلبات واستجابات HTTP؟",
     "optionsEn": [
-      "Domain",
-      "Application",
+      "Presentation",
       "Infrastructure",
-      "Presentation"
+      "Domain",
+      "Application"
     ]
   },
   {
@@ -1047,9 +1047,9 @@
     "type": "multiple_choice",
     "question": "يستخدم التطبيق نظامًا فرعيًا معقدًا يحتوي على AuthenticationService وPaymentService وNotificationService. تريد تزويد العميل بواجهة واحدة بسيطة لاستخدام هذه الخدمات. ما هو النمط الذي يجب أن تستخدمه؟",
     "options": [
-      "ديكور",
-      "الواجهة",
       "المراقب",
+      "الواجهة",
+      "ديكور",
       "وكيل"
     ],
     "correctAnswer": 1,
@@ -1062,9 +1062,9 @@
     "questionEn": "An application uses a complex subsystem containing AuthenticationService, PaymentService, and NotificationService. You want to provide the client with one simple interface to use these services. Which pattern should you use?",
     "questionAr": "يستخدم التطبيق نظامًا فرعيًا معقدًا يحتوي على AuthenticationService وPaymentService وNotificationService. تريد تزويد العميل بواجهة واحدة بسيطة لاستخدام هذه الخدمات. ما هو النمط الذي يجب أن تستخدمه؟",
     "optionsEn": [
-      "Decorator",
-      "Façade",
       "Observer",
+      "Façade",
+      "Decorator",
       "Proxy"
     ]
   },
@@ -1076,12 +1076,12 @@
     "type": "multiple_choice",
     "question": "وفقًا لقاعدة التبعية، يجب أن تشير التبعيات إلى:",
     "options": [
-      "من الطبقات الداخلية إلى الطبقات الخارجية",
-      "من الطبقات الخارجية إلى الطبقات الداخلية",
       "من قاعدة البيانات إلى واجهة المستخدم",
-      "في كلا الاتجاهين"
+      "في كلا الاتجاهين",
+      "من الطبقات الخارجية إلى الطبقات الداخلية",
+      "من الطبقات الداخلية إلى الطبقات الخارجية"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 2,
     "answerStatus": "confirmed",
     "explanation": "Dependencies must point inward: outer layers (UI, DB) depend on inner layers (Application, Domain).",
     "source": {
@@ -1091,10 +1091,10 @@
     "questionEn": "According to the Dependency Rule, dependencies should point:",
     "questionAr": "وفقًا لقاعدة التبعية، يجب أن تشير التبعيات إلى:",
     "optionsEn": [
-      "From inner layers to outer layers",
-      "From outer layers to inner layers",
       "From database to UI",
-      "In both directions"
+      "In both directions",
+      "From outer layers to inner layers",
+      "From inner layers to outer layers"
     ]
   },
   {
@@ -1134,12 +1134,12 @@
     "type": "multiple_choice",
     "question": "أين يجب عادةً وضع تطبيق قاعدة البيانات؟",
     "options": [
+      "العرض التقديمي",
       "المجال",
       "التطبيق",
-      "البنية التحتية",
-      "العرض التقديمي"
+      "البنية التحتية"
     ],
-    "correctAnswer": 2,
+    "correctAnswer": 3,
     "answerStatus": "confirmed",
     "explanation": "Infrastructure layer houses all database frameworks, EF Core contexts, and concrete repository classes.",
     "source": {
@@ -1149,10 +1149,10 @@
     "questionEn": "Where should database implementation usually be placed?",
     "questionAr": "أين يجب عادةً وضع تطبيق قاعدة البيانات؟",
     "optionsEn": [
+      "Presentation",
       "Domain",
       "Application",
-      "Infrastructure",
-      "Presentation"
+      "Infrastructure"
     ]
   },
   {
@@ -1163,9 +1163,9 @@
     "type": "multiple_choice",
     "question": "ما هو المبدأ الذي يشجع على الاعتماد على التجريدات بدلا من التنفيذ الملموس؟",
     "options": [
-      "SRP",
       "OCP",
       "LSP",
+      "SRP",
       "DIP (مبدأ انعكاس التبعية)"
     ],
     "correctAnswer": 3,
@@ -1178,9 +1178,9 @@
     "questionEn": "Which principle encourages depending on abstractions rather than concrete implementations?",
     "questionAr": "ما هو المبدأ الذي يشجع على الاعتماد على التجريدات بدلا من التنفيذ الملموس؟",
     "optionsEn": [
-      "SRP",
       "OCP",
       "LSP",
+      "SRP",
       "DIP (Dependency Inversion Principle)"
     ]
   },
@@ -1191,12 +1191,12 @@
     "type": "multiple_choice",
     "question": "ما هي هندسة البرمجيات المعنية بها في المقام الأول؟",
     "options": [
-      "تصميم مكونات الأجهزة",
       "إدارة حركة المرور على الشبكة",
       "جميع جوانب إنتاج البرمجيات",
-      "كتابة الوثائق فقط"
+      "كتابة الوثائق فقط",
+      "تصميم مكونات الأجهزة"
     ],
-    "correctAnswer": 2,
+    "correctAnswer": 1,
     "explanation": "وفقاً لمحاضرة المحاضرة 1 في هندسة البرمجيات: جميع جوانب إنتاج البرمجيات",
     "difficulty": "easy",
     "status": "published",
@@ -1211,10 +1211,10 @@
     "questionAr": "ما هي هندسة البرمجيات المعنية بها في المقام الأول؟",
     "questionEn": "What is software engineering primarily concerned with?",
     "optionsEn": [
-      "Designing hardware components",
       "Managing network traffic",
       "All aspects of software production",
-      "Writing documentation only"
+      "Writing documentation only",
+      "Designing hardware components"
     ]
   },
   {
@@ -1224,12 +1224,12 @@
     "type": "multiple_choice",
     "question": "يوصف هندسة البرمجيات بشكل أفضل بأنها..",
     "options": [
-      "هواية لإنشاء التطبيقات",
-      "مهنة تركز على تطوير وتصميم برمجيات عالية الجودة",
+      "طريقة للتعامل مع شكاوى المستخدمين",
       "طريقة لزيادة سرعة الأجهزة",
-      "طريقة للتعامل مع شكاوى المستخدمين"
+      "هواية لإنشاء التطبيقات",
+      "مهنة تركز على تطوير وتصميم برمجيات عالية الجودة"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "explanation": "وفقاً لمحاضرة المحاضرة 1 في هندسة البرمجيات: مهنة تركز على تطوير وتصميم برمجيات عالية الجودة",
     "difficulty": "medium",
     "status": "published",
@@ -1244,10 +1244,10 @@
     "questionAr": "يوصف هندسة البرمجيات بشكل أفضل بأنها..",
     "questionEn": "Software engineering is best described as..",
     "optionsEn": [
-      "A hobby for creating apps",
-      "A profession focused on developing and designing high-quality software",
+      "A way to handle user complaints",
       "A method to increase hardware speed",
-      "A way to handle user complaints"
+      "A hobby for creating apps",
+      "A profession focused on developing and designing high-quality software"
     ]
   },
   {
@@ -1257,12 +1257,12 @@
     "type": "multiple_choice",
     "question": "أي مما يلي يعتبر في هندسة البرمجيات على جميع المستويات؟",
     "options": [
+      "تدريب الموظفين",
       "تخصصات ومتطلبات المستخدم",
-      "فقط تكلفة البرمجيات",
       "استراتيجيات التسويق",
-      "تدريب الموظفين"
+      "فقط تكلفة البرمجيات"
     ],
-    "correctAnswer": 0,
+    "correctAnswer": 1,
     "explanation": "وفقاً لمحاضرة المحاضرة 1 في هندسة البرمجيات: تخصصات ومتطلبات المستخدم",
     "difficulty": "hard",
     "status": "published",
@@ -1277,10 +1277,10 @@
     "questionAr": "أي مما يلي يعتبر في هندسة البرمجيات على جميع المستويات؟",
     "questionEn": "Which of the following is considered in software engineering at all levels?",
     "optionsEn": [
+      "Employee training",
       "User specialties and requirements",
-      "Only the cost of software",
       "Marketing strategies",
-      "Employee training"
+      "Only the cost of software"
     ]
   },
   {
@@ -1290,10 +1290,10 @@
     "type": "multiple_choice",
     "question": "الهدف الرئيسي لهندسة البرمجيات هو..",
     "options": [
-      "بناء برمجيات دون النظر إلى احتياجات المستخدم",
+      "استبدال مهندسي الأجهزة",
       "تطوير برمجيات عالية الجودة تلبي متطلبات المستخدم",
       "تقليل استهلاك الكهرباء",
-      "استبدال مهندسي الأجهزة"
+      "بناء برمجيات دون النظر إلى احتياجات المستخدم"
     ],
     "correctAnswer": 1,
     "explanation": "وفقاً لمحاضرة المحاضرة 1 في هندسة البرمجيات: تطوير برمجيات عالية الجودة تلبي متطلبات المستخدم",
@@ -1310,10 +1310,10 @@
     "questionAr": "الهدف الرئيسي لهندسة البرمجيات هو..",
     "questionEn": "The main goal of software engineering is to..",
     "optionsEn": [
-      "Build software without considering user needs",
+      "Replace hardware engineers",
       "Develop high-quality software that meets user requirements",
       "Reduce electricity consumption",
-      "Replace hardware engineers"
+      "Build software without considering user needs"
     ]
   },
   {
@@ -1324,11 +1324,11 @@
     "question": "تتعامل هندسة البرمجيات مع:",
     "options": [
       "تقنيات الترميز فقط",
-      "جميع جوانب إنتاج البرمجيات، بما في ذلك التصميم والتطوير",
+      "إنشاء التصاميم الرسومية فقط",
       "اختبار البرمجيات فقط",
-      "إنشاء التصاميم الرسومية فقط"
+      "جميع جوانب إنتاج البرمجيات، بما في ذلك التصميم والتطوير"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "explanation": "وفقاً لمحاضرة المحاضرة 1 في هندسة البرمجيات: جميع جوانب إنتاج البرمجيات، بما في ذلك التصميم والتطوير",
     "difficulty": "easy",
     "status": "published",
@@ -1344,9 +1344,9 @@
     "questionEn": "Software engineering deals with:",
     "optionsEn": [
       "Only coding techniques",
-      "All aspects of software production, including design and development",
+      "Only creating graphical designs",
       "Only testing software",
-      "Only creating graphical designs"
+      "All aspects of software production, including design and development"
     ]
   },
   {
@@ -1356,12 +1356,12 @@
     "type": "multiple_choice",
     "question": "في هندسة البرمجيات، ما هي النسبة التقريبية لتكاليف التطوير إلى تكاليف الاختبار؟",
     "options": [
-      "70% تطوير، 30% اختبار",
-      "50% تطوير، 50% اختبار",
       "60% تطوير، 40% اختبار",
-      "40% تطوير، 60% اختبار"
+      "70% تطوير، 30% اختبار",
+      "40% تطوير، 60% اختبار",
+      "50% تطوير، 50% اختبار"
     ],
-    "correctAnswer": 0,
+    "correctAnswer": 1,
     "explanation": "وفقاً لمحاضرة المحاضرة 1 في هندسة البرمجيات: 70% تطوير، 30% اختبار",
     "difficulty": "hard",
     "status": "published",
@@ -1376,10 +1376,10 @@
     "questionAr": "في هندسة البرمجيات، ما هي النسبة التقريبية لتكاليف التطوير إلى تكاليف الاختبار؟",
     "questionEn": "In software engineering, what is the approximate ratio of development costs to testing costs?",
     "optionsEn": [
-      "70% development, 30% testing",
-      "50% development, 50% testing",
       "60% development, 40% testing",
-      "40% development, 60% testing"
+      "70% development, 30% testing",
+      "40% development, 60% testing",
+      "50% development, 50% testing"
     ]
   },
   {
@@ -1389,12 +1389,12 @@
     "type": "multiple_choice",
     "question": "كيف يتم تعريف البرمجيات بشكل أفضل؟",
     "options": [
-      "مجموعة من مكونات الأجهزة",
       "مجموعة من التعليمات المترابطة المصممة لحل مشكلة محددة",
-      "نوع من أنظمة قواعد البيانات",
-      "أداة لتصميم الرسومات"
+      "أداة لتصميم الرسومات",
+      "مجموعة من مكونات الأجهزة",
+      "نوع من أنظمة قواعد البيانات"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 0,
     "explanation": "وفقاً لمحاضرة المحاضرة 1 في هندسة البرمجيات: مجموعة من التعليمات المترابطة المصممة لحل مشكلة محددة",
     "difficulty": "easy",
     "status": "published",
@@ -1409,10 +1409,10 @@
     "questionAr": "كيف يتم تعريف البرمجيات بشكل أفضل؟",
     "questionEn": "How is software best defined?",
     "optionsEn": [
-      "A collection of hardware components",
       "A set of interconnected instructions designed to solve a specific problem",
-      "A type of database system",
-      "A graphic design tool"
+      "A graphic design tool",
+      "A collection of hardware components",
+      "A type of database system"
     ]
   },
   {
@@ -1422,12 +1422,12 @@
     "type": "multiple_choice",
     "question": "أي سمة من سمات البرمجيات الجيدة تضمن قدرتها على التكيف مع المتطلبات المتغيرة؟",
     "options": [
-      "القابلية للصيانة",
-      "الاعتمادية",
       "الكفاءة",
-      "سهولة الاستخدام"
+      "سهولة الاستخدام",
+      "الاعتمادية",
+      "القابلية للصيانة"
     ],
-    "correctAnswer": 0,
+    "correctAnswer": 3,
     "explanation": "وفقاً لمحاضرة المحاضرة 1 في هندسة البرمجيات: القابلية للصيانة",
     "difficulty": "medium",
     "status": "published",
@@ -1442,10 +1442,10 @@
     "questionAr": "أي سمة من سمات البرمجيات الجيدة تضمن قدرتها على التكيف مع المتطلبات المتغيرة؟",
     "questionEn": "Which attribute of good software ensures it can adapt to changing requirements?",
     "optionsEn": [
-      "Maintainability",
-      "Dependability",
       "Efficiency",
-      "Usability"
+      "Usability",
+      "Dependability",
+      "Maintainability"
     ]
   },
   {
@@ -1455,12 +1455,12 @@
     "type": "multiple_choice",
     "question": "أي سمة تضمن أن البرمجيات لا تسبب ضررًا كبيرًا إذا فشلت؟",
     "options": [
-      "سهولة الاستخدام",
       "الاعتمادية",
+      "سهولة الاستخدام",
       "الكفاءة",
       "القابلية للصيانة"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 0,
     "explanation": "وفقاً لمحاضرة المحاضرة 1 في هندسة البرمجيات: الاعتمادية",
     "difficulty": "hard",
     "status": "published",
@@ -1475,8 +1475,8 @@
     "questionAr": "أي سمة تضمن أن البرمجيات لا تسبب ضررًا كبيرًا إذا فشلت؟",
     "questionEn": "Which attribute ensures that software does not cause significant damage if it fails?",
     "optionsEn": [
-      "Usability",
       "Dependability",
+      "Usability",
       "Efficiency",
       "Maintainability"
     ]
@@ -1488,12 +1488,12 @@
     "type": "multiple_choice",
     "question": "أي سمة تركز على تقليل استخدام الموارد مثل الذاكرة والمعالج؟",
     "options": [
-      "الكفاءة",
-      "القابلية للصيانة",
       "الاعتمادية",
-      "سهولة الاستخدام"
+      "القابلية للصيانة",
+      "سهولة الاستخدام",
+      "الكفاءة"
     ],
-    "correctAnswer": 0,
+    "correctAnswer": 3,
     "explanation": "وفقاً لمحاضرة المحاضرة 1 في هندسة البرمجيات: الكفاءة",
     "difficulty": "medium",
     "status": "published",
@@ -1508,10 +1508,10 @@
     "questionAr": "أي سمة تركز على تقليل استخدام الموارد مثل الذاكرة والمعالج؟",
     "questionEn": "Which attribute focuses on minimizing the use of resources like memory and processor?",
     "optionsEn": [
-      "Efficiency",
-      "Maintainability",
       "Dependability",
-      "Usability"
+      "Maintainability",
+      "Usability",
+      "Efficiency"
     ]
   },
   {
@@ -1521,12 +1521,12 @@
     "type": "multiple_choice",
     "question": "أي سمة تضمن أن البرمجيات يمكن فهمها واستخدامها بسهولة من قبل المستخدمين؟",
     "options": [
-      "سهولة الاستخدام",
-      "الكفاءة",
+      "القابلية للصيانة",
       "الاعتمادية",
-      "القابلية للصيانة"
+      "الكفاءة",
+      "سهولة الاستخدام"
     ],
-    "correctAnswer": 0,
+    "correctAnswer": 3,
     "explanation": "وفقاً لمحاضرة المحاضرة 1 في هندسة البرمجيات: سهولة الاستخدام",
     "difficulty": "easy",
     "status": "published",
@@ -1541,10 +1541,10 @@
     "questionAr": "أي سمة تضمن أن البرمجيات يمكن فهمها واستخدامها بسهولة من قبل المستخدمين؟",
     "questionEn": "Which attribute ensures that software can be easily understood and used by users?",
     "optionsEn": [
-      "Usability",
-      "Efficiency",
+      "Maintainability",
       "Dependability",
-      "Maintainability"
+      "Efficiency",
+      "Usability"
     ]
   },
   {
@@ -1554,12 +1554,12 @@
     "type": "multiple_choice",
     "question": "ما الذي يتضمنه تطوير البرمجيات في المقام الأول؟",
     "options": [
-      "إنشاء دوائر الأجهزة",
       "إنشاء برمجيات فردية باستخدام لغة برمجة",
-      "تصميم طوبولوجيا الشبكة",
-      "كتابة كتيبات المستخدم"
+      "كتابة كتيبات المستخدم",
+      "إنشاء دوائر الأجهزة",
+      "تصميم طوبولوجيا الشبكة"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 0,
     "explanation": "وفقاً لمحاضرة المحاضرة 1 في هندسة البرمجيات: إنشاء برمجيات فردية باستخدام لغة برمجة",
     "difficulty": "hard",
     "status": "published",
@@ -1574,10 +1574,10 @@
     "questionAr": "ما الذي يتضمنه تطوير البرمجيات في المقام الأول؟",
     "questionEn": "What does software development primarily involve?",
     "optionsEn": [
-      "Creating hardware circuits",
       "Creating individual software using a programming language",
-      "Designing network topologies",
-      "Writing user manuals"
+      "Writing user manuals",
+      "Creating hardware circuits",
+      "Designing network topologies"
     ]
   },
   {
@@ -1587,12 +1587,12 @@
     "type": "multiple_choice",
     "question": "يمكن وصف تطوير البرمجيات بأنه",
     "options": [
+      "نشاط صيانة قواعد البيانات",
       "عملية تثبيت لمرة واحدة",
       "عملية لبناء البرمجيات باستخدام لغات برمجة محددة",
-      "إجراء للاختبار فقط",
-      "نشاط صيانة قواعد البيانات"
+      "إجراء للاختبار فقط"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 2,
     "explanation": "وفقاً لمحاضرة المحاضرة 1 في هندسة البرمجيات: عملية لبناء البرمجيات باستخدام لغات برمجة محددة",
     "difficulty": "easy",
     "status": "published",
@@ -1607,10 +1607,10 @@
     "questionAr": "يمكن وصف تطوير البرمجيات بأنه",
     "questionEn": "Software development can be described as",
     "optionsEn": [
+      "Database maintenance activity",
       "One-time installation process",
       "Process to build software using specific programming languages",
-      "Testing-only procedure",
-      "Database maintenance activity"
+      "Testing-only procedure"
     ]
   },
   {
@@ -1620,12 +1620,12 @@
     "type": "multiple_choice",
     "question": "أي نوع من البرمجيات يدير الأجهزة والعمليات الأساسية للنظام؟",
     "options": [
+      "برمجيات الذكاء الاصطناعي",
       "البرمجيات في الوقت الحقيقي",
       "برمجيات النظام",
-      "البرمجيات التجارية",
-      "برمجيات الذكاء الاصطناعي"
+      "البرمجيات التجارية"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 2,
     "explanation": "وفقاً لمحاضرة المحاضرة 1 في هندسة البرمجيات: برمجيات النظام",
     "difficulty": "medium",
     "status": "published",
@@ -1640,10 +1640,10 @@
     "questionAr": "أي نوع من البرمجيات يدير الأجهزة والعمليات الأساسية للنظام؟",
     "questionEn": "Which type of software manages hardware and basic system operations?",
     "optionsEn": [
+      "AI software",
       "Real-time software",
       "System software",
-      "Business software",
-      "AI software"
+      "Business software"
     ]
   },
   {
@@ -1655,8 +1655,8 @@
     "options": [
       "البرمجيات القائمة على الويب",
       "البرمجيات في الوقت الحقيقي",
-      "برمجيات الحاسوب الشخصي",
-      "البرمجيات الهندسية"
+      "البرمجيات الهندسية",
+      "برمجيات الحاسوب الشخصي"
     ],
     "correctAnswer": 1,
     "explanation": "وفقاً لمحاضرة المحاضرة 1 في هندسة البرمجيات: البرمجيات في الوقت الحقيقي",
@@ -1675,8 +1675,8 @@
     "optionsEn": [
       "Web-based software",
       "Real-time software",
-      "PC software",
-      "Engineering software"
+      "Engineering software",
+      "PC software"
     ]
   },
   {
@@ -1686,12 +1686,12 @@
     "type": "multiple_choice",
     "question": "أي نوع من البرمجيات يستخدم بشكل أساسي لدعم العمليات التجارية مثل المحاسبة أو المخزون؟",
     "options": [
-      "البرمجيات التجارية",
       "برمجيات الذكاء الاصطناعي",
       "برمجيات النظام",
-      "البرمجيات في الوقت الحقيقي"
+      "البرمجيات في الوقت الحقيقي",
+      "البرمجيات التجارية"
     ],
-    "correctAnswer": 0,
+    "correctAnswer": 3,
     "explanation": "وفقاً لمحاضرة المحاضرة 1 في هندسة البرمجيات: البرمجيات التجارية",
     "difficulty": "medium",
     "status": "published",
@@ -1706,10 +1706,10 @@
     "questionAr": "أي نوع من البرمجيات يستخدم بشكل أساسي لدعم العمليات التجارية مثل المحاسبة أو المخزون؟",
     "questionEn": "Which type of software is primarily used to support business operations like accounting or inventory?",
     "optionsEn": [
-      "Business software",
       "AI software",
       "System software",
-      "Real-time software"
+      "Real-time software",
+      "Business software"
     ]
   },
   {
@@ -1719,12 +1719,12 @@
     "type": "multiple_choice",
     "question": "البرمجيات المستخدمة لحل المشكلات العلمية والهندسية تسمى:",
     "options": [
+      "البرمجيات القائمة على الويب",
       "برمجيات الذكاء الاصطناعي",
       "البرمجيات الهندسية والعلمية",
-      "برمجيات الحاسوب الشخصي",
-      "البرمجيات القائمة على الويب"
+      "برمجيات الحاسوب الشخصي"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 2,
     "explanation": "وفقاً لمحاضرة المحاضرة 1 في هندسة البرمجيات: البرمجيات الهندسية والعلمية",
     "difficulty": "easy",
     "status": "published",
@@ -1739,10 +1739,10 @@
     "questionAr": "البرمجيات المستخدمة لحل المشكلات العلمية والهندسية تسمى:",
     "questionEn": "Software used for solving scientific and engineering problems is called:",
     "optionsEn": [
+      "Web-based software",
       "AI software",
       "Engineering and scientific software",
-      "PC software",
-      "Web-based software"
+      "PC software"
     ]
   },
   {
@@ -1753,11 +1753,11 @@
     "question": "ما الذي يعرف النظام الحرج؟",
     "options": [
       "نظام يمكنه تحمل الأعطال المتكررة",
-      "نظام يمكن أن يؤدي فشله إلى خسارة اقتصادية، أو ضرر مادي، أو فقدان الحياة",
+      "نظام لا يتطلب صيانة",
       "نظام يستخدم فقط لأغراض الترفيه",
-      "نظام لا يتطلب صيانة"
+      "نظام يمكن أن يؤدي فشله إلى خسارة اقتصادية، أو ضرر مادي، أو فقدان الحياة"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "explanation": "وفقاً لمحاضرة المحاضرة 1 في هندسة البرمجيات: نظام يمكن أن يؤدي فشله إلى خسارة اقتصادية، أو ضرر مادي، أو فقدان الحياة",
     "difficulty": "hard",
     "status": "published",
@@ -1773,9 +1773,9 @@
     "questionEn": "What defines a critical system?",
     "optionsEn": [
       "A system that can tolerate frequent failures",
-      "A system whose failure can cause economic loss, material damage, or loss of life",
+      "A system that does not require maintenance",
       "A system used only for entertainment purposes",
-      "A system that does not require maintenance"
+      "A system whose failure can cause economic loss, material damage, or loss of life"
     ]
   },
   {
@@ -1785,10 +1785,10 @@
     "type": "multiple_choice",
     "question": "أي مما يلي هو خاصية رئيسية للأنظمة الحرجة؟",
     "options": [
-      "هي منخفضة التكلفة وقابلة للتخلص منها",
+      "تعمل بدون برمجة",
       "يجب أن تكون موثوقة للغاية بسبب العواقب الوخيمة المحتملة",
       "هي مصممة للتفاعل العادي للمستخدم",
-      "تعمل بدون برمجة"
+      "هي منخفضة التكلفة وقابلة للتخلص منها"
     ],
     "correctAnswer": 1,
     "explanation": "وفقاً لمحاضرة المحاضرة 1 في هندسة البرمجيات: يجب أن تكون موثوقة للغاية بسبب العواقب الوخيمة المحتملة",
@@ -1805,10 +1805,10 @@
     "questionAr": "أي مما يلي هو خاصية رئيسية للأنظمة الحرجة؟",
     "questionEn": "Which of the following is a key characteristic of critical systems?",
     "optionsEn": [
-      "They are low-cost and disposable",
+      "They operate without programming",
       "They must be highly reliable due to potential severe consequences",
       "They are designed for casual user interaction",
-      "They operate without programming"
+      "They are low-cost and disposable"
     ]
   },
   {
@@ -1818,10 +1818,10 @@
     "type": "multiple_choice",
     "question": "أي نوع من الأنظمة الحرجة يركز على منع إصابة البشر أو الضرر البيئي الخطير؟",
     "options": [
-      "الأنظمة الحرجة من حيث الموثوقية",
+      "الأنظمة الحرجة من حيث العمل",
       "الأنظمة الحرجة من حيث السلامة",
       "الأنظمة الحرجة من حيث الأمان",
-      "الأنظمة الحرجة من حيث العمل"
+      "الأنظمة الحرجة من حيث الموثوقية"
     ],
     "correctAnswer": 1,
     "explanation": "وفقاً لمحاضرة المحاضرة 1 في هندسة البرمجيات: الأنظمة الحرجة من حيث السلامة",
@@ -1838,10 +1838,10 @@
     "questionAr": "أي نوع من الأنظمة الحرجة يركز على منع إصابة البشر أو الضرر البيئي الخطير؟",
     "questionEn": "Which type of critical system focuses on preventing human injury or serious environmental damage?",
     "optionsEn": [
-      "Critical systems in terms of reliability",
+      "Critical systems in terms of work",
       "Critical systems in terms of safety",
       "Critical systems in terms of security",
-      "Critical systems in terms of work"
+      "Critical systems in terms of reliability"
     ]
   },
   {
@@ -1851,12 +1851,12 @@
     "type": "multiple_choice",
     "question": "أي نوع من الأنظمة الحرجة يهتم في المقام الأول بمنع الخسائر المالية أو فقدان البيانات الكبير؟",
     "options": [
-      "الأنظمة الحرجة من حيث السلامة",
       "الأنظمة الحرجة من حيث الأمان",
       "الأنظمة الحرجة من حيث العمل",
+      "الأنظمة الحرجة من حيث السلامة",
       "الأنظمة الحرجة من حيث الموثوقية"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 0,
     "explanation": "وفقاً لمحاضرة المحاضرة 1 في هندسة البرمجيات: الأنظمة الحرجة من حيث الأمان",
     "difficulty": "hard",
     "status": "published",
@@ -1871,9 +1871,9 @@
     "questionAr": "أي نوع من الأنظمة الحرجة يهتم في المقام الأول بمنع الخسائر المالية أو فقدان البيانات الكبير؟",
     "questionEn": "Which type of critical system is primarily concerned with preventing significant financial or data loss?",
     "optionsEn": [
-      "Critical systems in terms of safety",
       "Critical systems in terms of security",
       "Critical systems in terms of work",
+      "Critical systems in terms of safety",
       "Critical systems in terms of reliability"
     ]
   },
@@ -1885,11 +1885,11 @@
     "question": "أي نوع من الأنظمة الحرجة يؤكد على الأداء المتسق والموثوق به بمرور الوقت؟",
     "options": [
       "الأنظمة الحرجة من حيث العمل",
-      "الأنظمة الحرجة من حيث الموثوقية",
       "الأنظمة الحرجة من حيث السلامة",
+      "الأنظمة الحرجة من حيث الموثوقية",
       "الأنظمة الحرجة من حيث الأمان"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 2,
     "explanation": "وفقاً لمحاضرة المحاضرة 1 في هندسة البرمجيات: الأنظمة الحرجة من حيث الموثوقية",
     "difficulty": "medium",
     "status": "published",
@@ -1905,8 +1905,8 @@
     "questionEn": "Which type of critical system emphasizes consistent and dependable performance over time?",
     "optionsEn": [
       "Critical systems in terms of work",
-      "Critical systems in terms of reliability",
       "Critical systems in terms of safety",
+      "Critical systems in terms of reliability",
       "Critical systems in terms of security"
     ]
   },
@@ -1917,12 +1917,12 @@
     "type": "multiple_choice",
     "question": "أي نوع من الأنظمة الحرجة يركز على الحفاظ على التشغيل المستمر أو تقديم الخدمة؟",
     "options": [
-      "الأنظمة الحرجة من حيث العمل",
-      "الأنظمة الحرجة من حيث الموثوقية",
       "الأنظمة الحرجة من حيث الأمان",
-      "الأنظمة الحرجة من حيث السلامة"
+      "الأنظمة الحرجة من حيث السلامة",
+      "الأنظمة الحرجة من حيث العمل",
+      "الأنظمة الحرجة من حيث الموثوقية"
     ],
-    "correctAnswer": 0,
+    "correctAnswer": 2,
     "explanation": "وفقاً لمحاضرة المحاضرة 1 في هندسة البرمجيات: الأنظمة الحرجة من حيث العمل",
     "difficulty": "easy",
     "status": "published",
@@ -1937,10 +1937,10 @@
     "questionAr": "أي نوع من الأنظمة الحرجة يركز على الحفاظ على التشغيل المستمر أو تقديم الخدمة؟",
     "questionEn": "Which type of critical system focuses on maintaining continuous operation or service delivery?",
     "optionsEn": [
-      "Critical systems in terms of work",
-      "Critical systems in terms of reliability",
       "Critical systems in terms of security",
-      "Critical systems in terms of safety"
+      "Critical systems in terms of safety",
+      "Critical systems in terms of work",
+      "Critical systems in terms of reliability"
     ]
   },
   {
@@ -1950,12 +1950,12 @@
     "type": "multiple_choice",
     "question": "أي مكون من مكونات النظام الحرج يمكن أن يفشل بسبب أخطاء التصميم أو الوصول إلى نهاية عمره الطبيعي؟",
     "options": [
-      "المكون البشري",
       "مكون البرمجيات",
-      "مكون الأجهزة",
-      "مكون الشبكة"
+      "المكون البشري",
+      "مكون الشبكة",
+      "مكون الأجهزة"
     ],
-    "correctAnswer": 2,
+    "correctAnswer": 3,
     "explanation": "وفقاً لمحاضرة المحاضرة 1 في هندسة البرمجيات: مكون الأجهزة",
     "difficulty": "hard",
     "status": "published",
@@ -1970,10 +1970,10 @@
     "questionAr": "أي مكون من مكونات النظام الحرج يمكن أن يفشل بسبب أخطاء التصميم أو الوصول إلى نهاية عمره الطبيعي؟",
     "questionEn": "Which component of a critical system can fail due to design errors or reaching the end of its normal life?",
     "optionsEn": [
-      "Human component",
       "Software component",
-      "Hardware component",
-      "Network component"
+      "Human component",
+      "Network component",
+      "Hardware component"
     ]
   },
   {
@@ -1983,12 +1983,12 @@
     "type": "multiple_choice",
     "question": "الأعطال في أي مكون عادة ما تكون ناجمة عن أخطاء في التحليل أو التصميم أو التنفيذ؟",
     "options": [
-      "مكون الأجهزة",
-      "مكون البرمجيات",
       "المكون البشري",
-      "المكون البيئي"
+      "مكون الأجهزة",
+      "المكون البيئي",
+      "مكون البرمجيات"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "explanation": "وفقاً لمحاضرة المحاضرة 1 في هندسة البرمجيات: مكون البرمجيات",
     "difficulty": "easy",
     "status": "published",
@@ -2003,10 +2003,10 @@
     "questionAr": "الأعطال في أي مكون عادة ما تكون ناجمة عن أخطاء في التحليل أو التصميم أو التنفيذ؟",
     "questionEn": "Failures in which component are usually caused by errors in analysis, design, or implementation?",
     "optionsEn": [
-      "Hardware component",
-      "Software component",
       "Human component",
-      "Environmental component"
+      "Hardware component",
+      "Environmental component",
+      "Software component"
     ]
   },
   {
@@ -2016,12 +2016,12 @@
     "type": "multiple_choice",
     "question": "أي نوع من الأعطال يحدث عندما لا يعمل مشغلو النظام على النظام بشكل صحيح بسبب قلة الخبرة؟",
     "options": [
-      "عطل مكون البرمجيات",
-      "عطل مكون الأجهزة",
       "عطل المكون البشري",
-      "عطل الأمان"
+      "عطل الأمان",
+      "عطل مكون الأجهزة",
+      "عطل مكون البرمجيات"
     ],
-    "correctAnswer": 2,
+    "correctAnswer": 0,
     "explanation": "وفقاً لمحاضرة المحاضرة 1 في هندسة البرمجيات: عطل المكون البشري",
     "difficulty": "medium",
     "status": "published",
@@ -2036,10 +2036,10 @@
     "questionAr": "أي نوع من الأعطال يحدث عندما لا يعمل مشغلو النظام على النظام بشكل صحيح بسبب قلة الخبرة؟",
     "questionEn": "Which type of failure occurs when system operators do not operate the system correctly due to inexperience?",
     "optionsEn": [
-      "Software component failure",
-      "Hardware component failure",
       "Human component failure",
-      "Security failure"
+      "Security failure",
+      "Hardware component failure",
+      "Software component failure"
     ]
   },
   {
@@ -2049,12 +2049,12 @@
     "type": "multiple_choice",
     "question": "أي بُعد من أبعاد موثوقية النظام يشير إلى قدرة النظام على تقديم الخدمات عند الطلب؟",
     "options": [
-      "الموثوقية",
-      "التوفر",
       "السلامة",
-      "الأمان"
+      "الموثوقية",
+      "الأمان",
+      "التوفر"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "explanation": "وفقاً لمحاضرة المحاضرة 1 في هندسة البرمجيات: التوفر",
     "difficulty": "hard",
     "status": "published",
@@ -2069,10 +2069,10 @@
     "questionAr": "أي بُعد من أبعاد موثوقية النظام يشير إلى قدرة النظام على تقديم الخدمات عند الطلب؟",
     "questionEn": "Which dimension of system reliability refers to the system's ability to provide services whenever requested?",
     "optionsEn": [
-      "Reliability",
-      "Availability",
       "Safety",
-      "Security"
+      "Reliability",
+      "Security",
+      "Availability"
     ]
   },
   {
@@ -2082,12 +2082,12 @@
     "type": "multiple_choice",
     "question": "أي بُعد يشير إلى احتمال أن يقدم النظام خدماته المتوقعة بشكل صحيح ضمن إطار زمني محدد؟",
     "options": [
-      "السلامة",
-      "الأمان",
       "الموثوقية",
+      "الأمان",
+      "السلامة",
       "التوفر"
     ],
-    "correctAnswer": 2,
+    "correctAnswer": 0,
     "explanation": "وفقاً لمحاضرة المحاضرة 1 في هندسة البرمجيات: الموثوقية",
     "difficulty": "medium",
     "status": "published",
@@ -2102,9 +2102,9 @@
     "questionAr": "أي بُعد يشير إلى احتمال أن يقدم النظام خدماته المتوقعة بشكل صحيح ضمن إطار زمني محدد؟",
     "questionEn": "Which dimension refers to the probability that the system delivers its expected services correctly within a specific time frame?",
     "optionsEn": [
-      "Safety",
-      "Security",
       "Reliability",
+      "Security",
+      "Safety",
       "Availability"
     ]
   },
@@ -2115,12 +2115,12 @@
     "type": "multiple_choice",
     "question": "أي بُعد يقيس احتمالية أن يتسبب النظام في ضرر للبشر أو البيئة؟",
     "options": [
-      "الأمان",
-      "السلامة",
       "الموثوقية",
-      "التوفر"
+      "الأمان",
+      "التوفر",
+      "السلامة"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "explanation": "وفقاً لمحاضرة المحاضرة 1 في هندسة البرمجيات: السلامة",
     "difficulty": "easy",
     "status": "published",
@@ -2135,10 +2135,10 @@
     "questionAr": "أي بُعد يقيس احتمالية أن يتسبب النظام في ضرر للبشر أو البيئة؟",
     "questionEn": "Which dimension measures the likelihood that the system could cause harm to humans or the environment?",
     "optionsEn": [
-      "Security",
-      "Safety",
       "Reliability",
-      "Availability"
+      "Security",
+      "Availability",
+      "Safety"
     ]
   },
   {
@@ -2148,12 +2148,12 @@
     "type": "multiple_choice",
     "question": "أي بُعد يركز على قدرة النظام على مقاومة الوصول غير المصرح به أو الاختراق؟",
     "options": [
-      "الأمان",
-      "السلامة",
       "الموثوقية",
-      "التوفر"
+      "التوفر",
+      "السلامة",
+      "الأمان"
     ],
-    "correctAnswer": 0,
+    "correctAnswer": 3,
     "explanation": "وفقاً لمحاضرة المحاضرة 1 في هندسة البرمجيات: الأمان",
     "difficulty": "hard",
     "status": "published",
@@ -2168,10 +2168,10 @@
     "questionAr": "أي بُعد يركز على قدرة النظام على مقاومة الوصول غير المصرح به أو الاختراق؟",
     "questionEn": "Which dimension focuses on the system's ability to resist unauthorized access or hacking?",
     "optionsEn": [
-      "Security",
-      "Safety",
       "Reliability",
-      "Availability"
+      "Availability",
+      "Safety",
+      "Security"
     ]
   },
   {
@@ -2181,12 +2181,12 @@
     "type": "multiple_choice",
     "question": "ما هي هندسة البرمجيات المعنية بها في المقام الأول؟",
     "options": [
-      "تصميم مكونات الأجهزة",
       "إدارة حركة المرور على الشبكة",
-      "جميع جوانب إنتاج البرمجيات",
-      "كتابة الوثائق فقط"
+      "كتابة الوثائق فقط",
+      "تصميم مكونات الأجهزة",
+      "جميع جوانب إنتاج البرمجيات"
     ],
-    "correctAnswer": 2,
+    "correctAnswer": 3,
     "explanation": "وفقاً لمحاضرة المحاضرة 1 في هندسة البرمجيات: جميع جوانب إنتاج البرمجيات",
     "difficulty": "easy",
     "status": "published",
@@ -2201,10 +2201,10 @@
     "questionAr": "ما هي هندسة البرمجيات المعنية بها في المقام الأول؟",
     "questionEn": "What is software engineering primarily concerned with?",
     "optionsEn": [
-      "Designing hardware components",
       "Managing network traffic",
-      "All aspects of software production",
-      "Writing documentation only"
+      "Writing documentation only",
+      "Designing hardware components",
+      "All aspects of software production"
     ]
   },
   {
@@ -2214,12 +2214,12 @@
     "type": "multiple_choice",
     "question": "يوصف هندسة البرمجيات بشكل أفضل بأنها..",
     "options": [
-      "هواية لإنشاء التطبيقات",
       "مهنة تركز على تطوير وتصميم برمجيات عالية الجودة",
-      "طريقة لزيادة سرعة الأجهزة",
-      "طريقة للتعامل مع شكاوى المستخدمين"
+      "هواية لإنشاء التطبيقات",
+      "طريقة للتعامل مع شكاوى المستخدمين",
+      "طريقة لزيادة سرعة الأجهزة"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 0,
     "explanation": "وفقاً لمحاضرة المحاضرة 1 في هندسة البرمجيات: مهنة تركز على تطوير وتصميم برمجيات عالية الجودة",
     "difficulty": "medium",
     "status": "published",
@@ -2234,10 +2234,10 @@
     "questionAr": "يوصف هندسة البرمجيات بشكل أفضل بأنها..",
     "questionEn": "Software engineering is best described as..",
     "optionsEn": [
-      "A hobby for creating apps",
       "A profession focused on developing and designing high-quality software",
-      "A method to increase hardware speed",
-      "A way to handle user complaints"
+      "A hobby for creating apps",
+      "A way to handle user complaints",
+      "A method to increase hardware speed"
     ]
   },
   {
@@ -2247,12 +2247,12 @@
     "type": "multiple_choice",
     "question": "أي مما يلي يعتبر في هندسة البرمجيات على جميع المستويات؟",
     "options": [
-      "تخصصات ومتطلبات المستخدم",
+      "تدريب الموظفين",
       "فقط تكلفة البرمجيات",
       "استراتيجيات التسويق",
-      "تدريب الموظفين"
+      "تخصصات ومتطلبات المستخدم"
     ],
-    "correctAnswer": 0,
+    "correctAnswer": 3,
     "explanation": "وفقاً لمحاضرة المحاضرة 1 في هندسة البرمجيات: تخصصات ومتطلبات المستخدم",
     "difficulty": "hard",
     "status": "published",
@@ -2267,10 +2267,10 @@
     "questionAr": "أي مما يلي يعتبر في هندسة البرمجيات على جميع المستويات؟",
     "questionEn": "Which of the following is considered in software engineering at all levels?",
     "optionsEn": [
-      "User specialties and requirements",
+      "Employee training",
       "Only the cost of software",
       "Marketing strategies",
-      "Employee training"
+      "User specialties and requirements"
     ]
   },
   {
@@ -2280,12 +2280,12 @@
     "type": "multiple_choice",
     "question": "الهدف الرئيسي لهندسة البرمجيات هو..",
     "options": [
-      "بناء برمجيات دون النظر إلى احتياجات المستخدم",
       "تطوير برمجيات عالية الجودة تلبي متطلبات المستخدم",
+      "استبدال مهندسي الأجهزة",
       "تقليل استهلاك الكهرباء",
-      "استبدال مهندسي الأجهزة"
+      "بناء برمجيات دون النظر إلى احتياجات المستخدم"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 0,
     "explanation": "وفقاً لمحاضرة المحاضرة 1 في هندسة البرمجيات: تطوير برمجيات عالية الجودة تلبي متطلبات المستخدم",
     "difficulty": "medium",
     "status": "published",
@@ -2300,10 +2300,10 @@
     "questionAr": "الهدف الرئيسي لهندسة البرمجيات هو..",
     "questionEn": "The main goal of software engineering is to..",
     "optionsEn": [
-      "Build software without considering user needs",
       "Develop high-quality software that meets user requirements",
+      "Replace hardware engineers",
       "Reduce electricity consumption",
-      "Replace hardware engineers"
+      "Build software without considering user needs"
     ]
   },
   {
@@ -2313,10 +2313,10 @@
     "type": "multiple_choice",
     "question": "تتعامل هندسة البرمجيات مع:",
     "options": [
-      "تقنيات الترميز فقط",
-      "جميع جوانب إنتاج البرمجيات، بما في ذلك التصميم والتطوير",
       "اختبار البرمجيات فقط",
-      "إنشاء التصاميم الرسومية فقط"
+      "جميع جوانب إنتاج البرمجيات، بما في ذلك التصميم والتطوير",
+      "إنشاء التصاميم الرسومية فقط",
+      "تقنيات الترميز فقط"
     ],
     "correctAnswer": 1,
     "explanation": "وفقاً لمحاضرة المحاضرة 1 في هندسة البرمجيات: جميع جوانب إنتاج البرمجيات، بما في ذلك التصميم والتطوير",
@@ -2333,10 +2333,10 @@
     "questionAr": "تتعامل هندسة البرمجيات مع:",
     "questionEn": "Software engineering deals with:",
     "optionsEn": [
-      "Only coding techniques",
-      "All aspects of software production, including design and development",
       "Only testing software",
-      "Only creating graphical designs"
+      "All aspects of software production, including design and development",
+      "Only creating graphical designs",
+      "Only coding techniques"
     ]
   },
   {
@@ -2379,12 +2379,12 @@
     "type": "multiple_choice",
     "question": "كيف يتم تعريف البرمجيات بشكل أفضل؟",
     "options": [
+      "أداة لتصميم الرسومات",
       "مجموعة من مكونات الأجهزة",
-      "مجموعة من التعليمات المترابطة المصممة لحل مشكلة محددة",
       "نوع من أنظمة قواعد البيانات",
-      "أداة لتصميم الرسومات"
+      "مجموعة من التعليمات المترابطة المصممة لحل مشكلة محددة"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "explanation": "وفقاً لمحاضرة المحاضرة 1 في هندسة البرمجيات: مجموعة من التعليمات المترابطة المصممة لحل مشكلة محددة",
     "difficulty": "easy",
     "status": "published",
@@ -2399,10 +2399,10 @@
     "questionAr": "كيف يتم تعريف البرمجيات بشكل أفضل؟",
     "questionEn": "How is software best defined?",
     "optionsEn": [
+      "A graphic design tool",
       "A collection of hardware components",
-      "A set of interconnected instructions designed to solve a specific problem",
       "A type of database system",
-      "A graphic design tool"
+      "A set of interconnected instructions designed to solve a specific problem"
     ]
   },
   {
@@ -2412,12 +2412,12 @@
     "type": "multiple_choice",
     "question": "أي سمة من سمات البرمجيات الجيدة تضمن قدرتها على التكيف مع المتطلبات المتغيرة؟",
     "options": [
-      "القابلية للصيانة",
-      "الاعتمادية",
+      "سهولة الاستخدام",
       "الكفاءة",
-      "سهولة الاستخدام"
+      "القابلية للصيانة",
+      "الاعتمادية"
     ],
-    "correctAnswer": 0,
+    "correctAnswer": 2,
     "explanation": "وفقاً لمحاضرة المحاضرة 1 في هندسة البرمجيات: القابلية للصيانة",
     "difficulty": "medium",
     "status": "published",
@@ -2432,10 +2432,10 @@
     "questionAr": "أي سمة من سمات البرمجيات الجيدة تضمن قدرتها على التكيف مع المتطلبات المتغيرة؟",
     "questionEn": "Which attribute of good software ensures it can adapt to changing requirements?",
     "optionsEn": [
-      "Maintainability",
-      "Dependability",
+      "Usability",
       "Efficiency",
-      "Usability"
+      "Maintainability",
+      "Dependability"
     ]
   },
   {
@@ -2446,11 +2446,11 @@
     "question": "أي سمة تضمن أن البرمجيات لا تسبب ضررًا كبيرًا إذا فشلت؟",
     "options": [
       "سهولة الاستخدام",
-      "الاعتمادية",
       "الكفاءة",
+      "الاعتمادية",
       "القابلية للصيانة"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 2,
     "explanation": "وفقاً لمحاضرة المحاضرة 1 في هندسة البرمجيات: الاعتمادية",
     "difficulty": "hard",
     "status": "published",
@@ -2466,8 +2466,8 @@
     "questionEn": "Which attribute ensures that software does not cause significant damage if it fails?",
     "optionsEn": [
       "Usability",
-      "Dependability",
       "Efficiency",
+      "Dependability",
       "Maintainability"
     ]
   },
@@ -2478,12 +2478,12 @@
     "type": "multiple_choice",
     "question": "أي سمة تركز على تقليل استخدام الموارد مثل الذاكرة والمعالج؟",
     "options": [
-      "الكفاءة",
       "القابلية للصيانة",
       "الاعتمادية",
-      "سهولة الاستخدام"
+      "سهولة الاستخدام",
+      "الكفاءة"
     ],
-    "correctAnswer": 0,
+    "correctAnswer": 3,
     "explanation": "وفقاً لمحاضرة المحاضرة 1 في هندسة البرمجيات: الكفاءة",
     "difficulty": "medium",
     "status": "published",
@@ -2498,10 +2498,10 @@
     "questionAr": "أي سمة تركز على تقليل استخدام الموارد مثل الذاكرة والمعالج؟",
     "questionEn": "Which attribute focuses on minimizing the use of resources like memory and processor?",
     "optionsEn": [
-      "Efficiency",
       "Maintainability",
       "Dependability",
-      "Usability"
+      "Usability",
+      "Efficiency"
     ]
   },
   {
@@ -2511,12 +2511,12 @@
     "type": "multiple_choice",
     "question": "أي سمة تضمن أن البرمجيات يمكن فهمها واستخدامها بسهولة من قبل المستخدمين؟",
     "options": [
-      "سهولة الاستخدام",
-      "الكفاءة",
       "الاعتمادية",
-      "القابلية للصيانة"
+      "القابلية للصيانة",
+      "سهولة الاستخدام",
+      "الكفاءة"
     ],
-    "correctAnswer": 0,
+    "correctAnswer": 2,
     "explanation": "وفقاً لمحاضرة المحاضرة 1 في هندسة البرمجيات: سهولة الاستخدام",
     "difficulty": "easy",
     "status": "published",
@@ -2531,10 +2531,10 @@
     "questionAr": "أي سمة تضمن أن البرمجيات يمكن فهمها واستخدامها بسهولة من قبل المستخدمين؟",
     "questionEn": "Which attribute ensures that software can be easily understood and used by users?",
     "optionsEn": [
-      "Usability",
-      "Efficiency",
       "Dependability",
-      "Maintainability"
+      "Maintainability",
+      "Usability",
+      "Efficiency"
     ]
   },
   {
@@ -2544,12 +2544,12 @@
     "type": "multiple_choice",
     "question": "ما الذي يتضمنه تطوير البرمجيات في المقام الأول؟",
     "options": [
-      "إنشاء دوائر الأجهزة",
       "إنشاء برمجيات فردية باستخدام لغة برمجة",
       "تصميم طوبولوجيا الشبكة",
-      "كتابة كتيبات المستخدم"
+      "كتابة كتيبات المستخدم",
+      "إنشاء دوائر الأجهزة"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 0,
     "explanation": "وفقاً لمحاضرة المحاضرة 1 في هندسة البرمجيات: إنشاء برمجيات فردية باستخدام لغة برمجة",
     "difficulty": "hard",
     "status": "published",
@@ -2564,10 +2564,10 @@
     "questionAr": "ما الذي يتضمنه تطوير البرمجيات في المقام الأول؟",
     "questionEn": "What does software development primarily involve?",
     "optionsEn": [
-      "Creating hardware circuits",
       "Creating individual software using a programming language",
       "Designing network topologies",
-      "Writing user manuals"
+      "Writing user manuals",
+      "Creating hardware circuits"
     ]
   },
   {
@@ -2578,11 +2578,11 @@
     "question": "يمكن وصف تطوير البرمجيات بأنه",
     "options": [
       "عملية تثبيت لمرة واحدة",
+      "نشاط صيانة قواعد البيانات",
       "عملية لبناء البرمجيات باستخدام لغات برمجة محددة",
-      "إجراء للاختبار فقط",
-      "نشاط صيانة قواعد البيانات"
+      "إجراء للاختبار فقط"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 2,
     "explanation": "وفقاً لمحاضرة المحاضرة 1 في هندسة البرمجيات: عملية لبناء البرمجيات باستخدام لغات برمجة محددة",
     "difficulty": "easy",
     "status": "published",
@@ -2598,9 +2598,9 @@
     "questionEn": "Software development can be described as",
     "optionsEn": [
       "One-time installation process",
+      "Database maintenance activity",
       "Process to build software using specific programming languages",
-      "Testing-only procedure",
-      "Database maintenance activity"
+      "Testing-only procedure"
     ]
   },
   {
@@ -2610,12 +2610,12 @@
     "type": "multiple_choice",
     "question": "أي نوع من البرمجيات يدير الأجهزة والعمليات الأساسية للنظام؟",
     "options": [
-      "البرمجيات في الوقت الحقيقي",
       "برمجيات النظام",
       "البرمجيات التجارية",
-      "برمجيات الذكاء الاصطناعي"
+      "برمجيات الذكاء الاصطناعي",
+      "البرمجيات في الوقت الحقيقي"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 0,
     "explanation": "وفقاً لمحاضرة المحاضرة 1 في هندسة البرمجيات: برمجيات النظام",
     "difficulty": "medium",
     "status": "published",
@@ -2630,10 +2630,10 @@
     "questionAr": "أي نوع من البرمجيات يدير الأجهزة والعمليات الأساسية للنظام؟",
     "questionEn": "Which type of software manages hardware and basic system operations?",
     "optionsEn": [
-      "Real-time software",
       "System software",
       "Business software",
-      "AI software"
+      "AI software",
+      "Real-time software"
     ]
   },
   {
@@ -2643,12 +2643,12 @@
     "type": "multiple_choice",
     "question": "أي نوع من البرمجيات مصمم للاستجابة للمدخلات على الفور، وغالبًا ما يستخدم في أنظمة التحكم؟",
     "options": [
-      "البرمجيات القائمة على الويب",
       "البرمجيات في الوقت الحقيقي",
       "برمجيات الحاسوب الشخصي",
-      "البرمجيات الهندسية"
+      "البرمجيات الهندسية",
+      "البرمجيات القائمة على الويب"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 0,
     "explanation": "وفقاً لمحاضرة المحاضرة 1 في هندسة البرمجيات: البرمجيات في الوقت الحقيقي",
     "difficulty": "hard",
     "status": "published",
@@ -2663,10 +2663,10 @@
     "questionAr": "أي نوع من البرمجيات مصمم للاستجابة للمدخلات على الفور، وغالبًا ما يستخدم في أنظمة التحكم؟",
     "questionEn": "Which type of software is designed to respond to inputs instantly, often used in control systems?",
     "optionsEn": [
-      "Web-based software",
       "Real-time software",
       "PC software",
-      "Engineering software"
+      "Engineering software",
+      "Web-based software"
     ]
   },
   {
@@ -2677,9 +2677,9 @@
     "question": "أي نوع من البرمجيات يستخدم بشكل أساسي لدعم العمليات التجارية مثل المحاسبة أو المخزون؟",
     "options": [
       "البرمجيات التجارية",
-      "برمجيات الذكاء الاصطناعي",
       "برمجيات النظام",
-      "البرمجيات في الوقت الحقيقي"
+      "البرمجيات في الوقت الحقيقي",
+      "برمجيات الذكاء الاصطناعي"
     ],
     "correctAnswer": 0,
     "explanation": "وفقاً لمحاضرة المحاضرة 1 في هندسة البرمجيات: البرمجيات التجارية",
@@ -2697,9 +2697,9 @@
     "questionEn": "Which type of software is primarily used to support business operations like accounting or inventory?",
     "optionsEn": [
       "Business software",
-      "AI software",
       "System software",
-      "Real-time software"
+      "Real-time software",
+      "AI software"
     ]
   },
   {
@@ -2709,12 +2709,12 @@
     "type": "multiple_choice",
     "question": "البرمجيات المستخدمة لحل المشكلات العلمية والهندسية تسمى:",
     "options": [
+      "البرمجيات القائمة على الويب",
       "برمجيات الذكاء الاصطناعي",
-      "البرمجيات الهندسية والعلمية",
       "برمجيات الحاسوب الشخصي",
-      "البرمجيات القائمة على الويب"
+      "البرمجيات الهندسية والعلمية"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "explanation": "وفقاً لمحاضرة المحاضرة 1 في هندسة البرمجيات: البرمجيات الهندسية والعلمية",
     "difficulty": "easy",
     "status": "published",
@@ -2729,10 +2729,10 @@
     "questionAr": "البرمجيات المستخدمة لحل المشكلات العلمية والهندسية تسمى:",
     "questionEn": "Software used for solving scientific and engineering problems is called:",
     "optionsEn": [
+      "Web-based software",
       "AI software",
-      "Engineering and scientific software",
       "PC software",
-      "Web-based software"
+      "Engineering and scientific software"
     ]
   },
   {
@@ -2742,12 +2742,12 @@
     "type": "multiple_choice",
     "question": "ما الذي يعرف النظام الحرج؟",
     "options": [
-      "نظام يمكنه تحمل الأعطال المتكررة",
-      "نظام يمكن أن يؤدي فشله إلى خسارة اقتصادية، أو ضرر مادي، أو فقدان الحياة",
       "نظام يستخدم فقط لأغراض الترفيه",
-      "نظام لا يتطلب صيانة"
+      "نظام لا يتطلب صيانة",
+      "نظام يمكن أن يؤدي فشله إلى خسارة اقتصادية، أو ضرر مادي، أو فقدان الحياة",
+      "نظام يمكنه تحمل الأعطال المتكررة"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 2,
     "explanation": "وفقاً لمحاضرة المحاضرة 1 في هندسة البرمجيات: نظام يمكن أن يؤدي فشله إلى خسارة اقتصادية، أو ضرر مادي، أو فقدان الحياة",
     "difficulty": "hard",
     "status": "published",
@@ -2762,10 +2762,10 @@
     "questionAr": "ما الذي يعرف النظام الحرج؟",
     "questionEn": "What defines a critical system?",
     "optionsEn": [
-      "A system that can tolerate frequent failures",
-      "A system whose failure can cause economic loss, material damage, or loss of life",
       "A system used only for entertainment purposes",
-      "A system that does not require maintenance"
+      "A system that does not require maintenance",
+      "A system whose failure can cause economic loss, material damage, or loss of life",
+      "A system that can tolerate frequent failures"
     ]
   },
   {
@@ -2808,12 +2808,12 @@
     "type": "multiple_choice",
     "question": "أي نوع من الأنظمة الحرجة يركز على منع إصابة البشر أو الضرر البيئي الخطير؟",
     "options": [
-      "الأنظمة الحرجة من حيث الموثوقية",
-      "الأنظمة الحرجة من حيث السلامة",
       "الأنظمة الحرجة من حيث الأمان",
-      "الأنظمة الحرجة من حيث العمل"
+      "الأنظمة الحرجة من حيث العمل",
+      "الأنظمة الحرجة من حيث السلامة",
+      "الأنظمة الحرجة من حيث الموثوقية"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 2,
     "explanation": "وفقاً لمحاضرة المحاضرة 1 في هندسة البرمجيات: الأنظمة الحرجة من حيث السلامة",
     "difficulty": "medium",
     "status": "published",
@@ -2828,10 +2828,10 @@
     "questionAr": "أي نوع من الأنظمة الحرجة يركز على منع إصابة البشر أو الضرر البيئي الخطير؟",
     "questionEn": "Which type of critical system focuses on preventing human injury or serious environmental damage?",
     "optionsEn": [
-      "Critical systems in terms of reliability",
-      "Critical systems in terms of safety",
       "Critical systems in terms of security",
-      "Critical systems in terms of work"
+      "Critical systems in terms of work",
+      "Critical systems in terms of safety",
+      "Critical systems in terms of reliability"
     ]
   },
   {
@@ -2841,12 +2841,12 @@
     "type": "multiple_choice",
     "question": "أي نوع من الأنظمة الحرجة يهتم في المقام الأول بمنع الخسائر المالية أو فقدان البيانات الكبير؟",
     "options": [
-      "الأنظمة الحرجة من حيث السلامة",
       "الأنظمة الحرجة من حيث الأمان",
+      "الأنظمة الحرجة من حيث الموثوقية",
       "الأنظمة الحرجة من حيث العمل",
-      "الأنظمة الحرجة من حيث الموثوقية"
+      "الأنظمة الحرجة من حيث السلامة"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 0,
     "explanation": "وفقاً لمحاضرة المحاضرة 1 في هندسة البرمجيات: الأنظمة الحرجة من حيث الأمان",
     "difficulty": "hard",
     "status": "published",
@@ -2861,10 +2861,10 @@
     "questionAr": "أي نوع من الأنظمة الحرجة يهتم في المقام الأول بمنع الخسائر المالية أو فقدان البيانات الكبير؟",
     "questionEn": "Which type of critical system is primarily concerned with preventing significant financial or data loss?",
     "optionsEn": [
-      "Critical systems in terms of safety",
       "Critical systems in terms of security",
+      "Critical systems in terms of reliability",
       "Critical systems in terms of work",
-      "Critical systems in terms of reliability"
+      "Critical systems in terms of safety"
     ]
   },
   {
@@ -2876,8 +2876,8 @@
     "options": [
       "الأنظمة الحرجة من حيث العمل",
       "الأنظمة الحرجة من حيث الموثوقية",
-      "الأنظمة الحرجة من حيث السلامة",
-      "الأنظمة الحرجة من حيث الأمان"
+      "الأنظمة الحرجة من حيث الأمان",
+      "الأنظمة الحرجة من حيث السلامة"
     ],
     "correctAnswer": 1,
     "explanation": "وفقاً لمحاضرة المحاضرة 1 في هندسة البرمجيات: الأنظمة الحرجة من حيث الموثوقية",
@@ -2896,8 +2896,8 @@
     "optionsEn": [
       "Critical systems in terms of work",
       "Critical systems in terms of reliability",
-      "Critical systems in terms of safety",
-      "Critical systems in terms of security"
+      "Critical systems in terms of security",
+      "Critical systems in terms of safety"
     ]
   },
   {
@@ -2907,12 +2907,12 @@
     "type": "multiple_choice",
     "question": "أي نوع من الأنظمة الحرجة يركز على الحفاظ على التشغيل المستمر أو تقديم الخدمة؟",
     "options": [
-      "الأنظمة الحرجة من حيث العمل",
-      "الأنظمة الحرجة من حيث الموثوقية",
       "الأنظمة الحرجة من حيث الأمان",
-      "الأنظمة الحرجة من حيث السلامة"
+      "الأنظمة الحرجة من حيث الموثوقية",
+      "الأنظمة الحرجة من حيث السلامة",
+      "الأنظمة الحرجة من حيث العمل"
     ],
-    "correctAnswer": 0,
+    "correctAnswer": 3,
     "explanation": "وفقاً لمحاضرة المحاضرة 1 في هندسة البرمجيات: الأنظمة الحرجة من حيث العمل",
     "difficulty": "easy",
     "status": "published",
@@ -2927,10 +2927,10 @@
     "questionAr": "أي نوع من الأنظمة الحرجة يركز على الحفاظ على التشغيل المستمر أو تقديم الخدمة؟",
     "questionEn": "Which type of critical system focuses on maintaining continuous operation or service delivery?",
     "optionsEn": [
-      "Critical systems in terms of work",
-      "Critical systems in terms of reliability",
       "Critical systems in terms of security",
-      "Critical systems in terms of safety"
+      "Critical systems in terms of reliability",
+      "Critical systems in terms of safety",
+      "Critical systems in terms of work"
     ]
   },
   {
@@ -2940,12 +2940,12 @@
     "type": "multiple_choice",
     "question": "أي مكون من مكونات النظام الحرج يمكن أن يفشل بسبب أخطاء التصميم أو الوصول إلى نهاية عمره الطبيعي؟",
     "options": [
-      "المكون البشري",
-      "مكون البرمجيات",
       "مكون الأجهزة",
-      "مكون الشبكة"
+      "المكون البشري",
+      "مكون الشبكة",
+      "مكون البرمجيات"
     ],
-    "correctAnswer": 2,
+    "correctAnswer": 0,
     "explanation": "وفقاً لمحاضرة المحاضرة 1 في هندسة البرمجيات: مكون الأجهزة",
     "difficulty": "hard",
     "status": "published",
@@ -2960,10 +2960,10 @@
     "questionAr": "أي مكون من مكونات النظام الحرج يمكن أن يفشل بسبب أخطاء التصميم أو الوصول إلى نهاية عمره الطبيعي؟",
     "questionEn": "Which component of a critical system can fail due to design errors or reaching the end of its normal life?",
     "optionsEn": [
-      "Human component",
-      "Software component",
       "Hardware component",
-      "Network component"
+      "Human component",
+      "Network component",
+      "Software component"
     ]
   },
   {
@@ -2973,12 +2973,12 @@
     "type": "multiple_choice",
     "question": "الأعطال في أي مكون عادة ما تكون ناجمة عن أخطاء في التحليل أو التصميم أو التنفيذ؟",
     "options": [
-      "مكون الأجهزة",
       "مكون البرمجيات",
+      "مكون الأجهزة",
       "المكون البشري",
       "المكون البيئي"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 0,
     "explanation": "وفقاً لمحاضرة المحاضرة 1 في هندسة البرمجيات: مكون البرمجيات",
     "difficulty": "easy",
     "status": "published",
@@ -2993,8 +2993,8 @@
     "questionAr": "الأعطال في أي مكون عادة ما تكون ناجمة عن أخطاء في التحليل أو التصميم أو التنفيذ؟",
     "questionEn": "Failures in which component are usually caused by errors in analysis, design, or implementation?",
     "optionsEn": [
-      "Hardware component",
       "Software component",
+      "Hardware component",
       "Human component",
       "Environmental component"
     ]
@@ -3006,12 +3006,12 @@
     "type": "multiple_choice",
     "question": "أي نوع من الأعطال يحدث عندما لا يعمل مشغلو النظام على النظام بشكل صحيح بسبب قلة الخبرة؟",
     "options": [
-      "عطل مكون البرمجيات",
       "عطل مكون الأجهزة",
-      "عطل المكون البشري",
-      "عطل الأمان"
+      "عطل الأمان",
+      "عطل مكون البرمجيات",
+      "عطل المكون البشري"
     ],
-    "correctAnswer": 2,
+    "correctAnswer": 3,
     "explanation": "وفقاً لمحاضرة المحاضرة 1 في هندسة البرمجيات: عطل المكون البشري",
     "difficulty": "medium",
     "status": "published",
@@ -3026,10 +3026,10 @@
     "questionAr": "أي نوع من الأعطال يحدث عندما لا يعمل مشغلو النظام على النظام بشكل صحيح بسبب قلة الخبرة؟",
     "questionEn": "Which type of failure occurs when system operators do not operate the system correctly due to inexperience?",
     "optionsEn": [
-      "Software component failure",
       "Hardware component failure",
-      "Human component failure",
-      "Security failure"
+      "Security failure",
+      "Software component failure",
+      "Human component failure"
     ]
   },
   {
@@ -3039,12 +3039,12 @@
     "type": "multiple_choice",
     "question": "أي بُعد من أبعاد موثوقية النظام يشير إلى قدرة النظام على تقديم الخدمات عند الطلب؟",
     "options": [
-      "الموثوقية",
       "التوفر",
       "السلامة",
+      "الموثوقية",
       "الأمان"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 0,
     "explanation": "وفقاً لمحاضرة المحاضرة 1 في هندسة البرمجيات: التوفر",
     "difficulty": "hard",
     "status": "published",
@@ -3059,9 +3059,9 @@
     "questionAr": "أي بُعد من أبعاد موثوقية النظام يشير إلى قدرة النظام على تقديم الخدمات عند الطلب؟",
     "questionEn": "Which dimension of system reliability refers to the system's ability to provide services whenever requested?",
     "optionsEn": [
-      "Reliability",
       "Availability",
       "Safety",
+      "Reliability",
       "Security"
     ]
   },
@@ -3072,12 +3072,12 @@
     "type": "multiple_choice",
     "question": "أي بُعد يشير إلى احتمال أن يقدم النظام خدماته المتوقعة بشكل صحيح ضمن إطار زمني محدد؟",
     "options": [
-      "السلامة",
-      "الأمان",
+      "التوفر",
       "الموثوقية",
-      "التوفر"
+      "السلامة",
+      "الأمان"
     ],
-    "correctAnswer": 2,
+    "correctAnswer": 1,
     "explanation": "وفقاً لمحاضرة المحاضرة 1 في هندسة البرمجيات: الموثوقية",
     "difficulty": "medium",
     "status": "published",
@@ -3092,10 +3092,10 @@
     "questionAr": "أي بُعد يشير إلى احتمال أن يقدم النظام خدماته المتوقعة بشكل صحيح ضمن إطار زمني محدد؟",
     "questionEn": "Which dimension refers to the probability that the system delivers its expected services correctly within a specific time frame?",
     "optionsEn": [
-      "Safety",
-      "Security",
+      "Availability",
       "Reliability",
-      "Availability"
+      "Safety",
+      "Security"
     ]
   },
   {
@@ -3105,12 +3105,12 @@
     "type": "multiple_choice",
     "question": "أي بُعد يقيس احتمالية أن يتسبب النظام في ضرر للبشر أو البيئة؟",
     "options": [
+      "التوفر",
       "الأمان",
-      "السلامة",
       "الموثوقية",
-      "التوفر"
+      "السلامة"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "explanation": "وفقاً لمحاضرة المحاضرة 1 في هندسة البرمجيات: السلامة",
     "difficulty": "easy",
     "status": "published",
@@ -3125,10 +3125,10 @@
     "questionAr": "أي بُعد يقيس احتمالية أن يتسبب النظام في ضرر للبشر أو البيئة؟",
     "questionEn": "Which dimension measures the likelihood that the system could cause harm to humans or the environment?",
     "optionsEn": [
+      "Availability",
       "Security",
-      "Safety",
       "Reliability",
-      "Availability"
+      "Safety"
     ]
   },
   {
@@ -3171,10 +3171,10 @@
     "type": "multiple_choice",
     "question": "هل موثوقية النظام وفائدته دائماً متماثلتان؟",
     "options": [
-      "نعم، هما متطابقان",
+      "فقط لأنظمة الذكاء الاصطناعي",
       "لا، يمكن أن يكون النظام مفيدًا حتى لو لم يكن موثوقًا للغاية",
-      "فقط لأنظمة الأجهزة",
-      "فقط لأنظمة الذكاء الاصطناعي"
+      "نعم، هما متطابقان",
+      "فقط لأنظمة الأجهزة"
     ],
     "correctAnswer": 1,
     "explanation": "وفقاً لمحاضرة المحاضرة 1 في هندسة البرمجيات: لا، يمكن أن يكون النظام مفيدًا حتى لو لم يكن موثوقًا للغاية",
@@ -3191,10 +3191,10 @@
     "questionAr": "هل موثوقية النظام وفائدته دائماً متماثلتان؟",
     "questionEn": "Are system reliability and usefulness always the same?",
     "optionsEn": [
-      "Yes, they are identical",
+      "Only for AI systems",
       "No, a system can be useful even if it is not highly reliable",
-      "Only for hardware systems",
-      "Only for AI systems"
+      "Yes, they are identical",
+      "Only for hardware systems"
     ]
   },
   {
@@ -3204,12 +3204,12 @@
     "type": "multiple_choice",
     "question": "ما المثال الذي تم تقديمه لتوضيح نظام مفيد جدًا ولكنه ليس موثوقًا للغاية؟",
     "options": [
-      "متصفح الويب",
       "معالج النصوص",
-      "خادم قواعد البيانات",
-      "نظام التشغيل"
+      "نظام التشغيل",
+      "متصفح الويب",
+      "خادم قواعد البيانات"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 0,
     "explanation": "وفقاً لمحاضرة المحاضرة 1 في هندسة البرمجيات: معالج النصوص",
     "difficulty": "medium",
     "status": "published",
@@ -3224,10 +3224,10 @@
     "questionAr": "ما المثال الذي تم تقديمه لتوضيح نظام مفيد جدًا ولكنه ليس موثوقًا للغاية؟",
     "questionEn": "What example is given to illustrate a system that is very useful but not highly reliable?",
     "optionsEn": [
-      "Web browser",
       "Word processor",
-      "Database server",
-      "Operating system"
+      "Operating system",
+      "Web browser",
+      "Database server"
     ]
   },
   {
@@ -3237,12 +3237,12 @@
     "type": "multiple_choice",
     "question": "كيف يعوض المستخدمون عن نقص الموثوقية في نظام مفيد مثل معالج النصوص؟",
     "options": [
-      "بتجاهل الأخطاء",
-      "باستخدامه بشكل متكرر والحفاظ على العديد من النسخ الاحتياطية",
       "باستبداله بنظام آخر",
-      "بتقليل ميزاته"
+      "بتقليل ميزاته",
+      "باستخدامه بشكل متكرر والحفاظ على العديد من النسخ الاحتياطية",
+      "بتجاهل الأخطاء"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 2,
     "explanation": "وفقاً لمحاضرة المحاضرة 1 في هندسة البرمجيات: باستخدامه بشكل متكرر والحفاظ على العديد من النسخ الاحتياطية",
     "difficulty": "hard",
     "status": "published",
@@ -3257,10 +3257,10 @@
     "questionAr": "كيف يعوض المستخدمون عن نقص الموثوقية في نظام مفيد مثل معالج النصوص؟",
     "questionEn": "How do users compensate for the lack of reliability in a useful system like a word processor?",
     "optionsEn": [
-      "By ignoring errors",
-      "By frequent use and maintaining many backups",
       "By replacing it with another system",
-      "By reducing its features"
+      "By reducing its features",
+      "By frequent use and maintaining many backups",
+      "By ignoring errors"
     ]
   },
   {
@@ -3270,12 +3270,12 @@
     "type": "multiple_choice",
     "question": "أي خاصية تشير إلى مدى سرعة وبساطة إصلاح النظام بعد الفشل؟",
     "options": [
-      "الصيانة السهلة",
-      "الإصلاح السهل",
       "التسامح مع الأخطاء",
-      "القدرة على البقاء"
+      "القدرة على البقاء",
+      "الإصلاح السهل",
+      "الصيانة السهلة"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 2,
     "explanation": "وفقاً لمحاضرة المحاضرة 1 في هندسة البرمجيات: الإصلاح السهل",
     "difficulty": "medium",
     "status": "published",
@@ -3290,10 +3290,10 @@
     "questionAr": "أي خاصية تشير إلى مدى سرعة وبساطة إصلاح النظام بعد الفشل؟",
     "questionEn": "Which characteristic refers to how quickly and simply a system can be fixed after failure?",
     "optionsEn": [
-      "Easy maintenance",
-      "Easy to repair",
       "Tolerance for errors",
-      "Ability to survive"
+      "Ability to survive",
+      "Easy to repair",
+      "Easy maintenance"
     ]
   },
   {
@@ -3303,12 +3303,12 @@
     "type": "multiple_choice",
     "question": "أي خاصية تركز على تبسيط الصيانة الروتينية والتحديثات للنظام؟",
     "options": [
-      "التسامح مع الأخطاء",
-      "الصيانة السهلة",
       "القدرة على البقاء",
-      "الإصلاح السهل"
+      "الإصلاح السهل",
+      "التسامح مع الأخطاء",
+      "الصيانة السهلة"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "explanation": "وفقاً لمحاضرة المحاضرة 1 في هندسة البرمجيات: الصيانة السهلة",
     "difficulty": "easy",
     "status": "published",
@@ -3323,10 +3323,10 @@
     "questionAr": "أي خاصية تركز على تبسيط الصيانة الروتينية والتحديثات للنظام؟",
     "questionEn": "Which characteristic focuses on simplifying routine upkeep and updates of the system?",
     "optionsEn": [
-      "Tolerance for errors",
-      "Easy maintenance",
       "Ability to survive",
-      "Easy to repair"
+      "Easy to repair",
+      "Tolerance for errors",
+      "Easy maintenance"
     ]
   },
   {
@@ -3338,12 +3338,12 @@
     "questionEn": "A ...... is/are nonmalicious program error(s)",
     "type": "multiple_choice",
     "options": [
-      "التضمين الأمني",
-      "هجوم السلامي",
       "التوسط غير الكامل",
-      "أ و ج"
+      "التضمين الأمني",
+      "أ و ج",
+      "هجوم السلامي"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 2,
     "explanation": "إجابة مؤكدة: أ و ج",
     "difficulty": "hard",
     "source": {
@@ -3353,10 +3353,10 @@
     },
     "questionAr": "...... هو/هي خطأ (أخطاء) برمجية غير خبيثة",
     "optionsEn": [
-      "Security implication",
-      "Salami attack",
       "Incomplete mediation",
-      "A and C"
+      "Security implication",
+      "A and C",
+      "Salami attack"
     ]
   },
   {
@@ -3368,12 +3368,12 @@
     "questionEn": "...... is a spoofing attack in which all or part of a web page is false",
     "type": "multiple_choice",
     "options": [
-      "قناة خفية",
-      "باب خلفي",
       "وهم الواجهة",
+      "باب خلفي",
+      "قناة خفية",
       "كل ما سبق خطأ"
     ],
-    "correctAnswer": 2,
+    "correctAnswer": 0,
     "explanation": "إجابة مؤكدة: وهم الواجهة",
     "difficulty": "hard",
     "source": {
@@ -3383,9 +3383,9 @@
     },
     "questionAr": "...... هو هجوم انتحال يتم فيه جعل كل أو جزء من صفحة الويب مزيفًا",
     "optionsEn": [
-      "hidden channel",
-      "Back door",
       "They are the facade",
+      "Back door",
+      "hidden channel",
       "All of the above is wrong"
     ]
   },
@@ -3398,12 +3398,12 @@
     "questionEn": "...... is desirable because developers cannot easily and maliciously alter the components of others if they do not know how the components work",
     "type": "multiple_choice",
     "options": [
-      "التغليف",
       "التعديلية",
       "الاقتران",
-      "إخفاء المعلومات"
+      "إخفاء المعلومات",
+      "التغليف"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 2,
     "explanation": "إجابة مؤكدة: إخفاء المعلومات",
     "difficulty": "hard",
     "source": {
@@ -3413,10 +3413,10 @@
     },
     "questionAr": "...... مرغوب فيه لأن المطورين لا يمكنهم بسهولة وبشكل خبيث تغيير مكونات الآخرين إذا لم يعرفوا كيفية عمل المكونات",
     "optionsEn": [
-      "Encapsulation",
       "Modularity",
       "Coupling",
-      "Information hiding"
+      "Information hiding",
+      "Encapsulation"
     ]
   },
   {
@@ -3430,10 +3430,10 @@
     "options": [
       "التغليف",
       "التعديلية",
-      "الاقتران",
-      "إخفاء المعلومات"
+      "إخفاء المعلومات",
+      "الاقتران"
     ],
-    "correctAnswer": 2,
+    "correctAnswer": 3,
     "explanation": "إجابة مؤكدة: الاقتران",
     "difficulty": "hard",
     "source": {
@@ -3445,8 +3445,8 @@
     "optionsEn": [
       "Packaging",
       "Revisionism",
-      "Pairing",
-      "Hiding information"
+      "Hiding information",
+      "Pairing"
     ]
   },
   {
@@ -3458,12 +3458,12 @@
     "questionEn": "A passphrases can be used for ……",
     "type": "multiple_choice",
     "options": [
-      "المصادقة بما تمتلك",
       "المصادقة بما أنت عليه",
       "التعريف البيولوجي",
-      "المصادقة بما تعرفه"
+      "المصادقة بما تعرفه",
+      "المصادقة بما تمتلك"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 2,
     "explanation": "إجابة مؤكدة: المصادقة بما تعرفه",
     "difficulty": "hard",
     "source": {
@@ -3473,10 +3473,10 @@
     },
     "questionAr": "يمكن استخدام عبارات المرور لـ ......",
     "optionsEn": [
-      "Validate what you have",
       "Validation of who you are",
       "Biological definition",
-      "Validate what you know"
+      "Validate what you know",
+      "Validate what you have"
     ]
   },
   {
@@ -3488,12 +3488,12 @@
     "questionEn": "The pattern of a person's voice can be used for ………",
     "type": "multiple_choice",
     "options": [
+      "التعريف البيولوجي",
       "المصادقة بما تمتلك",
       "المصادقة بما أنت عليه",
-      "التعريف البيولوجي",
       "المصادقة بما تعرفه"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 2,
     "explanation": "إجابة مؤكدة: المصادقة بما أنت عليه",
     "difficulty": "hard",
     "source": {
@@ -3503,9 +3503,9 @@
     },
     "questionAr": "يمكن استخدام نمط صوت الشخص لـ ......",
     "optionsEn": [
+      "Biological definition",
       "Validate what you have",
       "Validation of who you are",
-      "Biological definition",
       "Validate what you know"
     ]
   },
@@ -3519,9 +3519,9 @@
     "type": "multiple_choice",
     "options": [
       "المصادقة بما تمتلك",
+      "المصادقة بما تعرفه",
       "المصادقة بما أنت عليه",
-      "التعريف البيولوجي",
-      "المصادقة بما تعرفه"
+      "التعريف البيولوجي"
     ],
     "correctAnswer": 0,
     "explanation": "إجابة مؤكدة: المصادقة بما تمتلك",
@@ -3534,9 +3534,9 @@
     "questionAr": "يمكن استخدام بطاقات الهوية لـ ......",
     "optionsEn": [
       "Validate what you have",
+      "Validate what you know",
       "Validation of who you are",
-      "Biological definition",
-      "Validate what you know"
+      "Biological definition"
     ]
   },
   {
@@ -3548,11 +3548,11 @@
     "questionEn": "A bank card and a PIN combine two forms of authentication, ……",
     "type": "multiple_choice",
     "options": [
-      "شيء يمتلكه المستخدم مع شيء يكونه المستخدم",
+      "شيء يمتلكه المستخدم مع شيء يعرفه المستخدم",
       "شيء يكونه المستخدم مع شيء يعرفه المستخدم",
-      "شيء يمتلكه المستخدم مع شيء يعرفه المستخدم"
+      "شيء يمتلكه المستخدم مع شيء يكونه المستخدم"
     ],
-    "correctAnswer": 2,
+    "correctAnswer": 0,
     "explanation": "إجابة مؤكدة: شيء يمتلكه المستخدم مع شيء يعرفه المستخدم",
     "difficulty": "hard",
     "source": {
@@ -3562,9 +3562,9 @@
     },
     "questionAr": "بطاقة البنك ورمز PIN يجمعان بين شكلي مصادقة، ......",
     "optionsEn": [
-      "Something the user has along with something the user is",
+      "Something the user has along with something the user knows",
       "Something the user is with something the user knows",
-      "Something the user has along with something the user knows"
+      "Something the user has along with something the user is"
     ]
   },
   {
@@ -3576,12 +3576,12 @@
     "questionEn": "What type of control is intended to offset deficiencies of other controls?",
     "type": "multiple_choice",
     "options": [
-      "وقائي",
-      "دفاعي",
       "تعويضي",
-      "استرداد"
+      "دفاعي",
+      "استرداد",
+      "وقائي"
     ],
-    "correctAnswer": 2,
+    "correctAnswer": 0,
     "explanation": "إجابة مؤكدة: تعويضي",
     "difficulty": "hard",
     "source": {
@@ -3591,10 +3591,10 @@
     },
     "questionAr": "ما نوع التحكم الذي يهدف إلى تعويض أوجه القصور في الضوابط الأخرى؟",
     "optionsEn": [
-      "Preventive",
-      "Defensive",
       "Compensatory",
-      "refund"
+      "Defensive",
+      "refund",
+      "Preventive"
     ]
   },
   {
@@ -3606,12 +3606,12 @@
     "questionEn": "What is strong authentication?",
     "type": "multiple_choice",
     "options": [
-      "تستخدم المصادقة القوية كلمات مرور طويلة",
-      "تتطلب المصادقة القوية بطاقات ذكية",
       "تتطلب المصادقة القوية استخدام طريقتين مختلفتين على الأقل للمصادقة",
-      "يتم توفير المصادقة القوية عبر القياسات الحيوية"
+      "يتم توفير المصادقة القوية عبر القياسات الحيوية",
+      "تتطلب المصادقة القوية بطاقات ذكية",
+      "تستخدم المصادقة القوية كلمات مرور طويلة"
     ],
-    "correctAnswer": 2,
+    "correctAnswer": 0,
     "explanation": "إجابة مؤكدة: تتطلب المصادقة القوية استخدام طريقتين مختلفتين على الأقل للمصادقة",
     "difficulty": "hard",
     "source": {
@@ -3621,10 +3621,10 @@
     },
     "questionAr": "ما هي المصادقة القوية؟",
     "optionsEn": [
-      "Strong authentication uses long passwords",
-      "Strong authentication requires smart cards",
       "Strong authentication requires the use of at least two different authentication methods",
-      "Strong authentication is provided via biometrics"
+      "Strong authentication is provided via biometrics",
+      "Strong authentication requires smart cards",
+      "Strong authentication uses long passwords"
     ]
   },
   {
@@ -3636,12 +3636,12 @@
     "questionEn": "The principle of isolating process spaces from each other is known as ……….",
     "type": "multiple_choice",
     "options": [
-      "التvirtualization",
-      "الفصل",
       "الدفاع في العمق",
-      "التقسيم"
+      "التقسيم",
+      "الفصل",
+      "التvirtualization"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "explanation": "إجابة مؤكدة: التقسيم",
     "difficulty": "hard",
     "source": {
@@ -3651,10 +3651,10 @@
     },
     "questionAr": "مبدأ عزل مساحات العمليات عن بعضها البعض يعرف باسم ......",
     "optionsEn": [
-      "virtualization",
-      "Chapter",
       "Defense in depth",
-      "Partition"
+      "Partition",
+      "Chapter",
+      "virtualization"
     ]
   },
   {
@@ -3666,9 +3666,9 @@
     "questionEn": "Surveys show that most organizations are at which level of the information security maturity model?",
     "type": "multiple_choice",
     "options": [
-      "غير موجود",
-      "محدد",
       "كاشف",
+      "محدد",
+      "غير موجود",
       "مقبول"
     ],
     "correctAnswer": 1,
@@ -3681,9 +3681,9 @@
     },
     "questionAr": "تظهر الاستطلاعات أن معظم المنظمات في أي مستوى من نموذج نضج أمن المعلومات؟",
     "optionsEn": [
-      "Not found",
-      "Specific",
       "detector",
+      "Specific",
+      "Not found",
       "Accepted"
     ]
   },
@@ -3696,12 +3696,12 @@
     "questionEn": "Privacy is a concern in which of the following industries:",
     "type": "multiple_choice",
     "options": [
-      "الخدمات المالية",
       "الخدمات المالية والحكومة",
-      "الاتصالات",
-      "كل ما سبق"
+      "كل ما سبق",
+      "الخدمات المالية",
+      "الاتصالات"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "explanation": "إجابة مؤكدة: كل ما سبق",
     "difficulty": "hard",
     "source": {
@@ -3711,10 +3711,10 @@
     },
     "questionAr": "الخصوصية مصدر قلق في أي من الصناعات التالية:",
     "optionsEn": [
-      "Financial services",
       "Financial services and government",
-      "Communications",
-      "All of the above"
+      "All of the above",
+      "Financial services",
+      "Communications"
     ]
   },
   {
@@ -3726,12 +3726,12 @@
     "questionEn": "What is assurance?",
     "type": "multiple_choice",
     "options": [
-      "إنه نوع من التأمين ضد الانتهاكات الأمنية",
       "إنها سياسة الأمن المكتوبة",
-      "إنها تتعلق بجدارة النظام بالثقة",
-      "يتم توفيرها من خلال التحكم الإلزامي في الوصول (MAC)"
+      "يتم توفيرها من خلال التحكم الإلزامي في الوصول (MAC)",
+      "إنه نوع من التأمين ضد الانتهاكات الأمنية",
+      "إنها تتعلق بجدارة النظام بالثقة"
     ],
-    "correctAnswer": 2,
+    "correctAnswer": 3,
     "explanation": "إجابة مؤكدة: إنها تتعلق بجدارة النظام بالثقة",
     "difficulty": "hard",
     "source": {
@@ -3741,10 +3741,10 @@
     },
     "questionAr": "ما هي الضمانات؟",
     "optionsEn": [
-      "It is a kind of insurance against security breaches",
       "It is a written security policy",
-      "It's about the trustworthiness of the system",
-      "MAC"
+      "MAC",
+      "It is a kind of insurance against security breaches",
+      "It's about the trustworthiness of the system"
     ]
   },
   {
@@ -3756,12 +3756,12 @@
     "questionEn": "Information security policies and procedures are a(n) ……….",
     "type": "multiple_choice",
     "options": [
-      "تحكم تقني",
       "تحكم إداري",
       "شكل من أشكال التحكم في الوصول",
-      "تحكم تشغيلي"
+      "تحكم تشغيلي",
+      "تحكم تقني"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 0,
     "explanation": "إجابة مؤكدة: تحكم إداري",
     "difficulty": "hard",
     "source": {
@@ -3771,10 +3771,10 @@
     },
     "questionAr": "سياسات وإجراءات أمن المعلومات هي ......",
     "optionsEn": [
-      "Technical control",
       "Administrative control",
       "A form of access control",
-      "Operational control"
+      "Operational control",
+      "Technical control"
     ]
   },
   {
@@ -3786,12 +3786,12 @@
     "questionEn": "What is the purpose of authentication?",
     "type": "multiple_choice",
     "options": [
-      "للحصول على دليل على الهوية المطالب بها",
       "للسماح باستخدام تفويضات مختلفة",
-      "لإنشاء المساءلة",
-      "لتنفيذ التحكم في الوصول"
+      "لتنفيذ التحكم في الوصول",
+      "للحصول على دليل على الهوية المطالب بها",
+      "لإنشاء المساءلة"
     ],
-    "correctAnswer": 0,
+    "correctAnswer": 2,
     "explanation": "إجابة مؤكدة: للحصول على دليل على الهوية المطالب بها",
     "difficulty": "hard",
     "source": {
@@ -3801,10 +3801,10 @@
     },
     "questionAr": "ما هو الغرض من المصادقة؟",
     "optionsEn": [
-      "To obtain proof of the claimed identity",
       "To allow the use of different authorizations",
-      "To create accountability",
-      "To implement access control"
+      "To implement access control",
+      "To obtain proof of the claimed identity",
+      "To create accountability"
     ]
   },
   {
@@ -3817,11 +3817,11 @@
     "type": "multiple_choice",
     "options": [
       "انتشار عالي للخطأ",
-      "سرعة التحويل",
       "انتشار عالي",
+      "سرعة التحويل",
       "كل ما سبق صحيح"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 2,
     "explanation": "إجابة مؤكدة: سرعة التحويل",
     "difficulty": "hard",
     "source": {
@@ -3832,8 +3832,8 @@
     "questionAr": "بعض مزايا تشفير الدفق هي ......",
     "optionsEn": [
       "High error propagation",
-      "Conversion speed",
       "High spread",
+      "Conversion speed",
       "All of the above is true"
     ]
   },
@@ -3846,12 +3846,12 @@
     "questionEn": "Some an advantage of a block cipher is ……….",
     "type": "multiple_choice",
     "options": [
-      "انتشار عالي",
-      "مناعة ضد إدخال الرموز",
+      "سرعة تحويل عالية",
       "أ و ب",
-      "سرعة تحويل عالية"
+      "انتشار عالي",
+      "مناعة ضد إدخال الرموز"
     ],
-    "correctAnswer": 2,
+    "correctAnswer": 1,
     "explanation": "إجابة مؤكدة: أ و ب",
     "difficulty": "hard",
     "source": {
@@ -3861,10 +3861,10 @@
     },
     "questionAr": "بعض مزايا تشفير الكتلة هي ......",
     "optionsEn": [
-      "High spread",
-      "Immunity to entering codes",
+      "High conversion speed",
       "A and B",
-      "High conversion speed"
+      "High spread",
+      "Immunity to entering codes"
     ]
   },
   {
@@ -3876,12 +3876,12 @@
     "questionEn": "In performing some software activity, the error may lead to a ......",
     "type": "multiple_choice",
     "options": [
-      "خطأ، خطوة غير صحيحة، أمر",
-      "عملية وتعريف البيانات في برنامج كمبيوتر",
       "فشل",
-      "أ و ب"
+      "أ و ب",
+      "خطأ، خطوة غير صحيحة، أمر",
+      "عملية وتعريف البيانات في برنامج كمبيوتر"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "explanation": "إجابة مؤكدة: أ و ب",
     "difficulty": "hard",
     "source": {
@@ -3891,10 +3891,10 @@
     },
     "questionAr": "عند تنفيذ بعض نشاط البرنامج، قد يؤدي الخطأ إلى ......",
     "optionsEn": [
-      "Error, incorrect step, command",
-      "The process and definition of data in a computer program",
       "Failed",
-      "A and B"
+      "A and B",
+      "Error, incorrect step, command",
+      "The process and definition of data in a computer program"
     ]
   },
   {
@@ -3936,12 +3936,12 @@
     "questionEn": "When a more faults were discovered and fixed in the system is better than when a few faults were discovered and fixed. That mean a ......",
     "type": "multiple_choice",
     "options": [
+      "ب و ج",
       "تصميم النظام جيد",
-      "يتم إجراء تحليل واختبار أكثر صرامة",
       "تصميم النظام ليس جيدًا",
-      "ب و ج"
+      "يتم إجراء تحليل واختبار أكثر صرامة"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 0,
     "explanation": "إجابة مؤكدة: ب و ج",
     "difficulty": "hard",
     "source": {
@@ -3951,10 +3951,10 @@
     },
     "questionAr": "عندما يتم اكتشاف المزيد من الأخطاء وإصلاحها في النظام أفضل من عندما يتم اكتشاف أخطاء قليلة وإصلاحها. هذا يعني ......",
     "optionsEn": [
+      "B and C",
       "System design is good",
-      "More stringent analysis and testing are performed",
       "The system design is not good",
-      "B and C"
+      "More stringent analysis and testing are performed"
     ]
   },
   {
@@ -3998,10 +3998,10 @@
     "options": [
       "الوصول إلى النظام",
       "تغيير البيانات",
-      "تغيير البرامج",
-      "كل ما سبق صحيح"
+      "كل ما سبق صحيح",
+      "تغيير البرامج"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 2,
     "explanation": "إجابة مؤكدة: كل ما سبق صحيح",
     "difficulty": "hard",
     "source": {
@@ -4013,8 +4013,8 @@
     "optionsEn": [
       "Access to the system",
       "Change data",
-      "Change programs",
-      "All of the above is true"
+      "All of the above is true",
+      "Change programs"
     ]
   },
   {
@@ -4026,12 +4026,12 @@
     "questionEn": "virus can ...... to cause an append to data",
     "type": "multiple_choice",
     "options": [
+      "نشر العدوى",
       "إرفاق ببرنامج قابل للتنفيذ",
       "إرفاق ببيانات أو ملف تحكم",
-      "إصابة الأقراص",
-      "نشر العدوى"
+      "إصابة الأقراص"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 0,
     "explanation": "إجابة مؤكدة: نشر العدوى",
     "difficulty": "hard",
     "source": {
@@ -4041,10 +4041,10 @@
     },
     "questionAr": "يمكن للفيروس ...... للتسبب في إلحاق البيانات",
     "optionsEn": [
+      "Spreading the infection",
       "Attach to an executable program",
       "Attach to a data or control file",
-      "Disk injury",
-      "Spreading the infection"
+      "Disk injury"
     ]
   },
   {
@@ -4056,12 +4056,12 @@
     "questionEn": "A ...... is/are nonmalicious program error(s)",
     "type": "multiple_choice",
     "options": [
-      "هجوم السلامي",
-      "فيضان المخزن المؤقت",
       "حصان طروادة",
-      "ب و ج"
+      "ب و ج",
+      "هجوم السلامي",
+      "فيضان المخزن المؤقت"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "explanation": "إجابة مؤكدة: فيضان المخزن المؤقت",
     "difficulty": "hard",
     "source": {
@@ -4071,10 +4071,10 @@
     },
     "questionAr": "...... هو/هي خطأ (أخطاء) برمجية غير خبيثة",
     "optionsEn": [
-      "Salami attack",
-      "Buffer overflow",
       "Trojan horse",
-      "B and C"
+      "B and C",
+      "Salami attack",
+      "Buffer overflow"
     ]
   },
   {
@@ -4086,12 +4086,12 @@
     "questionEn": "In the inadvertent flaws, the flaw that result from serialization and aliasing is a ......",
     "type": "multiple_choice",
     "options": [
-      "أساس للتفويض",
-      "فحوصات الإذن",
       "ترتيب تدفق البرنامج",
-      "التحكم في الوصول إلى البيانات"
+      "أساس للتفويض",
+      "التحكم في الوصول إلى البيانات",
+      "فحوصات الإذن"
     ],
-    "correctAnswer": 2,
+    "correctAnswer": 0,
     "explanation": "إجابة مؤكدة: ترتيب تدفق البرنامج",
     "difficulty": "hard",
     "source": {
@@ -4101,10 +4101,10 @@
     },
     "questionAr": "في العيوب غير المقصودة، العيب الناتج عن التسلسل والتسمية هو ......",
     "optionsEn": [
-      "Basis for delegation",
-      "Permission checks",
       "Program flow arrangement",
-      "Data access control"
+      "Basis for delegation",
+      "Data access control",
+      "Permission checks"
     ]
   },
   {
@@ -4116,12 +4116,12 @@
     "questionEn": "In the ......, the object list shows all subjects who should have access to the object & what their access is",
     "type": "multiple_choice",
     "options": [
-      "قائمة التحكم في الوصول",
+      "القدرة",
       "الدليل",
-      "مصفوفة التحكم في الوصول",
-      "القدرة"
+      "قائمة التحكم في الوصول",
+      "مصفوفة التحكم في الوصول"
     ],
-    "correctAnswer": 2,
+    "correctAnswer": 3,
     "explanation": "إجابة مؤكدة: مصفوفة التحكم في الوصول",
     "difficulty": "hard",
     "source": {
@@ -4131,10 +4131,10 @@
     },
     "questionAr": "في ......، تظهر قائمة الكائنات جميع الموضوعات التي يجب أن يكون لها حق الوصول إلى الكائن وما هو وصولهم",
     "optionsEn": [
-      "Access control list",
+      "Capacity",
       "The evidence",
-      "Access control matrix",
-      "Capacity"
+      "Access control list",
+      "Access control matrix"
     ]
   },
   {
@@ -4146,12 +4146,12 @@
     "questionEn": "A ...... is an unforgeable token that gives the possessor certain rights to an object",
     "type": "multiple_choice",
     "options": [
-      "التحكم في الوصول القائم على الدور",
       "القدرة",
+      "التحكم في الوصول القائم على الدور",
       "التحكم في الوصول الموجه للإجراءات",
       "كل ما سبق صحيح"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 0,
     "explanation": "إجابة مؤكدة: القدرة",
     "difficulty": "hard",
     "source": {
@@ -4161,8 +4161,8 @@
     },
     "questionAr": "...... هو رمز غير قابل للتزوير يمنح حامله حقوقًا معينة لكائن",
     "optionsEn": [
-      "Role-based access control",
       "Capacity",
+      "Role-based access control",
       "Procedure-oriented access control",
       "All of the above is true"
     ]
@@ -4176,10 +4176,10 @@
     "questionEn": "In the access control list, ......",
     "type": "multiple_choice",
     "options": [
+      "كل ما سبق خطأ",
       "يتم إنشاء دليل لكل موضوع",
-      "يتم إنشاء دليل لكل كائن",
       "هناك قائمة تحكم وصول واحدة لكل كائن",
-      "كل ما سبق خطأ"
+      "يتم إنشاء دليل لكل كائن"
     ],
     "correctAnswer": 2,
     "explanation": "إجابة مؤكدة: هناك قائمة تحكم وصول واحدة لكل كائن",
@@ -4191,10 +4191,10 @@
     },
     "questionAr": "في قائمة التحكم في الوصول، ......",
     "optionsEn": [
+      "All of the above is wrong",
       "A guide is created for each topic",
-      "A directory is created for each object",
       "There is one access control list for each object",
-      "All of the above is wrong"
+      "A directory is created for each object"
     ]
   },
   {
@@ -4208,8 +4208,8 @@
     "options": [
       "كل موضوع",
       "كل كائن",
-      "قائمة تحكم وصول واحدة لكل كائن",
-      "قوائم تحكم وصول مختلفة لكل موضوع"
+      "قوائم تحكم وصول مختلفة لكل موضوع",
+      "قائمة تحكم وصول واحدة لكل كائن"
     ],
     "correctAnswer": 0,
     "explanation": "إجابة مؤكدة: كل موضوع",
@@ -4223,8 +4223,8 @@
     "optionsEn": [
       "Every topic",
       "Every being",
-      "One access control list per object",
-      "Different access control lists for each theme"
+      "Different access control lists for each theme",
+      "One access control list per object"
     ]
   },
   {
@@ -4236,9 +4236,9 @@
     "questionEn": "Capability can be created only by a specific request from a user to the ......",
     "type": "multiple_choice",
     "options": [
-      "مركز توزيع المفاتيح",
-      "نظام التشغيل",
       "كيربيروس",
+      "نظام التشغيل",
+      "مركز توزيع المفاتيح",
       "أ و ب"
     ],
     "correctAnswer": 3,
@@ -4251,9 +4251,9 @@
     },
     "questionAr": "يمكن إنشاء القدرة فقط عن طريق طلب محدد من مستخدم إلى ......",
     "optionsEn": [
-      "Key distribution center",
-      "Operating system",
       "Kerberos",
+      "Operating system",
+      "Key distribution center",
       "A and B"
     ]
   },
@@ -4266,12 +4266,12 @@
     "questionEn": "Inaccess control matrix is sparse, because most subjects ......",
     "type": "multiple_choice",
     "options": [
-      "لديهم حقوق وصول لمعظم الكائنات",
       "لديهم حقوق وصول لمركز توزيع المفاتيح",
       "ليس لديهم حقوق وصول لمعظم الكائنات",
-      "لديهم حقوق وصول لمركز توزيع المفاتيح"
+      "لديهم حقوق وصول لمركز توزيع المفاتيح",
+      "لديهم حقوق وصول لمعظم الكائنات"
     ],
-    "correctAnswer": 2,
+    "correctAnswer": 1,
     "explanation": "إجابة مؤكدة: ليس لديهم حقوق وصول لمعظم الكائنات",
     "difficulty": "hard",
     "source": {
@@ -4281,10 +4281,10 @@
     },
     "questionAr": "مصفوفة التحكم في الوصول متفرقة، لأن معظم الموضوعات ......",
     "optionsEn": [
-      "They have access rights to most objects",
       "They have access rights to the key distribution center",
       "They do not have access rights to most objects",
-      "They have access rights to the key distribution center"
+      "They have access rights to the key distribution center",
+      "They have access rights to most objects"
     ]
   },
   {
@@ -4296,8 +4296,8 @@
     "questionEn": "In ......, not allowing access to unnecessary objects guards against security weaknesses if a part of the protection mechanism should fail",
     "type": "multiple_choice",
     "options": [
-      "التحقق من الاستخدام المقبول",
       "فحص كل وصول",
+      "التحقق من الاستخدام المقبول",
       "فرض الامتياز الأدنى",
       "ليس كل ما سبق"
     ],
@@ -4311,8 +4311,8 @@
     },
     "questionAr": "في ......، عدم السماح بالوصول إلى الكائنات غير الضرورية يحمي من نقاط الضعف الأمنية إذا فشل جزء من آلية الحماية",
     "optionsEn": [
-      "Verify acceptable use",
       "Check every access",
+      "Verify acceptable use",
       "Enforce minimum privilege",
       "Not all of the above"
     ]
@@ -4326,12 +4326,12 @@
     "questionEn": "In ......, we may want not only to control who or what has access to object but also to be assured that the accesses performed are legitimate object accesses",
     "type": "multiple_choice",
     "options": [
-      "التحقق من الاستخدام المقبول",
       "فحص كل وصول",
-      "فرض الامتياز الأدنى",
-      "ليس كل ما سبق"
+      "التحقق من الاستخدام المقبول",
+      "ليس كل ما سبق",
+      "فرض الامتياز الأدنى"
     ],
-    "correctAnswer": 0,
+    "correctAnswer": 1,
     "explanation": "إجابة مؤكدة: التحقق من الاستخدام المقبول",
     "difficulty": "hard",
     "source": {
@@ -4341,10 +4341,10 @@
     },
     "questionAr": "في ......، قد نريد ليس فقط التحكم في من أو ما لديه حق الوصول إلى الكائن ولكن أيضًا التأكد من أن عمليات الوصول التي تم إجراؤها هي عمليات وصول شرعية للكائن",
     "optionsEn": [
-      "Verify acceptable use",
       "Check every access",
-      "Enforce minimum privilege",
-      "Not all of the above"
+      "Verify acceptable use",
+      "Not all of the above",
+      "Enforce minimum privilege"
     ]
   },
   {
@@ -4355,12 +4355,12 @@
     "question": "ما هو وكيل رد الفعل البسيط (Simple Reflex Agent)؟",
     "type": "multiple_choice",
     "options": [
-      "وكيل يختار أفعاله بناءً على المدرك الحالي فقط متجاهلاً تاريخ المدركات السابق عبر قواعد (condition-action)",
       "وكيل يحتفظ بنموذج داخلي للعالم",
       "وكيل يمتلك أهدافاً مستقبلية يسعى لتحقيقها",
-      "وكيل يتعلم من أخطائه السابقة"
+      "وكيل يتعلم من أخطائه السابقة",
+      "وكيل يختار أفعاله بناءً على المدرك الحالي فقط متجاهلاً تاريخ المدركات السابق عبر قواعد (condition-action)"
     ],
-    "correctAnswer": 0,
+    "correctAnswer": 3,
     "explanation": "Simple Reflex Agent acts only on the basis of the current percept, ignoring the history of percepts.",
     "difficulty": "hard",
     "source": {
@@ -4371,10 +4371,10 @@
     "questionAr": "ما هو وكيل رد الفعل البسيط (Simple Reflex Agent)؟",
     "questionEn": "Regarding Midterm Exam: What is the correct statement/concept?",
     "optionsEn": [
-      "condition-action",
       "An agent maintains an internal model of the world",
       "An agent has future goals that he seeks to achieve",
-      "An agent learns from his past mistakes"
+      "An agent learns from his past mistakes",
+      "condition-action"
     ]
   },
   {
@@ -4385,12 +4385,12 @@
     "question": "ما هو وكيل رد الفعل القائم على النموذج (Model-based Reflex Agent)؟",
     "type": "multiple_choice",
     "options": [
-      "وكيل يحتفظ بحالة داخلية (Internal State) لتتبع جوانب العالم التي لا يمكن رؤيتها حالياً",
       "وكيل لا يستخدم أي حساسات",
-      "وكيل يتخذ قرارات عشوائية تماماً",
-      "وكيل يعتمد على المنطق الضبابي فقط"
+      "وكيل يعتمد على المنطق الضبابي فقط",
+      "وكيل يحتفظ بحالة داخلية (Internal State) لتتبع جوانب العالم التي لا يمكن رؤيتها حالياً",
+      "وكيل يتخذ قرارات عشوائية تماماً"
     ],
-    "correctAnswer": 0,
+    "correctAnswer": 2,
     "explanation": "Model-based agent maintains internal state to handle partial observability.",
     "difficulty": "hard",
     "source": {
@@ -4401,10 +4401,10 @@
     "questionAr": "ما هو وكيل رد الفعل القائم على النموذج (Model-based Reflex Agent)؟",
     "questionEn": "Regarding Midterm Exam: What is the correct statement/concept?",
     "optionsEn": [
-      "Internal State",
       "An agent that does not use any sensors",
-      "An agent makes completely random decisions",
-      "An agent based only on fuzzy logic"
+      "An agent based only on fuzzy logic",
+      "Internal State",
+      "An agent makes completely random decisions"
     ]
   },
   {
@@ -4415,12 +4415,12 @@
     "question": "ما هو الفرق بين الخوارزمية الكاملة (Complete) والمثالية (Optimal) في البحث؟",
     "type": "multiple_choice",
     "options": [
-      "الكاملة تضمن إيجاد حل إذا كان موجوداً، والمثالية تضمن إيجاد الحل ذي التكلفة الأدنى بين جميع الحلول",
-      "الكاملة لا تنتهي أبداً والمثالية تنتهي سريعاً",
       "المثالية تخص المسائل الرياضية فقط",
-      "كلاهما مصطلحان يعبران عن نفس الشيء بالضبط"
+      "كلاهما مصطلحان يعبران عن نفس الشيء بالضبط",
+      "الكاملة تضمن إيجاد حل إذا كان موجوداً، والمثالية تضمن إيجاد الحل ذي التكلفة الأدنى بين جميع الحلول",
+      "الكاملة لا تنتهي أبداً والمثالية تنتهي سريعاً"
     ],
-    "correctAnswer": 0,
+    "correctAnswer": 2,
     "explanation": "Completeness: finds a solution if one exists. Optimality: finds the lowest-cost solution.",
     "difficulty": "hard",
     "source": {
@@ -4431,10 +4431,10 @@
     "questionAr": "ما هو الفرق بين الخوارزمية الكاملة (Complete) والمثالية (Optimal) في البحث؟",
     "questionEn": "Regarding Midterm Exam: What is the correct statement/concept?",
     "optionsEn": [
-      "Completeness guarantees finding a solution if it exists, and optimality guarantees finding the solution with the lowest cost among all solutions",
-      "Perfection never ends and perfectionism ends quickly",
       "Idealism concerns mathematical problems only",
-      "They are both terms that express exactly the same thing"
+      "They are both terms that express exactly the same thing",
+      "Completeness guarantees finding a solution if it exists, and optimality guarantees finding the solution with the lowest cost among all solutions",
+      "Perfection never ends and perfectionism ends quickly"
     ]
   },
   {
@@ -4446,9 +4446,9 @@
     "type": "multiple_choice",
     "options": [
       "الحد الأقصى لعدد العقد الفرعية المتفرعة من أي عقدة في الشجرة",
-      "عمق أضحل عقدة هدف",
+      "عدد الأهداف المتاحة",
       "طول أطول مسار في الشجرة",
-      "عدد الأهداف المتاحة"
+      "عمق أضحل عقدة هدف"
     ],
     "correctAnswer": 0,
     "explanation": "Branching factor (b) is the maximum number of successors of any node.",
@@ -4462,9 +4462,9 @@
     "questionEn": "Regarding Midterm Exam: What is the correct statement/concept?",
     "optionsEn": [
       "The maximum number of child nodes branching from any node in the tree",
-      "Shallowest target node depth",
+      "Number of targets available",
       "The length of the longest path in the tree",
-      "Number of targets available"
+      "Shallowest target node depth"
     ]
   },
   {
@@ -4475,12 +4475,12 @@
     "question": "ما هي الخوارزمية الكشفية التي تختار التوسع في العقدة الأقرب للهدف ظاهرياً بناءً على h(n) فقط؟",
     "type": "multiple_choice",
     "options": [
-      "البحث الجشع في أفضل أولاً (Greedy Best-First Search)",
-      "البحث بالعرض أولاً BFS",
+      "البحث بالعمق التكراري IDS",
       "خوارزمية A*",
-      "البحث بالعمق التكراري IDS"
+      "البحث بالعرض أولاً BFS",
+      "البحث الجشع في أفضل أولاً (Greedy Best-First Search)"
     ],
-    "correctAnswer": 0,
+    "correctAnswer": 3,
     "explanation": "Greedy best-first search expands the node that appears to be closest to the goal based on h(n).",
     "difficulty": "hard",
     "source": {
@@ -4491,10 +4491,10 @@
     "questionAr": "ما هي الخوارزمية الكشفية التي تختار التوسع في العقدة الأقرب للهدف ظاهرياً بناءً على h(n) فقط؟",
     "questionEn": "Regarding Midterm Exam: What is the correct statement/concept?",
     "optionsEn": [
-      "Greedy Best-First Search",
-      "Breadth-first search BFS",
+      "Iterative depth search (IDS).",
       "A* algorithm",
-      "Iterative depth search (IDS)."
+      "Breadth-first search BFS",
+      "Greedy Best-First Search"
     ]
   },
   {
@@ -4505,11 +4505,11 @@
     "type": "multiple_choice",
     "options": [
       "السعادة والرضا",
-      "الارتباك والإحباط",
       "الإثارة والتحفيز",
-      "الاسترخاء والهدوء"
+      "الاسترخاء والهدوء",
+      "الارتباك والإحباط"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "explanation": "من بنك أسئلة مادة تفاعل الإنسان والحاسوب الرسمي المعتمد.",
     "source": {
       "file": "185 Q from Bank HCI.JSON",
@@ -4519,9 +4519,9 @@
     "questionAr": "ما هي بعض الاستجابات النفسية النموذجية للتصميم السيئ؟",
     "optionsEn": [
       "Happiness and satisfaction",
-      "Confusion and frustration",
       "Excitement and motivation",
-      "Relaxation and calmness"
+      "Relaxation and calmness",
+      "Confusion and frustration"
     ],
     "midtermId": "hci-midterm-01"
   },
@@ -4532,12 +4532,12 @@
     "question": "أي مما يلي يعد رد فعل فيزيائيًا على التصميم السيئ؟",
     "type": "multiple_choice",
     "options": [
-      "رفض النظام",
-      "الاستخدام الجزئي للنظام",
       "تعديل المهمة",
-      "كل ما سبق"
+      "رفض النظام",
+      "كل ما سبق",
+      "الاستخدام الجزئي للنظام"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 2,
     "explanation": "من بنك أسئلة مادة تفاعل الإنسان والحاسوب الرسمي المعتمد.",
     "source": {
       "file": "185 Q from Bank HCI.JSON",
@@ -4546,10 +4546,10 @@
     "questionEn": "Which of the following is a physical reaction to poor design?",
     "questionAr": "أي مما يلي يعد رد فعل فيزيائيًا على التصميم السيئ؟",
     "optionsEn": [
-      "Rejection of the system",
-      "Partial use of the system",
       "Modification of the task",
-      "All of the above"
+      "Rejection of the system",
+      "All of the above",
+      "Partial use of the system"
     ],
     "midtermId": "hci-midterm-01"
   },
@@ -4560,12 +4560,12 @@
     "question": "ما هي الأهداف العملية لـ HCI؟",
     "type": "multiple_choice",
     "options": [
+      "التركيز على تصميم الأجهزة",
       "تطوير منتجات قابلة للاستخدام",
       "تحقيق المعرفة التقنية العالية",
-      "تقليل رضا المستخدم",
-      "التركيز على تصميم الأجهزة"
+      "تقليل رضا المستخدم"
     ],
-    "correctAnswer": 0,
+    "correctAnswer": 1,
     "explanation": "من بنك أسئلة مادة تفاعل الإنسان والحاسوب الرسمي المعتمد.",
     "source": {
       "file": "185 Q from Bank HCI.JSON",
@@ -4574,10 +4574,10 @@
     "questionEn": "What are the practical goals of HCI?",
     "questionAr": "ما هي الأهداف العملية لـ HCI؟",
     "optionsEn": [
+      "Focus on hardware design",
       "Develop usable products",
       "Achieve high technical knowledge",
-      "Minimize user satisfaction",
-      "Focus on hardware design"
+      "Minimize user satisfaction"
     ],
     "midtermId": "hci-midterm-01"
   },
@@ -4588,12 +4588,12 @@
     "question": "من هو متخصص HCI الذي يشارك في تقييم المنتجات باستخدام أساليب ومبادئ سهولة الاستخدام؟",
     "type": "multiple_choice",
     "options": [
-      "مصمم التفاعل",
-      "مهندس سهولة الاستخدام",
+      "مهندس المعلومات",
       "مصمم ويب",
-      "مهندس المعلومات"
+      "مهندس سهولة الاستخدام",
+      "مصمم التفاعل"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 2,
     "explanation": "من بنك أسئلة مادة تفاعل الإنسان والحاسوب الرسمي المعتمد.",
     "source": {
       "file": "185 Q from Bank HCI.JSON",
@@ -4602,10 +4602,10 @@
     "questionEn": "Which HCI professional is involved in evaluating products using usability methods and principles?",
     "questionAr": "من هو متخصص HCI الذي يشارك في تقييم المنتجات باستخدام أساليب ومبادئ سهولة الاستخدام؟",
     "optionsEn": [
-      "Interaction designer",
-      "Usability engineer",
+      "Information architect",
       "Web designer",
-      "Information architect"
+      "Usability engineer",
+      "Interaction designer"
     ],
     "midtermId": "hci-midterm-01"
   },
@@ -4616,12 +4616,12 @@
     "question": "ما هي المجالات التي تعتبر فروعًا لـ HCI؟",
     "type": "multiple_choice",
     "options": [
+      "كل ما يذكر",
       "علم النفس",
-      "الحوسبة",
       "علم الاجتماع",
-      "كل ما يذكر"
+      "الحوسبة"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 0,
     "explanation": "من بنك أسئلة مادة تفاعل الإنسان والحاسوب الرسمي المعتمد.",
     "source": {
       "file": "185 Q from Bank HCI.JSON",
@@ -4630,10 +4630,10 @@
     "questionEn": "Which fields are considered branches of HCI?",
     "questionAr": "ما هي المجالات التي تعتبر فروعًا لـ HCI؟",
     "optionsEn": [
+      "All of mentions",
       "Psychology",
-      "Computing",
       "Sociology",
-      "All of mentions"
+      "Computing"
     ],
     "midtermId": "hci-midterm-01"
   },
@@ -4669,9 +4669,9 @@
     "type": "multiple_choice",
     "options": [
       "فهو يزيد الإنتاجية في مكان العمل",
-      "ويتسبب في إصابة جسدية وعاطفية",
+      "إنه يهدر المال",
       "ويؤدي إلى ارتفاع معدلات الخطأ",
-      "إنه يهدر المال"
+      "ويتسبب في إصابة جسدية وعاطفية"
     ],
     "correctAnswer": 0,
     "explanation": "من بنك أسئلة مادة تفاعل الإنسان والحاسوب الرسمي المعتمد.",
@@ -4683,9 +4683,9 @@
     "questionAr": "لماذا تعتبر سهولة الاستخدام مهمة؟",
     "optionsEn": [
       "It increases productivity in the workplace",
-      "It causes physical and emotional injury",
+      "It wastes money",
       "It leads to higher error rates",
-      "It wastes money"
+      "It causes physical and emotional injury"
     ],
     "midtermId": "hci-midterm-01"
   },
@@ -4697,11 +4697,11 @@
     "type": "multiple_choice",
     "options": [
       "الفعالية",
-      "قابلية التعلم",
+      "التذكر",
       "الكفاءة",
-      "التذكر"
+      "قابلية التعلم"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "explanation": "من بنك أسئلة مادة تفاعل الإنسان والحاسوب الرسمي المعتمد.",
     "source": {
       "file": "185 Q from Bank HCI.JSON",
@@ -4711,9 +4711,9 @@
     "questionAr": "ما هي سمة سهولة الاستخدام التي تشير إلى سهولة استخدام النظام بشكل متقطع للمستخدمين العاديين؟",
     "optionsEn": [
       "Effectiveness",
-      "Learnability",
+      "Memorability",
       "Efficiency",
-      "Memorability"
+      "Learnability"
     ],
     "midtermId": "hci-midterm-01"
   },
@@ -4725,8 +4725,8 @@
     "type": "multiple_choice",
     "options": [
       "مصمم التفاعل",
-      "مهندس سهولة الاستخدام",
       "مصمم ويب",
+      "مهندس سهولة الاستخدام",
       "مهندس المعلومات"
     ],
     "correctAnswer": 0,
@@ -4739,8 +4739,8 @@
     "questionAr": "من هو محترف HCI الذي يشارك في تصميم جميع الجوانب التفاعلية للمنتج؟",
     "optionsEn": [
       "Interaction designer",
-      "Usability engineer",
       "Web designer",
+      "Usability engineer",
       "Information architect"
     ],
     "midtermId": "hci-midterm-01"
@@ -4776,12 +4776,12 @@
     "question": "أي مما يلي ليس من أهداف التفاعل بين الإنسان والحاسوب؟",
     "type": "multiple_choice",
     "options": [
+      "تطوير تقنيات جديدة تسمح للأشخاص بالتفاعل مع أجهزة الكمبيوتر بطرق جديدة",
       "لجعل أجهزة الكمبيوتر أكثر قابلية للاستخدام وممتعة للناس",
       "لإنشاء واجهات مستخدم تتسم بالكفاءة والفعالية",
-      "لجعل أجهزة الكمبيوتر ذكية للغاية بحيث لا تحتاج إلى التفاعل مع البشر على الإطلاق",
-      "تطوير تقنيات جديدة تسمح للأشخاص بالتفاعل مع أجهزة الكمبيوتر بطرق جديدة"
+      "لجعل أجهزة الكمبيوتر ذكية للغاية بحيث لا تحتاج إلى التفاعل مع البشر على الإطلاق"
     ],
-    "correctAnswer": 2,
+    "correctAnswer": 3,
     "explanation": "من بنك أسئلة مادة تفاعل الإنسان والحاسوب الرسمي المعتمد.",
     "source": {
       "file": "185 Q from Bank HCI.JSON",
@@ -4790,10 +4790,10 @@
     "questionEn": "Which of the following is NOT a goal of Human-Computer Interaction?",
     "questionAr": "أي مما يلي ليس من أهداف التفاعل بين الإنسان والحاسوب؟",
     "optionsEn": [
+      "To develop new technologies that allow people to interact with computers in new ways",
       "To make computers more usable and enjoyable for people",
       "To create user interfaces that are efficient and effective",
-      "To make computers so intelligent that they don't need to interact with humans at all",
-      "To develop new technologies that allow people to interact with computers in new ways"
+      "To make computers so intelligent that they don't need to interact with humans at all"
     ],
     "midtermId": "hci-midterm-01"
   },
@@ -4804,9 +4804,9 @@
     "question": "أي مما يلي ليس من مجالات الدراسة التي تساهم في التفاعل بين الإنسان والحاسوب؟",
     "type": "multiple_choice",
     "options": [
-      "العلوم الاجتماعية",
-      "رسومات الحاسوب",
       "التصميم الصناعي",
+      "رسومات الحاسوب",
+      "العلوم الاجتماعية",
       "الفيزياء النظرية"
     ],
     "correctAnswer": 3,
@@ -4818,9 +4818,9 @@
     "questionEn": "Which of the following is NOT a field of study that contributes to Human-Computer Interaction?",
     "questionAr": "أي مما يلي ليس من مجالات الدراسة التي تساهم في التفاعل بين الإنسان والحاسوب؟",
     "optionsEn": [
-      "Social science",
-      "Computer graphics",
       "Industrial design",
+      "Computer graphics",
+      "Social science",
       "Theoretical physics"
     ],
     "midtermId": "hci-midterm-01"
@@ -4832,12 +4832,12 @@
     "question": "أي مما يلي ليس مجالًا متعلقًا بتصميم التفاعل؟",
     "type": "multiple_choice",
     "options": [
-      "بيئة العمل",
-      "التصميم الجرافيكي",
       "علم الفلك",
-      "المعلوماتية"
+      "التصميم الجرافيكي",
+      "المعلوماتية",
+      "بيئة العمل"
     ],
-    "correctAnswer": 2,
+    "correctAnswer": 0,
     "explanation": "من بنك أسئلة مادة تفاعل الإنسان والحاسوب الرسمي المعتمد.",
     "source": {
       "file": "185 Q from Bank HCI.JSON",
@@ -4846,10 +4846,10 @@
     "questionEn": "Which of the following is NOT a field related to Interaction Design?",
     "questionAr": "أي مما يلي ليس مجالًا متعلقًا بتصميم التفاعل؟",
     "optionsEn": [
-      "Ergonomics",
-      "Graphic Design",
       "Astronomy",
-      "Informatics"
+      "Graphic Design",
+      "Informatics",
+      "Ergonomics"
     ],
     "midtermId": "hci-midterm-01"
   },
@@ -4860,12 +4860,12 @@
     "question": "ما هو الجانب الحاسم من اعتبارات التصميم؟",
     "type": "multiple_choice",
     "options": [
+      "استراتيجية الإعلان",
       "نظام الألوان",
       "المستخدمين وأنشطتهم",
-      "سعر المنتج",
-      "استراتيجية الإعلان"
+      "سعر المنتج"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 2,
     "explanation": "من بنك أسئلة مادة تفاعل الإنسان والحاسوب الرسمي المعتمد.",
     "source": {
       "file": "185 Q from Bank HCI.JSON",
@@ -4874,10 +4874,10 @@
     "questionEn": "What is a crucial aspect of design considerations?",
     "questionAr": "ما هو الجانب الحاسم من اعتبارات التصميم؟",
     "optionsEn": [
+      "The advertising strategy",
       "The color scheme",
       "The users and their activities",
-      "The product price",
-      "The advertising strategy"
+      "The product price"
     ],
     "midtermId": "hci-midterm-01"
   },
@@ -4888,12 +4888,12 @@
     "question": "ما هي إحدى الطرق التي يساعد بها فهم الإدراك؟",
     "type": "multiple_choice",
     "options": [
-      "يزيد من توقعات المستخدم",
-      "يحدد ويشرح مشاكل المستخدم",
       "يقلل من المعرفة حول المستخدمين",
-      "يحد من تصميم المنتجات التفاعلية"
+      "يحد من تصميم المنتجات التفاعلية",
+      "يزيد من توقعات المستخدم",
+      "يحدد ويشرح مشاكل المستخدم"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "explanation": "من بنك أسئلة مادة تفاعل الإنسان والحاسوب الرسمي المعتمد.",
     "source": {
       "file": "185 Q from Bank HCI.JSON",
@@ -4902,10 +4902,10 @@
     "questionEn": "What is one way understanding cognition helps?",
     "questionAr": "ما هي إحدى الطرق التي يساعد بها فهم الإدراك؟",
     "optionsEn": [
-      "Increases user expectations",
-      "Identifies and explains user problems",
       "Reduces knowledge about users",
-      "Limits the design of interactive products"
+      "Limits the design of interactive products",
+      "Increases user expectations",
+      "Identifies and explains user problems"
     ],
     "midtermId": "hci-midterm-01"
   },
@@ -4917,9 +4917,9 @@
     "type": "multiple_choice",
     "options": [
       "التفكير",
-      "تذكر",
+      "القراءة",
       "الطبخ",
-      "القراءة"
+      "تذكر"
     ],
     "correctAnswer": 2,
     "explanation": "من بنك أسئلة مادة تفاعل الإنسان والحاسوب الرسمي المعتمد.",
@@ -4931,9 +4931,9 @@
     "questionAr": "أي مما يلي لم يتم إدراجه كجزء من الإدراك؟",
     "optionsEn": [
       "Thinking",
-      "Remembering",
+      "Reading",
       "Cooking",
-      "Reading"
+      "Remembering"
     ],
     "midtermId": "hci-midterm-01"
   },
@@ -4944,12 +4944,12 @@
     "question": "يتكون إطار النمذجة البشرية الذي اقترحه كارد وموران ونيويل من ثلاثة أنظمة فرعية: الجهاز الإدراكي، والجهاز الحركي، ونظام ______.",
     "type": "multiple_choice",
     "options": [
-      "عاطفية",
-      "معرفي",
       "اجتماعي",
-      "حسي"
+      "حسي",
+      "عاطفية",
+      "معرفي"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "explanation": "من بنك أسئلة مادة تفاعل الإنسان والحاسوب الرسمي المعتمد.",
     "source": {
       "file": "185 Q from Bank HCI.JSON",
@@ -4958,10 +4958,10 @@
     "questionEn": "The Human Modeling framework proposed by Card, Moran, and Newell consists of three subsystems: the perceptual system, the motor system, and the ______ system.",
     "questionAr": "يتكون إطار النمذجة البشرية الذي اقترحه كارد وموران ونيويل من ثلاثة أنظمة فرعية: الجهاز الإدراكي، والجهاز الحركي، ونظام ______.",
     "optionsEn": [
-      "Emotional",
-      "Cognitive",
       "Social",
-      "Sensory"
+      "Sensory",
+      "Emotional",
+      "Cognitive"
     ],
     "midtermId": "hci-midterm-01"
   },
@@ -4972,12 +4972,12 @@
     "question": "أي مما يلي يعتبر من الحواس الخمس للإنسان؟",
     "type": "multiple_choice",
     "options": [
-      "المس",
-      "رائحة",
+      "كل ما يذكر",
       "الذوق",
-      "كل ما يذكر"
+      "المس",
+      "رائحة"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 0,
     "explanation": "من بنك أسئلة مادة تفاعل الإنسان والحاسوب الرسمي المعتمد.",
     "source": {
       "file": "185 Q from Bank HCI.JSON",
@@ -4986,10 +4986,10 @@
     "questionEn": "Which of the following is considered as one of the five human senses?",
     "questionAr": "أي مما يلي يعتبر من الحواس الخمس للإنسان؟",
     "optionsEn": [
-      "Touch",
-      "Smell",
+      "All of mentions",
       "Taste",
-      "All of mentions"
+      "Touch",
+      "Smell"
     ],
     "midtermId": "hci-midterm-01"
   },
@@ -5000,12 +5000,12 @@
     "question": "تحتوي العين البشرية على نوعين من الخلايا المستقبلة للضوء تسمى ______.",
     "type": "multiple_choice",
     "options": [
+      "قضبان وأقماع",
       "المحاور والتشعبات",
       "الخلايا العصبية والمشابك العصبية",
-      "قضبان وأقماع",
       "النقرة والعصب البصري"
     ],
-    "correctAnswer": 2,
+    "correctAnswer": 0,
     "explanation": "من بنك أسئلة مادة تفاعل الإنسان والحاسوب الرسمي المعتمد.",
     "source": {
       "file": "185 Q from Bank HCI.JSON",
@@ -5014,9 +5014,9 @@
     "questionEn": "The human eye contains two types of photoreceptor cells called ______.",
     "questionAr": "تحتوي العين البشرية على نوعين من الخلايا المستقبلة للضوء تسمى ______.",
     "optionsEn": [
+      "Rods and cones",
       "Axons and dendrites",
       "Neurons and synapses",
-      "Rods and cones",
       "Fovea and optic nerve"
     ],
     "midtermId": "hci-midterm-01"
@@ -5028,12 +5028,12 @@
     "question": "المخاريط مسؤولة عن الرؤية في ______.",
     "type": "multiple_choice",
     "options": [
-      "ضوء ساطع (ضوء النهار)",
       "ضوء خافت (ليلا)",
-      "الظلام الكامل",
-      "الرؤية المحيطية"
+      "ضوء ساطع (ضوء النهار)",
+      "الرؤية المحيطية",
+      "الظلام الكامل"
     ],
-    "correctAnswer": 0,
+    "correctAnswer": 1,
     "explanation": "من بنك أسئلة مادة تفاعل الإنسان والحاسوب الرسمي المعتمد.",
     "source": {
       "file": "185 Q from Bank HCI.JSON",
@@ -5042,10 +5042,10 @@
     "questionEn": "Cones are responsible for vision in ______.",
     "questionAr": "المخاريط مسؤولة عن الرؤية في ______.",
     "optionsEn": [
-      "Bright light (daylight)",
       "Dim light (night)",
-      "Complete darkness",
-      "Peripheral vision"
+      "Bright light (daylight)",
+      "Peripheral vision",
+      "Complete darkness"
     ],
     "midtermId": "hci-midterm-01"
   },
@@ -5056,12 +5056,12 @@
     "question": "تقع القضبان في المقام الأول بالقرب من ______.",
     "type": "multiple_choice",
     "options": [
-      "شبكية العين",
-      "تلميذ",
       "العصب البصري",
-      "محيط الشبكية"
+      "محيط الشبكية",
+      "تلميذ",
+      "شبكية العين"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "explanation": "من بنك أسئلة مادة تفاعل الإنسان والحاسوب الرسمي المعتمد.",
     "source": {
       "file": "185 Q from Bank HCI.JSON",
@@ -5070,10 +5070,10 @@
     "questionEn": "Rods are primarily located near the ______.",
     "questionAr": "تقع القضبان في المقام الأول بالقرب من ______.",
     "optionsEn": [
-      "Retina",
-      "Pupil",
       "Optic nerve",
-      "Periphery of the retina"
+      "Periphery of the retina",
+      "Pupil",
+      "Retina"
     ],
     "midtermId": "hci-midterm-01"
   },
@@ -5108,10 +5108,10 @@
     "question": "يمكن أن يحدث العمى الليلي بسبب نقص ______.",
     "type": "multiple_choice",
     "options": [
-      "المخاريط",
+      "العصب البصري",
       "قضبان",
       "النقرة",
-      "العصب البصري"
+      "المخاريط"
     ],
     "correctAnswer": 1,
     "explanation": "من بنك أسئلة مادة تفاعل الإنسان والحاسوب الرسمي المعتمد.",
@@ -5122,10 +5122,10 @@
     "questionEn": "Night blindness can occur due to a deficiency of ______.",
     "questionAr": "يمكن أن يحدث العمى الليلي بسبب نقص ______.",
     "optionsEn": [
-      "Cones",
+      "Optic nerve",
       "Rods",
       "Fovea",
-      "Optic nerve"
+      "Cones"
     ],
     "midtermId": "hci-midterm-01"
   },
@@ -5136,12 +5136,12 @@
     "question": "عمى الألوان أكثر انتشارا بين ______.",
     "type": "multiple_choice",
     "options": [
-      "ذكور",
       "إناث",
       "كلا الجنسين على قدم المساواة",
-      "ولا يتعلق الأمر بالجنس"
+      "ولا يتعلق الأمر بالجنس",
+      "ذكور"
     ],
-    "correctAnswer": 0,
+    "correctAnswer": 3,
     "explanation": "من بنك أسئلة مادة تفاعل الإنسان والحاسوب الرسمي المعتمد.",
     "source": {
       "file": "185 Q from Bank HCI.JSON",
@@ -5150,10 +5150,10 @@
     "questionEn": "Color blindness is more prevalent among ______.",
     "questionAr": "عمى الألوان أكثر انتشارا بين ______.",
     "optionsEn": [
-      "Males",
       "Females",
       "Both genders equally",
-      "It is not related to gender"
+      "It is not related to gender",
+      "Males"
     ],
     "midtermId": "hci-midterm-01"
   },
@@ -5164,12 +5164,12 @@
     "question": "أي من المكونات التالية يتضمن نظام معالجة المعلومات البشرية؟",
     "type": "multiple_choice",
     "options": [
-      "الإدخال والإخراج والذاكرة والمعالجة",
       "الإدخال والإخراج والتخزين والنقل",
       "الإدخال والإخراج والاسترجاع والتنفيذ",
-      "الإدخال والإخراج والتشفير وفك التشفير"
+      "الإدخال والإخراج والتشفير وفك التشفير",
+      "الإدخال والإخراج والذاكرة والمعالجة"
     ],
-    "correctAnswer": 0,
+    "correctAnswer": 3,
     "explanation": "من بنك أسئلة مادة تفاعل الإنسان والحاسوب الرسمي المعتمد.",
     "source": {
       "file": "185 Q from Bank HCI.JSON",
@@ -5178,10 +5178,10 @@
     "questionEn": "The human information processing system includes which of the following components?",
     "questionAr": "أي من المكونات التالية يتضمن نظام معالجة المعلومات البشرية؟",
     "optionsEn": [
-      "Input, output, memory, and processing",
       "Input, output, storage, and transmission",
       "Input, output, retrieval, and execution",
-      "Input, output, encoding, and decoding"
+      "Input, output, encoding, and decoding",
+      "Input, output, memory, and processing"
     ],
     "midtermId": "hci-midterm-01"
   },
@@ -5192,12 +5192,12 @@
     "question": "ما هي الحاسة المسؤولة بشكل أساسي عن كشف الموجات الصوتية؟",
     "type": "multiple_choice",
     "options": [
-      "البصر",
       "السمع",
-      "المس",
-      "رائحة"
+      "البصر",
+      "رائحة",
+      "المس"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 0,
     "explanation": "من بنك أسئلة مادة تفاعل الإنسان والحاسوب الرسمي المعتمد.",
     "source": {
       "file": "185 Q from Bank HCI.JSON",
@@ -5206,10 +5206,10 @@
     "questionEn": "Which sense is primarily responsible for detecting sound waves?",
     "questionAr": "ما هي الحاسة المسؤولة بشكل أساسي عن كشف الموجات الصوتية؟",
     "optionsEn": [
-      "Sight",
       "Hearing",
-      "Touch",
-      "Smell"
+      "Sight",
+      "Smell",
+      "Touch"
     ],
     "midtermId": "hci-midterm-01"
   },
@@ -5222,8 +5222,8 @@
     "options": [
       "البصر",
       "السمع",
-      "المس",
-      "رائحة"
+      "رائحة",
+      "المس"
     ],
     "correctAnswer": 0,
     "explanation": "من بنك أسئلة مادة تفاعل الإنسان والحاسوب الرسمي المعتمد.",
@@ -5236,8 +5236,8 @@
     "optionsEn": [
       "Sight",
       "Hearing",
-      "Touch",
-      "Smell"
+      "Smell",
+      "Touch"
     ],
     "midtermId": "hci-midterm-01"
   },
@@ -5249,9 +5249,9 @@
     "type": "multiple_choice",
     "options": [
       "كمية الضوء المنبعثة من جسم ما",
+      "الزاوية التي يتم النظر إلى الكائن بها",
       "حجم الكائن",
-      "المسافة من كائن",
-      "الزاوية التي يتم النظر إلى الكائن بها"
+      "المسافة من كائن"
     ],
     "correctAnswer": 0,
     "explanation": "من بنك أسئلة مادة تفاعل الإنسان والحاسوب الرسمي المعتمد.",
@@ -5263,9 +5263,9 @@
     "questionAr": "يشير النصوع إلى ______.",
     "optionsEn": [
       "The amount of light emitted by an object",
+      "The angle at which an object is viewed",
       "The size of an object",
-      "The distance of an object",
-      "The angle at which an object is viewed"
+      "The distance of an object"
     ],
     "midtermId": "hci-midterm-01"
   },
@@ -5276,12 +5276,12 @@
     "question": "ما هو مكون نظام معالجة المعلومات البشرية المسؤول عن تخزين المعلومات واسترجاعها؟",
     "type": "multiple_choice",
     "options": [
-      "الإدخال",
       "الإخراج",
       "الذاكرة",
-      "المعالجة"
+      "المعالجة",
+      "الإدخال"
     ],
-    "correctAnswer": 2,
+    "correctAnswer": 1,
     "explanation": "من بنك أسئلة مادة تفاعل الإنسان والحاسوب الرسمي المعتمد.",
     "source": {
       "file": "185 Q from Bank HCI.JSON",
@@ -5290,10 +5290,10 @@
     "questionEn": "Which component of the human information processing system is responsible for storing and retrieving information?",
     "questionAr": "ما هو مكون نظام معالجة المعلومات البشرية المسؤول عن تخزين المعلومات واسترجاعها؟",
     "optionsEn": [
-      "Input",
       "Output",
       "Memory",
-      "Processing"
+      "Processing",
+      "Input"
     ],
     "midtermId": "hci-midterm-01"
   },
@@ -5304,12 +5304,12 @@
     "question": "أي مما يلي يصف درجة اللون؟",
     "type": "multiple_choice",
     "options": [
-      "سطوع اللون",
       "كمية البياض في اللون",
       "الطول الموجي الطيفي للضوء",
-      "شدة اللون"
+      "شدة اللون",
+      "سطوع اللون"
     ],
-    "correctAnswer": 2,
+    "correctAnswer": 1,
     "explanation": "من بنك أسئلة مادة تفاعل الإنسان والحاسوب الرسمي المعتمد.",
     "source": {
       "file": "185 Q from Bank HCI.JSON",
@@ -5318,10 +5318,10 @@
     "questionEn": "Which of the following describes the hue of a color?",
     "questionAr": "أي مما يلي يصف درجة اللون؟",
     "optionsEn": [
-      "The brightness of the color",
       "The amount of whiteness in the color",
       "The spectral wavelength of the light",
-      "The intensity of the color"
+      "The intensity of the color",
+      "The brightness of the color"
     ],
     "midtermId": "hci-midterm-01"
   },
@@ -5332,12 +5332,12 @@
     "question": "إذا كانت الأبجدية Σ = {a, b}، فما هو عدد السلاسل النصية ذات الطول 3 (Strings of length 3) التي يمكن تكوينها من هذه الأبجدية؟",
     "type": "multiple_choice",
     "options": [
-      "8 سلاسل (|Σ|^3 = 2^3 = 8)",
+      "16 سلسلة",
       "6 سلاسل",
       "9 سلاسل",
-      "16 سلسلة"
+      "8 سلاسل (|Σ|^3 = 2^3 = 8)"
     ],
-    "correctAnswer": 0,
+    "correctAnswer": 3,
     "explanation": "عدد السلاسل النصية ذات الطول n من أبجدية حجمها |Σ| يُحسب بالقانون |Σ|^n. هنا 2^3 = 8 سلاسل.",
     "difficulty": "easy",
     "source": {
@@ -5347,10 +5347,10 @@
     "questionEn": "If the alphabet Σ = {a, b}, how many strings of length 3 can be formed from this alphabet?",
     "questionAr": "إذا كانت الأبجدية Σ = {a, b}، فما هو عدد السلاسل النصية ذات الطول 3 (Strings of length 3) التي يمكن تكوينها من هذه الأبجدية؟",
     "optionsEn": [
-      "8 strings (|Σ|^3 = 2^3 = 8)",
+      "16 series",
       "6 strings",
       "9 strings",
-      "16 series"
+      "8 strings (|Σ|^3 = 2^3 = 8)"
     ],
     "midtermId": "toc-midterm-01"
   },
@@ -5361,12 +5361,12 @@
     "question": "ما هي نتيجة ضم السلسلة الفارغة (λ أو ε) مع أي سلسلة نصية w (Concatenation of empty string with w)؟",
     "type": "multiple_choice",
     "options": [
-      "السلسلة w نفسها دون أي تغيير (wε = εw = w)",
-      "السلسلة الفارغة ε",
       "سلسلة طولها صفر دائماً",
-      "سلسلة مضاعفة ww"
+      "السلسلة w نفسها دون أي تغيير (wε = εw = w)",
+      "سلسلة مضاعفة ww",
+      "السلسلة الفارغة ε"
     ],
-    "correctAnswer": 0,
+    "correctAnswer": 1,
     "explanation": "السلسلة الفارغة ε هي العنصر المحايد في عملية الضم (Identity element for concatenation): wε = εw = w وطولها |ε| = 0.",
     "difficulty": "easy",
     "source": {
@@ -5376,10 +5376,10 @@
     "questionEn": "What is the result of concatenating an empty string (λ or ε) with any string w (Concatenation of empty string with w)?",
     "questionAr": "ما هي نتيجة ضم السلسلة الفارغة (λ أو ε) مع أي سلسلة نصية w (Concatenation of empty string with w)؟",
     "optionsEn": [
-      "The string w itself without any change (wε = εw = w)",
-      "The empty string ε",
       "A string of length always zero",
-      "Double chain ww"
+      "The string w itself without any change (wε = εw = w)",
+      "Double chain ww",
+      "The empty string ε"
     ],
     "midtermId": "toc-midterm-01"
   },
@@ -5391,8 +5391,8 @@
     "type": "multiple_choice",
     "options": [
       "Σ* تتضمن السلسلة الفارغة ε (الطول 0 فما فوق)، بينما Σ+ تبدأ من السلاسل ذات الطول 1 فما فوق (Σ+ = Σ* - {ε})",
-      "Σ+ تتضمن السلسلة الفارغة و Σ* لا تتضمنها",
       "Σ* محصورة في السلاسل الزوجية فقط",
+      "Σ+ تتضمن السلسلة الفارغة و Σ* لا تتضمنها",
       "لا يوجد أي فرق بينهما"
     ],
     "correctAnswer": 0,
@@ -5406,8 +5406,8 @@
     "questionAr": "ما الفرق الرياضي بين النجمة الكلينية Σ* والإغلاق الموجب Σ+ للأبجدية Σ؟",
     "optionsEn": [
       "Σ* includes the empty string ε (length 0 and above), while Σ+ starts from strings of length 1 and above (Σ+ = Σ* - {ε})",
-      "Σ+ includes the empty string and Σ* does not",
       "Σ* is limited to even strings only",
+      "Σ+ includes the empty string and Σ* does not",
       "There is no difference between them"
     ],
     "midtermId": "toc-midterm-01"
@@ -5419,12 +5419,12 @@
     "question": "إذا كانت اللغة L1 = {ab, ba} واللغة L2 = {a, b}، فما هي لغة الضم L1L2؟",
     "type": "multiple_choice",
     "options": [
-      "{أبا، أب، با، باب}",
+      "{أ، ب}",
       "{أ، با، أ، ب}",
-      "{باب، بابا}",
-      "{أ، ب}"
+      "{أبا، أب، با، باب}",
+      "{باب، بابا}"
     ],
-    "correctAnswer": 0,
+    "correctAnswer": 2,
     "explanation": "ضم اللغتين يضم كل عنصر من L1 مع كل عنصر من L2: {ab.a, ab.b, ba.a, ba.b} = {aba, abb, baa, bab}.",
     "difficulty": "medium",
     "source": {
@@ -5434,10 +5434,10 @@
     "questionEn": "If L1 = {ab, ba} and L2 = {a, b}, what is L1L2?",
     "questionAr": "إذا كانت اللغة L1 = {ab, ba} واللغة L2 = {a, b}، فما هي لغة الضم L1L2؟",
     "optionsEn": [
-      "{aba, abb, baa, bab}",
+      "{a, b}",
       "{ab, ba, a, b}",
-      "{abab, baba}",
-      "{a, b}"
+      "{aba, abb, baa, bab}",
+      "{abab, baba}"
     ],
     "midtermId": "toc-midterm-01"
   },
@@ -5449,9 +5449,9 @@
     "type": "multiple_choice",
     "options": [
       "10110",
-      "01101",
+      "00110",
       "11001",
-      "00110"
+      "01101"
     ],
     "correctAnswer": 0,
     "explanation": "معكوس السلسلة w^R يتم بقراءة حروفها من اليمين إلى اليسار: w = 01101 تصبح w^R = 10110.",
@@ -5464,9 +5464,9 @@
     "questionAr": "ما هو معكوس السلسلة (Reverse of a string) w = \"01101\"؟",
     "optionsEn": [
       "10110",
-      "01101",
+      "00110",
       "11001",
-      "00110"
+      "01101"
     ],
     "midtermId": "toc-midterm-01"
   },
@@ -5477,12 +5477,12 @@
     "question": "ما هو التعريف الرياضي الخماسي للأوتوماتا المنتهية المحددة (DFA)؟",
     "type": "multiple_choice",
     "options": [
-      "M = (Q, Σ, δ, q0, F) حيث Q مجموعة الحالات، Σ الأبجدية، δ دالة الانتقال، q0 حالة البداية، F الحالات النهائية",
+      "م = (ق، أنا، يا، تي، و)",
       "م = (V، Σ، R، S، Z)",
-      "م = (ك، Γ، ب، F، δ)",
-      "م = (ق، أنا، يا، تي، و)"
+      "M = (Q, Σ, δ, q0, F) حيث Q مجموعة الحالات، Σ الأبجدية، δ دالة الانتقال، q0 حالة البداية، F الحالات النهائية",
+      "م = (ك، Γ، ب، F، δ)"
     ],
-    "correctAnswer": 0,
+    "correctAnswer": 2,
     "explanation": "الـ 5-tuple المعياري للـ DFA: Q (states), Σ (alphabet), δ (transition function: Q × Σ → Q), q0 (start state), F ⊆ Q (accept states).",
     "difficulty": "medium",
     "source": {
@@ -5492,10 +5492,10 @@
     "questionEn": "What is the pentagonal mathematical definition of definite finite automata (DFA)?",
     "questionAr": "ما هو التعريف الرياضي الخماسي للأوتوماتا المنتهية المحددة (DFA)؟",
     "optionsEn": [
-      "M = (Q, Σ, δ, q0, F) where Q is the set of states, Σ is the alphabet, δ is the transition function, q0 is the starting state, F is the final states",
+      "M = (S, I, O, T, F)",
       "M = (V, Σ, R, S, Z)",
-      "M = (K, Γ, b, F, δ)",
-      "M = (S, I, O, T, F)"
+      "M = (Q, Σ, δ, q0, F) where Q is the set of states, Σ is the alphabet, δ is the transition function, q0 is the starting state, F is the final states",
+      "M = (K, Γ, b, F, δ)"
     ],
     "midtermId": "toc-midterm-01"
   },
@@ -5506,12 +5506,12 @@
     "question": "في الأوتوماتا المنتهية المحددة (DFA)، ماذا يعني المجال والمستقر لدالة الانتقال δ: Q × Σ → Q؟",
     "type": "multiple_choice",
     "options": [
-      "لكل زوج مكون من حالة ورمز إدخال، توجد حالة تالية وحيدة ومحددة بدقة",
       "يمكن الانتقال إلى مجموعة من الحالات في نفس الوقت",
-      "يمكن الانتقال دون قراءة أي رمز إدخال",
-      "يقتصر الانتقال على الحالات النهائية فقط"
+      "يقتصر الانتقال على الحالات النهائية فقط",
+      "لكل زوج مكون من حالة ورمز إدخال، توجد حالة تالية وحيدة ومحددة بدقة",
+      "يمكن الانتقال دون قراءة أي رمز إدخال"
     ],
-    "correctAnswer": 0,
+    "correctAnswer": 2,
     "explanation": "المحددة (Deterministic) تعني حتمية وجود انتقال وحيد تماماً لكل رمز دخل من كل حالة دون احتمالات متعددة أو انتقالات فارغة.",
     "difficulty": "medium",
     "source": {
@@ -5521,10 +5521,10 @@
     "questionEn": "In definite finite automata (DFA), what do the domain and constant mean for the transfer function δ: Q × Σ → Q?",
     "questionAr": "في الأوتوماتا المنتهية المحددة (DFA)، ماذا يعني المجال والمستقر لدالة الانتقال δ: Q × Σ → Q؟",
     "optionsEn": [
-      "For every state-input code pair, there is a single, well-defined next state",
       "Can move to a group of states at the same time",
-      "It is possible to navigate without reading any input code",
-      "The transition is limited to final states only"
+      "The transition is limited to final states only",
+      "For every state-input code pair, there is a single, well-defined next state",
+      "It is possible to navigate without reading any input code"
     ],
     "midtermId": "toc-midterm-01"
   },
@@ -5535,12 +5535,12 @@
     "question": "متى تقبل الأوتوماتا المنتهية المحددة (DFA) سلسلة نصية معينة w؟",
     "type": "multiple_choice",
     "options": [
-      "إذا انتهت مسيرة معالجة كافة رموز السلسلة بالوصول إلى إحدى الحالات النهائية (Accept / Final State ∈ F)",
-      "إذا كانت السلسلة تحتوي على عدد زوجي من الحروف فقط",
       "إذا مرت الأوتوماتا بحالة البداية مرتين",
-      "إذا توقفت الأوتوماتا في حالة الرفض Trap State"
+      "إذا انتهت مسيرة معالجة كافة رموز السلسلة بالوصول إلى إحدى الحالات النهائية (Accept / Final State ∈ F)",
+      "إذا توقفت الأوتوماتا في حالة الرفض Trap State",
+      "إذا كانت السلسلة تحتوي على عدد زوجي من الحروف فقط"
     ],
-    "correctAnswer": 0,
+    "correctAnswer": 1,
     "explanation": "تُقبل السلسلة إذا وفقط إذا قادت دالة الانتقال الموسعة δ*(q0, w) إلى حالة تنتمي لمجموعة الحالات المقبولة F.",
     "difficulty": "easy",
     "source": {
@@ -5550,10 +5550,10 @@
     "questionEn": "When does a definite finalized automaton (DFA) accept a given string w?",
     "questionAr": "متى تقبل الأوتوماتا المنتهية المحددة (DFA) سلسلة نصية معينة w؟",
     "optionsEn": [
-      "If the process of processing all symbols of the string ends up reaching one of the final states (Accept / Final State ∈ F)",
-      "If the string contains only an even number of characters",
       "If the automata passes the starting state twice",
-      "If the automata stops in a Trap State"
+      "If the process of processing all symbols of the string ends up reaching one of the final states (Accept / Final State ∈ F)",
+      "If the automata stops in a Trap State",
+      "If the string contains only an even number of characters"
     ],
     "midtermId": "toc-midterm-01"
   },
@@ -5564,12 +5564,12 @@
     "question": "ما هي حالة المصيدة أو الحالة الميتة (Trap / Dead State) في DFA؟",
     "type": "multiple_choice",
     "options": [
-      "حالة غير نهائية، بمجرد الدخول إليها تعود جميع الانتقالات إليها نفسها ولا يمكن الخروج منها إلى حالة مقبولة",
+      "حالة يتم حذفها دائماً عند تقليل الأوتوماتا",
       "حالة البداية عندما لا يوجد لها دخل",
-      "حالة نهائية تقبل السلسلة الفارغة فقط",
-      "حالة يتم حذفها دائماً عند تقليل الأوتوماتا"
+      "حالة غير نهائية، بمجرد الدخول إليها تعود جميع الانتقالات إليها نفسها ولا يمكن الخروج منها إلى حالة مقبولة",
+      "حالة نهائية تقبل السلسلة الفارغة فقط"
     ],
-    "correctAnswer": 0,
+    "correctAnswer": 2,
     "explanation": "حالة الموت (Dead/Trap State) تستقبل المدخلات التي تؤكد فشل السلسلة في تحقيق شرط اللغة وتمنع قبولها.",
     "difficulty": "medium",
     "source": {
@@ -5579,10 +5579,10 @@
     "questionEn": "What is Trap/Dead State in DFA?",
     "questionAr": "ما هي حالة المصيدة أو الحالة الميتة (Trap / Dead State) في DFA؟",
     "optionsEn": [
-      "A non-final state, once entered, all transitions to it return to themselves and cannot be exited to an acceptable state",
+      "A condition that is always deleted when automata are reduced",
       "The starting state is when it has no income",
-      "Final case accepts only empty string",
-      "A condition that is always deleted when automata are reduced"
+      "A non-final state, once entered, all transitions to it return to themselves and cannot be exited to an acceptable state",
+      "Final case accepts only empty string"
     ],
     "midtermId": "toc-midterm-01"
   },
@@ -5593,12 +5593,12 @@
     "question": "كم عدد الحالات الدنيا (Minimum States) في DFA للتعرف على السلاسل التي تنتهي بـ '01' على الأبجدية {0, 1}؟",
     "type": "multiple_choice",
     "options": [
-      "3 حالات (حالة البداية، حالة بعد قراءة 0، وحالة القبول بعد قراءة 1)",
-      "حالتان فقط",
+      "5 حالات",
       "4 حالات",
-      "5 حالات"
+      "حالتان فقط",
+      "3 حالات (حالة البداية، حالة بعد قراءة 0، وحالة القبول بعد قراءة 1)"
     ],
-    "correctAnswer": 0,
+    "correctAnswer": 3,
     "explanation": "تحتاج الحالة q0 (البداية/أي شيء آخر)، q1 (آخر رمز كان 0)، و q2 (تمت قراءة 01 - حالة قبول). المجموع 3 حالات.",
     "difficulty": "medium",
     "source": {
@@ -5608,10 +5608,10 @@
     "questionEn": "How many Minimum States does DFA have to recognize strings ending in '01' on the alphabet {0, 1}?",
     "questionAr": "كم عدد الحالات الدنيا (Minimum States) في DFA للتعرف على السلاسل التي تنتهي بـ '01' على الأبجدية {0, 1}؟",
     "optionsEn": [
-      "3 states (start state, state after reading 0, and acceptance state after reading 1)",
-      "Only two cases",
+      "5 cases",
       "4 cases",
-      "5 cases"
+      "Only two cases",
+      "3 states (start state, state after reading 0, and acceptance state after reading 1)"
     ],
     "midtermId": "toc-midterm-01"
   },
@@ -5622,12 +5622,12 @@
     "question": "ما هو التعبير النمطي (Regular Expression) الذي يمثل لغة كافة السلاسل التي تبدأ وتنتهي بالحرف 'a' على الأبجدية {a, b}؟",
     "type": "multiple_choice",
     "options": [
+      "أ(أ+ب)*",
       "أ(أ+ب)*أ + أ",
       "(أ+ب)*أ",
-      "أ(أ+ب)*",
       "(أ ب) * أ"
     ],
-    "correctAnswer": 0,
+    "correctAnswer": 1,
     "explanation": "السلسلة إما أن تكون الحرف الفردي 'a' نفسه، أو تبدأ بـ 'a' ثم أي مجموعة من {a,b}* ثم تنتهي بـ 'a'.",
     "difficulty": "medium",
     "source": {
@@ -5637,9 +5637,9 @@
     "questionEn": "What is the regular expression that represents the language of all strings that begin and end with the letter 'a' on the alphabet {a, b}?",
     "questionAr": "ما هو التعبير النمطي (Regular Expression) الذي يمثل لغة كافة السلاسل التي تبدأ وتنتهي بالحرف 'a' على الأبجدية {a, b}؟",
     "optionsEn": [
+      "a(a+b)*",
       "a(a+b)*a + a",
       "(a+b)*a",
-      "a(a+b)*",
       "(ab)*a"
     ],
     "midtermId": "toc-midterm-01"
@@ -5651,12 +5651,12 @@
     "question": "التعبير النمطي (0 + 1)*00(0 + 1)* يعبر عن لغة:",
     "type": "multiple_choice",
     "options": [
-      "كافة السلاسل التي تحتوي على الصفر المزدوج '00' كعلامة جزئية (Substring)",
       "السلاسل التي تبدأ بـ '00' فقط",
+      "كافة السلاسل التي تحتوي على الصفر المزدوج '00' كعلامة جزئية (Substring)",
       "السلاسل التي تنتهي بـ '00' فقط",
       "السلاسل التي لا تحتوي على أي آحاد"
     ],
-    "correctAnswer": 0,
+    "correctAnswer": 1,
     "explanation": "وجود (0+1)* قبل وبعد 00 يسمح بأي تتابع من الأصفار والآحاد في البداية والنهاية طالما 00 موجودة في الداخل.",
     "difficulty": "easy",
     "source": {
@@ -5666,8 +5666,8 @@
     "questionEn": "The regular expression (0 + 1)*00(0 + 1)* expresses a language:",
     "questionAr": "التعبير النمطي (0 + 1)*00(0 + 1)* يعبر عن لغة:",
     "optionsEn": [
-      "All strings that contain the double zero '00' as a substring",
       "Only strings starting with '00'",
+      "All strings that contain the double zero '00' as a substring",
       "Only strings ending in '00'",
       "Strings that do not contain any ones"
     ],
@@ -5680,12 +5680,12 @@
     "question": "ما هي لغة التعبير النمطي (a+b)*؟",
     "type": "multiple_choice",
     "options": [
-      "مجموعة كافة السلاسل الممكنة على الأبجدية {a, b} بما فيها السلسلة الفارغة",
       "السلسلة 'ab' مكررة",
+      "السلاسل التي تحتوي على 'a' و 'b' بالتساوي",
       "السلاسل ذات الطول الزوجي فقط",
-      "السلاسل التي تحتوي على 'a' و 'b' بالتساوي"
+      "مجموعة كافة السلاسل الممكنة على الأبجدية {a, b} بما فيها السلسلة الفارغة"
     ],
-    "correctAnswer": 0,
+    "correctAnswer": 3,
     "explanation": "(a+b)* يمثل الإغلاق الكليني الشامل للأبجدية الثنائية {a, b}*.",
     "difficulty": "easy",
     "source": {
@@ -5695,10 +5695,10 @@
     "questionEn": "What is regular expression language (a+b)*?",
     "questionAr": "ما هي لغة التعبير النمطي (a+b)*؟",
     "optionsEn": [
-      "The set of all possible strings on the alphabet {a, b} including the empty string",
       "The string 'ab' is duplicated",
+      "Strings that contain 'a' and 'b' equally",
       "Even-length chains only",
-      "Strings that contain 'a' and 'b' equally"
+      "The set of all possible strings on the alphabet {a, b} including the empty string"
     ],
     "midtermId": "toc-midterm-01"
   },
@@ -5709,12 +5709,12 @@
     "question": "ما هو الفارق الجوهري بين دالة الانتقال في NFA مقارنة بـ DFA؟",
     "type": "multiple_choice",
     "options": [
-      "في NFA دالة الانتقال تعود بمجموعة من الحالات الجزئية δ: Q × (Σ ∪ {ε}) → P(Q)، بينما في DFA تعود بحالة واحدة وحيدة δ: Q × Σ → Q",
       "في NFA دالة الانتقال خطية فقط",
+      "في DFA الانتقالات غير محددة",
       "في NFA لا يمكن وجود حالات نهائية",
-      "في DFA الانتقالات غير محددة"
+      "في NFA دالة الانتقال تعود بمجموعة من الحالات الجزئية δ: Q × (Σ ∪ {ε}) → P(Q)، بينما في DFA تعود بحالة واحدة وحيدة δ: Q × Σ → Q"
     ],
-    "correctAnswer": 0,
+    "correctAnswer": 3,
     "explanation": "NFA تسمح بتشعب مسارات الانتقال إلى قوة المجموعة P(Q) وتسمح بانتقالات إبسيلون دون استهلاك أي رمز إدخال.",
     "difficulty": "medium",
     "source": {
@@ -5724,10 +5724,10 @@
     "questionEn": "What is the fundamental difference between the transfer function in NFA compared to DFA?",
     "questionAr": "ما هو الفارق الجوهري بين دالة الانتقال في NFA مقارنة بـ DFA؟",
     "optionsEn": [
-      "In NFA the transfer function returns a set of partial states δ: Q × (Σ ∪ {ε}) → P(Q), while in DFA it returns a single state δ: Q × Σ → Q",
       "In NFA the transition function is linear only",
+      "In DFA, transfers are not specified",
       "In NFA there can be no final states",
-      "In DFA, transfers are not specified"
+      "In NFA the transfer function returns a set of partial states δ: Q × (Σ ∪ {ε}) → P(Q), while in DFA it returns a single state δ: Q × Σ → Q"
     ],
     "midtermId": "toc-midterm-01"
   },
@@ -5738,12 +5738,12 @@
     "question": "ماذا يعني انتقال إبسيلون (ε-transition / λ-transition) في أوتوماتا NFA؟",
     "type": "multiple_choice",
     "options": [
-      "انتقال فوري وتلقائي بين حالتين دون قراءة أو استهلاك أي رمز من شريط الإدخال",
-      "انتقال يتطلب قراءة مسافة بيضاء من النص",
+      "انتقال لا يمكن تمثيله في الرسوم البيانية",
       "انتقال يؤدي دائماً إلى تدمير الآلة",
-      "انتقال لا يمكن تمثيله في الرسوم البيانية"
+      "انتقال يتطلب قراءة مسافة بيضاء من النص",
+      "انتقال فوري وتلقائي بين حالتين دون قراءة أو استهلاك أي رمز من شريط الإدخال"
     ],
-    "correctAnswer": 0,
+    "correctAnswer": 3,
     "explanation": "انتقال إبسيلون يسمح للأوتوماتا بتغيير حالتها عفوياً بدون قراءة أي حرف من المدخلات.",
     "difficulty": "easy",
     "source": {
@@ -5753,10 +5753,10 @@
     "questionEn": "What does epsilon transition (ε-transition / λ-transition) mean in NFA automata?",
     "questionAr": "ماذا يعني انتقال إبسيلون (ε-transition / λ-transition) في أوتوماتا NFA؟",
     "optionsEn": [
-      "Instant and automatic transition between two states without reading or consuming any code from the input bar",
-      "Transition requires reading white space from text",
+      "Transmission cannot be represented in diagrams",
       "Transmission always leads to the destruction of the machine",
-      "Transmission cannot be represented in diagrams"
+      "Transition requires reading white space from text",
+      "Instant and automatic transition between two states without reading or consuming any code from the input bar"
     ],
     "midtermId": "toc-midterm-01"
   },
@@ -5767,12 +5767,12 @@
     "question": "إذا كانت الأوتوماتا غير المحددة NFA تتكون من n حالة، فما هو الحد الأقصى لعدد الحالات الممكنة في DFA المكافئة لها بعد التحويل؟",
     "type": "multiple_choice",
     "options": [
-      "2^n حالة (مجموعة القوة Powerset)",
       "n^2 حالة",
+      "n! حالة",
       "2n حالة",
-      "n! حالة"
+      "2^n حالة (مجموعة القوة Powerset)"
     ],
-    "correctAnswer": 0,
+    "correctAnswer": 3,
     "explanation": "خوارزمية Subset Construction تنشئ حالات تمثل المجموعات الجزئية لحالات NFA، وعدد المجموعات الجزئية هو 2^n.",
     "difficulty": "medium",
     "source": {
@@ -5782,10 +5782,10 @@
     "questionEn": "If an NFA automata consists of n states, what is the maximum number of possible states in its equivalent DFA after transformation?",
     "questionAr": "إذا كانت الأوتوماتا غير المحددة NFA تتكون من n حالة، فما هو الحد الأقصى لعدد الحالات الممكنة في DFA المكافئة لها بعد التحويل؟",
     "optionsEn": [
-      "2^n state (powerset)",
       "n^2 cases",
+      "n! case",
       "2n case",
-      "n! case"
+      "2^n state (powerset)"
     ],
     "midtermId": "toc-midterm-01"
   },
@@ -5796,12 +5796,12 @@
     "question": "ما هي العلاقة بين فئة اللغات المقبولة بواسطة DFA وفئة اللغات المقبولة بواسطة NFA؟",
     "type": "multiple_choice",
     "options": [
+      "NFA تقبل لغات محدودة فقط بينما DFA غير محدودة",
       "متطابقتان تماماً في القوة التعبيرية؛ كلاهما يقبل فقط اللغات المنتظمة (Regular Languages)",
       "NFA أقوى وتستطيع قبول لغات غير منتظمة",
-      "DFA أقوى وتستطيع قبول لغات خالية من السياق",
-      "NFA تقبل لغات محدودة فقط بينما DFA غير محدودة"
+      "DFA أقوى وتستطيع قبول لغات خالية من السياق"
     ],
-    "correctAnswer": 0,
+    "correctAnswer": 1,
     "explanation": "أثبتت نظرية رابين وسكوت (Rabin & Scott 1959) التكافؤ التام بين DFA و NFA في القدرة الحسابية واللغوية.",
     "difficulty": "medium",
     "source": {
@@ -5811,10 +5811,10 @@
     "questionEn": "What is the relationship between the category of languages accepted by the DFA and the category of languages accepted by the NFA?",
     "questionAr": "ما هي العلاقة بين فئة اللغات المقبولة بواسطة DFA وفئة اللغات المقبولة بواسطة NFA؟",
     "optionsEn": [
+      "NFA accepts only limited languages while DFA is unlimited",
       "They are completely identical in expressive power; Both only accept Regular Languages.",
       "NFA is stronger and can accept irregular languages",
-      "DFA is stronger and can accept context-free languages",
-      "NFA accepts only limited languages while DFA is unlimited"
+      "DFA is stronger and can accept context-free languages"
     ],
     "midtermId": "toc-midterm-01"
   },
@@ -5825,12 +5825,12 @@
     "question": "ما هي المكونات الأربعة في تعريف القواعد الصورية (Formal Grammar 4-tuple G = (V, Σ, R, S))؟",
     "type": "multiple_choice",
     "options": [
-      "V مجموعة المتغيرات غير الطرفية، Σ مجموعة الرموز الطرفية، R مجموعة قواعد الإنتاج، و S رمز البداية",
-      "V القيم، Σ المجموع، R النطاق، و S الحجم",
       "V المتجهات، Σ المصفوفات، R الأوتوماتا، و S الشجرة",
-      "V الحالات، Σ الدخل، R الخرج، و S الانتقال"
+      "V الحالات، Σ الدخل، R الخرج، و S الانتقال",
+      "V مجموعة المتغيرات غير الطرفية، Σ مجموعة الرموز الطرفية، R مجموعة قواعد الإنتاج، و S رمز البداية",
+      "V القيم، Σ المجموع، R النطاق، و S الحجم"
     ],
-    "correctAnswer": 0,
+    "correctAnswer": 2,
     "explanation": "التعريف الرباعي للقواعد الصورية يتكون من: Variables/Non-terminals (V), Terminals (Σ), Production Rules (R), Start symbol (S).",
     "difficulty": "medium",
     "source": {
@@ -5840,10 +5840,10 @@
     "questionEn": "What are the four components in the definition of formal grammar (Formal Grammar 4-tuple G = (V, Σ, R, S))?",
     "questionAr": "ما هي المكونات الأربعة في تعريف القواعد الصورية (Formal Grammar 4-tuple G = (V, Σ, R, S))؟",
     "optionsEn": [
-      "V is the set of non-terminal variables, Σ is the set of terminal symbols, R is the set of production rules, and S is the starting symbol",
-      "V values, Σ the sum, R the range, and S the size",
       "V is vectors, Σ is matrices, R is automata, and S is tree",
-      "V states, Σ is the input, R is the output, and S is the transition"
+      "V states, Σ is the input, R is the output, and S is the transition",
+      "V is the set of non-terminal variables, Σ is the set of terminal symbols, R is the set of production rules, and S is the starting symbol",
+      "V values, Σ the sum, R the range, and S the size"
     ],
     "midtermId": "toc-midterm-01"
   },
@@ -5854,12 +5854,12 @@
     "question": "ما هو شرط قواعد اللغة الخالية من السياق (Context-Free Grammar - CFG) على الطرف الأيسر لقواعد الإنتاج (A → α)؟",
     "type": "multiple_choice",
     "options": [
-      "أن يكون الطرف الأيسر متغيراً غير طرفي مفرد فقط (Single Non-terminal variable A ∈ V)",
-      "أن يحتوي الطرف الأيسر على رموز طرفية وغير طرفية معاً",
       "أن يكون الطرف الأيسر أطول من الطرف الأيمن دائماً",
+      "أن يحتوي الطرف الأيسر على رموز طرفية وغير طرفية معاً",
+      "أن يكون الطرف الأيسر متغيراً غير طرفي مفرد فقط (Single Non-terminal variable A ∈ V)",
       "أن لا يحتوي الطرف الأيمن على السلسلة الفارغة"
     ],
-    "correctAnswer": 0,
+    "correctAnswer": 2,
     "explanation": "في CFG، تكون القاعدة بالصيغة A → α حيث A متغير غير طرفي وحيد، ولا يتأثر بالسياق المحيط به (Context-Free).",
     "difficulty": "medium",
     "source": {
@@ -5869,9 +5869,9 @@
     "questionEn": "What is the Context-Free Grammar (CFG) condition on the left end of the production grammar (A → α)?",
     "questionAr": "ما هو شرط قواعد اللغة الخالية من السياق (Context-Free Grammar - CFG) على الطرف الأيسر لقواعد الإنتاج (A → α)؟",
     "optionsEn": [
-      "The left side must be a single non-terminal variable A ∈ V.",
-      "The left side contains both terminal and non-terminal symbols",
       "The left side should always be longer than the right side",
+      "The left side contains both terminal and non-terminal symbols",
+      "The left side must be a single non-terminal variable A ∈ V.",
       "The right side does not contain the empty string"
     ],
     "midtermId": "toc-midterm-01"
@@ -5883,12 +5883,12 @@
     "question": "متى تُعتبر القواعد النحوية غامضة (Ambiguous Grammar)؟",
     "type": "multiple_choice",
     "options": [
-      "إذا وُجدت سلسلة نصية واحدة تمتلك شجرتي إعراب مختلفتين (Two distinct parse trees) أو اشتقاقين يساريين مختلفين",
-      "إذا كانت القواعد لا تولد أي سلاسل نهائية",
+      "إذا كانت تقبل السلسلة الفارغة فقط",
       "إذا كانت تحتوي على أكثر من 10 قواعد إنتاج",
-      "إذا كانت تقبل السلسلة الفارغة فقط"
+      "إذا وُجدت سلسلة نصية واحدة تمتلك شجرتي إعراب مختلفتين (Two distinct parse trees) أو اشتقاقين يساريين مختلفين",
+      "إذا كانت القواعد لا تولد أي سلاسل نهائية"
     ],
-    "correctAnswer": 0,
+    "correctAnswer": 2,
     "explanation": "الغموض (Ambiguity) يسبب مشكلة في المترجمات لأنه يعطي السلسلة البرمجية أكثر من معنى أو تفسير تركيبي وتنفيذي.",
     "difficulty": "hard",
     "source": {
@@ -5898,10 +5898,10 @@
     "questionEn": "When is grammar considered ambiguous?",
     "questionAr": "متى تُعتبر القواعد النحوية غامضة (Ambiguous Grammar)؟",
     "optionsEn": [
-      "If a single string has two distinct parse trees or two different left-handed derivations",
-      "If the rules do not generate any final strings",
+      "If it only accepts empty string",
       "If it has more than 10 production rules",
-      "If it only accepts empty string"
+      "If a single string has two distinct parse trees or two different left-handed derivations",
+      "If the rules do not generate any final strings"
     ],
     "midtermId": "toc-midterm-01"
   },
@@ -5912,12 +5912,12 @@
     "question": "Research is",
     "type": "multiple_choice",
     "options": [
-      "البحث مرارا وتكرارا",
       "إيجاد حل لأي مشكلة",
-      "العمل بطريقة علمية للبحث عن حقيقة أي مشكلة",
-      "لا شيء مما سبق"
+      "البحث مرارا وتكرارا",
+      "لا شيء مما سبق",
+      "العمل بطريقة علمية للبحث عن حقيقة أي مشكلة"
     ],
-    "correctAnswer": 2,
+    "correctAnswer": 3,
     "explanation": "سؤال معتمد من بنك أسئلة اختبارات منهجية البحث العلمي - كلية الحاسوب وتكنولوجيا المعلومات - د. مالك الجبري.",
     "difficulty": "medium",
     "source": {
@@ -5927,10 +5927,10 @@
     "questionEn": "Research is",
     "questionAr": "Research is",
     "optionsEn": [
-      "Searching again and again",
       "Finding solution to any problem",
-      "Working in a scientific way to search for truth of any problem",
-      "None of the above"
+      "Searching again and again",
+      "None of the above",
+      "Working in a scientific way to search for truth of any problem"
     ],
     "midtermId": "rm-midterm-01"
   },
@@ -5941,12 +5941,12 @@
     "question": "A review of the literature prior to formulating research questions allows the researcher to",
     "type": "multiple_choice",
     "options": [
-      "توفير فهم محدث للموضوع وأهميته وبنيته",
+      "كل ما سبق",
       "توجيه تطوير الأسئلة البحثية",
       "عرض أنواع منهجيات البحث المستخدمة في الدراسات السابقة",
-      "كل ما سبق"
+      "توفير فهم محدث للموضوع وأهميته وبنيته"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 0,
     "explanation": "سؤال معتمد من بنك أسئلة اختبارات منهجية البحث العلمي - كلية الحاسوب وتكنولوجيا المعلومات - د. مالك الجبري.",
     "difficulty": "medium",
     "source": {
@@ -5956,10 +5956,10 @@
     "questionEn": "A review of the literature prior to formulating research questions allows the researcher to",
     "questionAr": "A review of the literature prior to formulating research questions allows the researcher to",
     "optionsEn": [
-      "Provide an up-to-date understanding of the subject, its significance, and structure",
+      "All of the above",
       "Guide the development of research questions",
       "Present the kinds of research methodologies used in previous studies",
-      "All of the above"
+      "Provide an up-to-date understanding of the subject, its significance, and structure"
     ],
     "midtermId": "rm-midterm-01"
   },
@@ -5970,12 +5970,12 @@
     "question": "The feasibility of a research study should be considered in light of",
     "type": "multiple_choice",
     "options": [
-      "التكلفة والوقت اللازم لإجراء الدراسة",
-      "الوصول إلى حراس البوابة والمستجيبين",
+      "كل ما سبق",
       "المخاوف الأخلاقية المحتملة",
-      "كل ما سبق"
+      "الوصول إلى حراس البوابة والمستجيبين",
+      "التكلفة والوقت اللازم لإجراء الدراسة"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 0,
     "explanation": "سؤال معتمد من بنك أسئلة اختبارات منهجية البحث العلمي - كلية الحاسوب وتكنولوجيا المعلومات - د. مالك الجبري.",
     "difficulty": "medium",
     "source": {
@@ -5985,10 +5985,10 @@
     "questionEn": "The feasibility of a research study should be considered in light of",
     "questionAr": "The feasibility of a research study should be considered in light of",
     "optionsEn": [
-      "Cost and time required to conduct the study",
-      "Access to gatekeepers and respondents",
+      "All of the above",
       "Potential ethical concerns",
-      "All of the above"
+      "Access to gatekeepers and respondents",
+      "Cost and time required to conduct the study"
     ],
     "midtermId": "rm-midterm-01"
   },
@@ -6000,11 +6000,11 @@
     "type": "multiple_choice",
     "options": [
       "البحث العملي",
-      "بحث مختلط الطريقة",
       "البحث الكمي",
-      "بحث عملي"
+      "بحث عملي",
+      "بحث مختلط الطريقة"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "explanation": "سؤال معتمد من بنك أسئلة اختبارات منهجية البحث العلمي - كلية الحاسوب وتكنولوجيا المعلومات - د. مالك الجبري.",
     "difficulty": "medium",
     "source": {
@@ -6015,9 +6015,9 @@
     "questionAr": "Research that uses qualitative methods for one phase and quantitative methods for the next phase is known as",
     "optionsEn": [
       "Action research",
-      "Mixed-method research",
       "Quantitative research",
-      "Pragmatic research"
+      "Pragmatic research",
+      "Mixed-method research"
     ],
     "midtermId": "rm-midterm-01"
   },
@@ -6028,10 +6028,10 @@
     "question": "Research hypotheses are",
     "type": "multiple_choice",
     "options": [
-      "تمت صياغته قبل مراجعة الأدبيات",
       "بيانات العلاقات المتوقعة بين المتغيرات",
+      "كلا من أ و ب",
       "ب ولكن ليس أ",
-      "كلا من أ و ب"
+      "تمت صياغته قبل مراجعة الأدبيات"
     ],
     "correctAnswer": 2,
     "explanation": "سؤال معتمد من بنك أسئلة اختبارات منهجية البحث العلمي - كلية الحاسوب وتكنولوجيا المعلومات - د. مالك الجبري.",
@@ -6043,10 +6043,10 @@
     "questionEn": "Research hypotheses are",
     "questionAr": "Research hypotheses are",
     "optionsEn": [
-      "Formulated prior to a review of the literature",
       "Statements of predicted relationships between variables",
+      "Both A and B",
       "B but not A",
-      "Both A and B"
+      "Formulated prior to a review of the literature"
     ],
     "midtermId": "rm-midterm-01"
   },
@@ -6057,12 +6057,12 @@
     "question": "Which of the following is the first step in starting the research process?",
     "type": "multiple_choice",
     "options": [
-      "البحث عن مصادر المعلومات لتحديد المشكلة.",
-      "مسح الأدبيات ذات الصلة",
       "تحديد المشكلة",
-      "البحث عن حلول للمشكلة"
+      "البحث عن حلول للمشكلة",
+      "مسح الأدبيات ذات الصلة",
+      "البحث عن مصادر المعلومات لتحديد المشكلة."
     ],
-    "correctAnswer": 2,
+    "correctAnswer": 0,
     "explanation": "سؤال معتمد من بنك أسئلة اختبارات منهجية البحث العلمي - كلية الحاسوب وتكنولوجيا المعلومات - د. مالك الجبري.",
     "difficulty": "medium",
     "source": {
@@ -6072,10 +6072,10 @@
     "questionEn": "Which of the following is the first step in starting the research process?",
     "questionAr": "Which of the following is the first step in starting the research process?",
     "optionsEn": [
-      "Searching sources of information to locate problem.",
-      "Survey of related literature",
       "Identification of problem",
-      "Searching for solutions to the problem"
+      "Searching for solutions to the problem",
+      "Survey of related literature",
+      "Searching sources of information to locate problem."
     ],
     "midtermId": "rm-midterm-01"
   },
@@ -6086,12 +6086,12 @@
     "question": "Adopting ethical principles in research means",
     "type": "multiple_choice",
     "options": [
-      "تجنب الإضرار بالمشاركين",
       "الباحث مجهول",
       "ولا يستخدم الخداع إلا عند الضرورة",
+      "تجنب الإضرار بالمشاركين",
       "المخبرون المختارون يمنحون موافقتهم"
     ],
-    "correctAnswer": 2,
+    "correctAnswer": 1,
     "explanation": "سؤال معتمد من بنك أسئلة اختبارات منهجية البحث العلمي - كلية الحاسوب وتكنولوجيا المعلومات - د. مالك الجبري.",
     "difficulty": "medium",
     "source": {
@@ -6101,9 +6101,9 @@
     "questionEn": "Adopting ethical principles in research means",
     "questionAr": "Adopting ethical principles in research means",
     "optionsEn": [
-      "Avoiding harm to participants",
       "The researcher is anonymous",
       "Deception is only used when necessary",
+      "Avoiding harm to participants",
       "Selected informants give their consent"
     ],
     "midtermId": "rm-midterm-01"
@@ -6115,12 +6115,12 @@
     "question": "A radical perspective on ethics suggests that",
     "type": "multiple_choice",
     "options": [
-      "يمكن للباحثين أن يفعلوا أي شيء يريدونه",
-      "يعد استخدام قوائم التحقق من الإجراءات الأخلاقية أمرًا ضروريًا",
       "وينبغي تعزيز صلاحيات مجالس المراجعة المؤسسية",
-      "يجب أن تقوم الأخلاق على الانعكاس الذاتي"
+      "يجب أن تقوم الأخلاق على الانعكاس الذاتي",
+      "يعد استخدام قوائم التحقق من الإجراءات الأخلاقية أمرًا ضروريًا",
+      "يمكن للباحثين أن يفعلوا أي شيء يريدونه"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "explanation": "سؤال معتمد من بنك أسئلة اختبارات منهجية البحث العلمي - كلية الحاسوب وتكنولوجيا المعلومات - د. مالك الجبري.",
     "difficulty": "medium",
     "source": {
@@ -6130,10 +6130,10 @@
     "questionEn": "A radical perspective on ethics suggests that",
     "questionAr": "A radical perspective on ethics suggests that",
     "optionsEn": [
-      "Researchers can do anything they want",
-      "The use of checklists of ethical actions is essential",
       "The powers of Institutional Review Boards should be strengthened",
-      "Ethics should be based on self-reflexivity"
+      "Ethics should be based on self-reflexivity",
+      "The use of checklists of ethical actions is essential",
+      "Researchers can do anything they want"
     ],
     "midtermId": "rm-midterm-01"
   },
@@ -6144,12 +6144,12 @@
     "question": "A common test in research demands much priority on",
     "type": "multiple_choice",
     "options": [
-      "الموثوقية",
-      "سهولة الاستخدام",
       "الموضوعية",
-      "كل ما سبق"
+      "كل ما سبق",
+      "سهولة الاستخدام",
+      "الموثوقية"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "explanation": "سؤال معتمد من بنك أسئلة اختبارات منهجية البحث العلمي - كلية الحاسوب وتكنولوجيا المعلومات - د. مالك الجبري.",
     "difficulty": "medium",
     "source": {
@@ -6159,10 +6159,10 @@
     "questionEn": "A common test in research demands much priority on",
     "questionAr": "A common test in research demands much priority on",
     "optionsEn": [
-      "Reliability",
-      "Useability",
       "Objectivity",
-      "All of the above"
+      "All of the above",
+      "Useability",
+      "Reliability"
     ],
     "midtermId": "rm-midterm-01"
   },
@@ -6173,12 +6173,12 @@
     "question": "Which research paradigm is most concerned about generalizing its findings?",
     "type": "multiple_choice",
     "options": [
-      "البحث الكمي",
       "البحث النوعي",
+      "البحث الكمي",
       "البحوث ذات الطرق المختلطة",
       "كل ما سبق"
     ],
-    "correctAnswer": 0,
+    "correctAnswer": 1,
     "explanation": "سؤال معتمد من بنك أسئلة اختبارات منهجية البحث العلمي - كلية الحاسوب وتكنولوجيا المعلومات - د. مالك الجبري.",
     "difficulty": "medium",
     "source": {
@@ -6188,8 +6188,8 @@
     "questionEn": "Which research paradigm is most concerned about generalizing its findings?",
     "questionAr": "Which research paradigm is most concerned about generalizing its findings?",
     "optionsEn": [
-      "Quantitative research",
       "Qualitative research",
+      "Quantitative research",
       "Mixed-methods research",
       "All of the above"
     ],
@@ -6202,10 +6202,10 @@
     "question": "A variable that is presumed to cause a change in another variable is called",
     "type": "multiple_choice",
     "options": [
+      "متغير عددي",
       "متغير متداخل",
-      "متغير تابع",
       "متغير مستقل",
-      "متغير عددي"
+      "متغير تابع"
     ],
     "correctAnswer": 2,
     "explanation": "سؤال معتمد من بنك أسئلة اختبارات منهجية البحث العلمي - كلية الحاسوب وتكنولوجيا المعلومات - د. مالك الجبري.",
@@ -6217,10 +6217,10 @@
     "questionEn": "A variable that is presumed to cause a change in another variable is called",
     "questionAr": "A variable that is presumed to cause a change in another variable is called",
     "optionsEn": [
+      "A numerical variable",
       "An intervening variable",
-      "A dependent variable",
       "An independent variable",
-      "A numerical variable"
+      "A dependent variable"
     ],
     "midtermId": "rm-midterm-01"
   },
@@ -6231,12 +6231,12 @@
     "question": "Researchers posit that performance-related pay increases employee motivation which in turn leads to an increase in job satisfaction. What kind of variable is ‘motivation”’ in this study?",
     "type": "multiple_choice",
     "options": [
-      "دخيل",
-      "مربك",
       "التدخل",
-      "التلاعب بها"
+      "مربك",
+      "التلاعب بها",
+      "دخيل"
     ],
-    "correctAnswer": 2,
+    "correctAnswer": 0,
     "explanation": "سؤال معتمد من بنك أسئلة اختبارات منهجية البحث العلمي - كلية الحاسوب وتكنولوجيا المعلومات - د. مالك الجبري.",
     "difficulty": "medium",
     "source": {
@@ -6246,10 +6246,10 @@
     "questionEn": "Researchers posit that performance-related pay increases employee motivation which in turn leads to an increase in job satisfaction. What kind of variable is ‘motivation”’ in this study?",
     "questionAr": "Researchers posit that performance-related pay increases employee motivation which in turn leads to an increase in job satisfaction. What kind of variable is ‘motivation”’ in this study?",
     "optionsEn": [
-      "Extraneous",
-      "Confounding",
       "Intervening",
-      "Manipulated"
+      "Confounding",
+      "Manipulated",
+      "Extraneous"
     ],
     "midtermId": "rm-midterm-01"
   },
@@ -6262,10 +6262,10 @@
     "options": [
       "البحوث الطولية",
       "البحوث التطبيقية",
-      "بدأ البحث لحل مشكلة فورية",
-      "بحث ذو هدف اجتماعي واقتصادي"
+      "بحث ذو هدف اجتماعي واقتصادي",
+      "بدأ البحث لحل مشكلة فورية"
     ],
-    "correctAnswer": 2,
+    "correctAnswer": 3,
     "explanation": "سؤال معتمد من بنك أسئلة اختبارات منهجية البحث العلمي - كلية الحاسوب وتكنولوجيا المعلومات - د. مالك الجبري.",
     "difficulty": "medium",
     "source": {
@@ -6277,8 +6277,8 @@
     "optionsEn": [
       "Longitudinal research",
       "Applied research",
-      "Research initiated to solve an immediate problem",
-      "A research with socioeconomic objective"
+      "A research with socioeconomic objective",
+      "Research initiated to solve an immediate problem"
     ],
     "midtermId": "rm-midterm-01"
   },
@@ -6289,9 +6289,9 @@
     "question": "A positive correlation occurs when",
     "type": "multiple_choice",
     "options": [
-      "يبقى متغيران ثابتين",
-      "يتحرك متغيران في نفس الاتجاه",
       "متغير واحد يرتفع والآخر ينخفض",
+      "يتحرك متغيران في نفس الاتجاه",
+      "يبقى متغيران ثابتين",
       "يتحرك متغيران في اتجاهين متعاكسين"
     ],
     "correctAnswer": 1,
@@ -6304,9 +6304,9 @@
     "questionEn": "A positive correlation occurs when",
     "questionAr": "A positive correlation occurs when",
     "optionsEn": [
-      "Two variables remain constant",
-      "Two variables move in the same direction",
       "One variable goes up and the other goes down",
+      "Two variables move in the same direction",
+      "Two variables remain constant",
       "Two variables move in opposite directions"
     ],
     "midtermId": "rm-midterm-01"
@@ -6318,12 +6318,12 @@
     "question": "The key defining characteristic of experimental research is that: S 1رقم السؤال ف ي القالب",
     "type": "multiple_choice",
     "options": [
+      "هناك علاقة إيجابية",
       "يتم التلاعب بالمتغير المستقل",
       "تم إثبات الفرضيات",
-      "هناك علاقة إيجابية",
       "العينات كبيرة"
     ],
-    "correctAnswer": 0,
+    "correctAnswer": 1,
     "explanation": "سؤال معتمد من بنك أسئلة اختبارات منهجية البحث العلمي - كلية الحاسوب وتكنولوجيا المعلومات - د. مالك الجبري.",
     "difficulty": "medium",
     "source": {
@@ -6333,9 +6333,9 @@
     "questionEn": "The key defining characteristic of experimental research is that: S 1 Question number in the template",
     "questionAr": "The key defining characteristic of experimental research is that: S 1رقم السؤال ف ي القالب",
     "optionsEn": [
+      "A positive correlation exists",
       "The independent variable is manipulated",
       "Hypotheses are proved",
-      "A positive correlation exists",
       "Samples are large"
     ],
     "midtermId": "rm-midterm-01"
@@ -6347,12 +6347,12 @@
     "question": "Qualitative research is used in all the following circumstances, EXCEPT",
     "type": "multiple_choice",
     "options": [
+      "ويستخدم الطريقة الاستقرائية",
       "يعتمد على مجموعة من البيانات غير الرقمية مثل الكلمات والصور",
       "وغالبا ما يستخدم عينات صغيرة",
-      "ويستخدم الطريقة الاستقرائية",
       "يتم استخدامه عادةً عندما يكون هناك قدر كبير من المعرفة حول الموضوع محل الاهتمام"
     ],
-    "correctAnswer": 0,
+    "correctAnswer": 1,
     "explanation": "سؤال معتمد من بنك أسئلة اختبارات منهجية البحث العلمي - كلية الحاسوب وتكنولوجيا المعلومات - د. مالك الجبري.",
     "difficulty": "medium",
     "source": {
@@ -6362,9 +6362,9 @@
     "questionEn": "Qualitative research is used in all the following circumstances, EXCEPT",
     "questionAr": "Qualitative research is used in all the following circumstances, EXCEPT",
     "optionsEn": [
+      "It uses the inductive method",
       "It is based on a collection of non-numerical data such as words and pictures",
       "It often uses small samples",
-      "It uses the inductive method",
       "It is typically used when a great deal is already known about the topic of interest1"
     ],
     "midtermId": "rm-midterm-01"
@@ -6376,12 +6376,12 @@
     "question": "In the process of conducting research ‘Formulation of Hypothesis” is followed byS 1",
     "type": "multiple_choice",
     "options": [
-      "بيان الأهداف",
-      "تحليل البيانات",
+      "جمع البيانات",
       "اختيار أدوات البحث",
-      "جمع البيانات"
+      "تحليل البيانات",
+      "بيان الأهداف"
     ],
-    "correctAnswer": 2,
+    "correctAnswer": 1,
     "explanation": "سؤال معتمد من بنك أسئلة اختبارات منهجية البحث العلمي - كلية الحاسوب وتكنولوجيا المعلومات - د. مالك الجبري.",
     "difficulty": "medium",
     "source": {
@@ -6391,10 +6391,10 @@
     "questionEn": "In the process of conducting research ‘Formulation of Hypothesis” is followed byS 1",
     "questionAr": "In the process of conducting research ‘Formulation of Hypothesis” is followed byS 1",
     "optionsEn": [
-      "Statement of Objectives",
-      "Analysis of Data",
+      "Collection of Data",
       "Selection of Research Tools",
-      "Collection of Data"
+      "Analysis of Data",
+      "Statement of Objectives"
     ],
     "midtermId": "rm-midterm-01"
   },
@@ -6406,9 +6406,9 @@
     "type": "multiple_choice",
     "options": [
       "البيانات الثانوية",
-      "ملاحظات ميدانية",
       "البيانات النوعية",
-      "البيانات الأولية"
+      "البيانات الأولية",
+      "ملاحظات ميدانية"
     ],
     "correctAnswer": 0,
     "explanation": "سؤال معتمد من بنك أسئلة اختبارات منهجية البحث العلمي - كلية الحاسوب وتكنولوجيا المعلومات - د. مالك الجبري.",
@@ -6421,9 +6421,9 @@
     "questionAr": "What do we call data that are used for a new study but which were collected by an earlier researcher for a different set of research questions?S 1",
     "optionsEn": [
       "Secondary data",
-      "Field notes",
       "Qualitative data",
-      "Primary data"
+      "Primary data",
+      "Field notes"
     ],
     "midtermId": "rm-midterm-01"
   },
@@ -6434,12 +6434,12 @@
     "question": "Which of the following statements are true?",
     "type": "multiple_choice",
     "options": [
-      "كلما زاد حجم العينة، كلما زاد فاصل الثقة",
-      "كلما كان حجم العينة أصغر، كلما زاد خطأ أخذ العينات",
+      "إن مستوى الثقة الذي يبلغ 95 بالمائة يكون دائمًا كافيًا",
       "كلما زاد عدد الفئات التي يتم قياسها، كلما كان حجم العينة أصغر",
-      "إن مستوى الثقة الذي يبلغ 95 بالمائة يكون دائمًا كافيًا"
+      "كلما كان حجم العينة أصغر، كلما زاد خطأ أخذ العينات",
+      "كلما زاد حجم العينة، كلما زاد فاصل الثقة"
     ],
-    "correctAnswer": 1,
+    "correctAnswer": 2,
     "explanation": "سؤال معتمد من بنك أسئلة اختبارات منهجية البحث العلمي - كلية الحاسوب وتكنولوجيا المعلومات - د. مالك الجبري.",
     "difficulty": "medium",
     "source": {
@@ -6449,10 +6449,10 @@
     "questionEn": "Which of the following statements are true?",
     "questionAr": "Which of the following statements are true?",
     "optionsEn": [
-      "The larger the sample size, the larger the confidence interval",
-      "The smaller the sample size, the greater the sampling error",
+      "A confidence level of 95 percent is always sufficient",
       "The more categories being measured, the smaller the sample size",
-      "A confidence level of 95 percent is always sufficient"
+      "The smaller the sample size, the greater the sampling error",
+      "The larger the sample size, the larger the confidence interval"
     ],
     "midtermId": "rm-midterm-01"
   },
@@ -6463,12 +6463,12 @@
     "question": "A research paper is a brief report of research work based on",
     "type": "multiple_choice",
     "options": [
-      "البيانات الأولية فقط",
-      "البيانات الثانوية فقط",
+      "لا شيء مما سبق",
       "كل من البيانات الأولية والثانوية",
-      "لا شيء مما سبق"
+      "البيانات الثانوية فقط",
+      "البيانات الأولية فقط"
     ],
-    "correctAnswer": 2,
+    "correctAnswer": 1,
     "explanation": "سؤال معتمد من بنك أسئلة اختبارات منهجية البحث العلمي - كلية الحاسوب وتكنولوجيا المعلومات - د. مالك الجبري.",
     "difficulty": "medium",
     "source": {
@@ -6478,10 +6478,10 @@
     "questionEn": "A research paper is a brief report of research work based on",
     "questionAr": "A research paper is a brief report of research work based on",
     "optionsEn": [
-      "Primary Data only",
-      "Secondary Data only",
+      "None of the above",
       "Both Primary and Secondary Data",
-      "None of the above"
+      "Secondary Data only",
+      "Primary Data only"
     ],
     "midtermId": "rm-midterm-01"
   },
@@ -6492,12 +6492,12 @@
     "question": "A test accurately indicates an employee’s scores on a future criterion )e.g., conscientiousness).  What kind of validity is this?S 1",
     "type": "multiple_choice",
     "options": [
-      "التنبؤية",
       "الوجه",
-      "المحتوى",
-      "متزامن"
+      "التنبؤية",
+      "متزامن",
+      "المحتوى"
     ],
-    "correctAnswer": 0,
+    "correctAnswer": 1,
     "explanation": "سؤال معتمد من بنك أسئلة اختبارات منهجية البحث العلمي - كلية الحاسوب وتكنولوجيا المعلومات - د. مالك الجبري.",
     "difficulty": "medium",
     "source": {
@@ -6507,10 +6507,10 @@
     "questionEn": "A test accurately indicates an employee’s scores on a future criterion )e.g., conscientiousness).  What kind of validity is this?S 1",
     "questionAr": "A test accurately indicates an employee’s scores on a future criterion )e.g., conscientiousness).  What kind of validity is this?S 1",
     "optionsEn": [
-      "Predictive",
       "Face",
-      "Content",
-      "Concurrent"
+      "Predictive",
+      "Concurrent",
+      "Content"
     ],
     "midtermId": "rm-midterm-01"
   },
@@ -6521,12 +6521,12 @@
     "question": "One advantage of using a questionnaire is that",
     "type": "multiple_choice",
     "options": [
-      "يمكن طرح أسئلة التحقيق",
       "يمكن وضع المستجيبين في سهولة",
-      "يمكن تجنب التحيز في المقابلة",
-      "معدلات الاستجابة مرتفعة دائمًا"
+      "معدلات الاستجابة مرتفعة دائمًا",
+      "يمكن طرح أسئلة التحقيق",
+      "يمكن تجنب التحيز في المقابلة"
     ],
-    "correctAnswer": 2,
+    "correctAnswer": 3,
     "explanation": "سؤال معتمد من بنك أسئلة اختبارات منهجية البحث العلمي - كلية الحاسوب وتكنولوجيا المعلومات - د. مالك الجبري.",
     "difficulty": "medium",
     "source": {
@@ -6536,10 +6536,10 @@
     "questionEn": "One advantage of using a questionnaire is that",
     "questionAr": "One advantage of using a questionnaire is that",
     "optionsEn": [
-      "Probe questions can be asked",
       "Respondents can be put at ease",
-      "Interview bias can be avoided",
-      "Response rates are always high"
+      "Response rates are always high",
+      "Probe questions can be asked",
+      "Interview bias can be avoided"
     ],
     "midtermId": "rm-midterm-01"
   },
@@ -6550,12 +6550,12 @@
     "question": "Secondary data can include which of the following?",
     "type": "multiple_choice",
     "options": [
+      "كل ما سبق",
       "إحصائيات حكومية",
       "مذكرات شخصية",
-      "السجلات التنظيمية",
-      "كل ما سبق"
+      "السجلات التنظيمية"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 0,
     "explanation": "سؤال معتمد من بنك أسئلة اختبارات منهجية البحث العلمي - كلية الحاسوب وتكنولوجيا المعلومات - د. مالك الجبري.",
     "difficulty": "medium",
     "source": {
@@ -6565,10 +6565,10 @@
     "questionEn": "Secondary data can include which of the following?",
     "questionAr": "Secondary data can include which of the following?",
     "optionsEn": [
+      "All of the above",
       "Government statistics",
       "Personal diaries",
-      "Organizational records",
-      "All of the above"
+      "Organizational records"
     ],
     "midtermId": "rm-midterm-01"
   },
@@ -6608,12 +6608,12 @@
     "question": "The ‘reliability’of a measure refers to the researcher asking",
     "type": "multiple_choice",
     "options": [
-      "هل يعطي نتائج متسقة؟",
       "هل يقيس ما يفترض أن يقيسه؟",
-      "هل يمكن تعميم النتائج؟",
-      "هل لديها موثوقية الوجه؟"
+      "هل يعطي نتائج متسقة؟",
+      "هل لديها موثوقية الوجه؟",
+      "هل يمكن تعميم النتائج؟"
     ],
-    "correctAnswer": 0,
+    "correctAnswer": 1,
     "explanation": "سؤال معتمد من بنك أسئلة اختبارات منهجية البحث العلمي - كلية الحاسوب وتكنولوجيا المعلومات - د. مالك الجبري.",
     "difficulty": "medium",
     "source": {
@@ -6623,10 +6623,10 @@
     "questionEn": "The ‘reliability’of a measure refers to the researcher asking",
     "questionAr": "The ‘reliability’of a measure refers to the researcher asking",
     "optionsEn": [
-      "Does it give consistent results?",
       "Does it measure what it is supposed to measure?",
-      "Can the results be generalized?",
-      "Does it have face reliability?"
+      "Does it give consistent results?",
+      "Does it have face reliability?",
+      "Can the results be generalized?"
     ],
     "midtermId": "rm-midterm-01"
   },
@@ -6666,12 +6666,12 @@
     "question": "Which of the following is not an essential element of report writing?",
     "type": "multiple_choice",
     "options": [
-      "منهجية البحث",
       "مرجع",
-      "خاتمة",
-      "لا شيء من هؤلاء"
+      "لا شيء من هؤلاء",
+      "منهجية البحث",
+      "خاتمة"
     ],
-    "correctAnswer": 3,
+    "correctAnswer": 1,
     "explanation": "سؤال معتمد من بنك أسئلة اختبارات منهجية البحث العلمي - كلية الحاسوب وتكنولوجيا المعلومات - د. مالك الجبري.",
     "difficulty": "medium",
     "source": {
@@ -6681,10 +6681,10 @@
     "questionEn": "Which of the following is not an essential element of report writing?",
     "questionAr": "Which of the following is not an essential element of report writing?",
     "optionsEn": [
-      "Research Methodology",
       "Reference",
-      "Conclusion",
-      "None of these"
+      "None of these",
+      "Research Methodology",
+      "Conclusion"
     ],
     "midtermId": "rm-midterm-01"
   },
@@ -6696,9 +6696,9 @@
     "type": "multiple_choice",
     "options": [
       "قيادة المستجيب",
-      "التحقيق في القضايا الحساسة",
+      "اختبار قوة الذاكرة لدى أفراد العينة",
       "يتم تسليمها بنبرة محايدة",
-      "اختبار قوة الذاكرة لدى أفراد العينة"
+      "التحقيق في القضايا الحساسة"
     ],
     "correctAnswer": 2,
     "explanation": "سؤال معتمد من بنك أسئلة اختبارات منهجية البحث العلمي - كلية الحاسوب وتكنولوجيا المعلومات - د. مالك الجبري.",
@@ -6711,9 +6711,9 @@
     "questionAr": "Interview questions should",
     "optionsEn": [
       "Lead the respondent",
-      "Probe sensitive issues",
+      "Test the respondents’ powers of memory",
       "Be delivered in a neutral tone",
-      "Test the respondents’ powers of memory"
+      "Probe sensitive issues"
     ],
     "midtermId": "rm-midterm-01"
   },
@@ -6724,12 +6724,12 @@
     "question": "Which of the following is not always true about focus groups?",
     "type": "multiple_choice",
     "options": [
-      "الحجم المثالي يتراوح عادةً بين 6 و12 مشاركًا",
-      "يجب على المشرفين تقديم أنفسهم للمجموعة",
       "يجب أن يأتي المشاركون من خلفيات متنوعة",
-      "يطرح المشرف أسئلة مخططة مسبقًا"
+      "يطرح المشرف أسئلة مخططة مسبقًا",
+      "الحجم المثالي يتراوح عادةً بين 6 و12 مشاركًا",
+      "يجب على المشرفين تقديم أنفسهم للمجموعة"
     ],
-    "correctAnswer": 2,
+    "correctAnswer": 0,
     "explanation": "سؤال معتمد من بنك أسئلة اختبارات منهجية البحث العلمي - كلية الحاسوب وتكنولوجيا المعلومات - د. مالك الجبري.",
     "difficulty": "medium",
     "source": {
@@ -6739,10 +6739,10 @@
     "questionEn": "Which of the following is not always true about focus groups?",
     "questionAr": "Which of the following is not always true about focus groups?",
     "optionsEn": [
-      "The ideal size is normally between 6 and 12 participants",
-      "Moderators should introduce themselves to the group",
       "Participants should come from diverse backgrounds",
-      "The moderator poses preplanned questions"
+      "The moderator poses preplanned questions",
+      "The ideal size is normally between 6 and 12 participants",
+      "Moderators should introduce themselves to the group"
     ],
     "midtermId": "rm-midterm-01"
   },
@@ -6753,12 +6753,12 @@
     "question": "A disadvantage of using secondary data is that",
     "type": "multiple_choice",
     "options": [
-      "ربما تم جمع البيانات بالإشارة إلى أسئلة بحثية ليست خاصة بالباحث1",
       "قد يُضفي الباحث مزيدًا من الانفصال في عرض البيانات عما يستطيع الباحثون الأصليون حشده",
+      "ربما تم جمع البيانات بالإشارة إلى أسئلة بحثية ليست خاصة بالباحث1",
       "غالبًا ما يتم جمع البيانات من قبل فرق من الباحثين ذوي الخبرة",
       "غالبًا ما تكون مجموعات البيانات الثانوية متاحة ويمكن الوصول إليها"
     ],
-    "correctAnswer": 0,
+    "correctAnswer": 1,
     "explanation": "سؤال معتمد من بنك أسئلة اختبارات منهجية البحث العلمي - كلية الحاسوب وتكنولوجيا المعلومات - د. مالك الجبري.",
     "difficulty": "medium",
     "source": {
@@ -6768,8 +6768,8 @@
     "questionEn": "A disadvantage of using secondary data is that",
     "questionAr": "A disadvantage of using secondary data is that",
     "optionsEn": [
-      "The data may have been collected with reference to research questions that are not those of the researcher1",
       "The researcher may bring more detachment in viewing the data than original researchers could muster",
+      "The data may have been collected with reference to research questions that are not those of the researcher1",
       "Data have often been collected by teams of experienced researchers",
       "Secondary data sets are often available and accessible"
     ],
